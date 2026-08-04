@@ -1,0 +1,21 @@
+{
+  "stage": "S5_complete",
+  "utc": "2026-08-04T03:04:42+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "versions": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "torch": "2.13.0"
+  },
+  "frozen_mask_ratio": 0.3,
+  "selected_objective": "masked_angular_velocity"
+}

@@ -1,0 +1,69 @@
+{
+  "stage": "S8_direction_similarity",
+  "utc": "2026-08-04T08:13:47+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "objective": "masked_angular_velocity",
+  "architecture": "conv",
+  "gate": {
+    "n_sufficient_runs_D12_D13": 14,
+    "sufficient_runs_per_delta": {
+      "D12": 8,
+      "D13": 6
+    },
+    "frac_raw_std_same_sign": 0.7142857142857143,
+    "frac_both_geometries_positive": 0.2857142857142857,
+    "stability": {
+      "D12_raw_frac_positive": 0.25,
+      "D12_raw_mean": -0.09075416865828238,
+      "D13_raw_frac_positive": 0.3333333333333333,
+      "D13_raw_mean": 0.020418575206232706,
+      "D12_std_frac_positive": 0.25,
+      "D12_std_mean": -0.12407446844284334,
+      "D13_std_frac_positive": 1.0,
+      "D13_std_mean": 0.12504740184621124
+    },
+    "jackknife_sign_flip_rate": 0.4583333333333333,
+    "jackknife_w_o_252_frac_positive": 0.5714285714285714,
+    "jackknife_w_o_671_frac_positive": 0.25,
+    "jackknife_w_o_790_frac_positive": 0.2857142857142857,
+    "class_fractions": {
+      "reliable_degraded_but_change_gt_rep": 0.38235294117647056,
+      "reliable_direction_change_gt_repetition": 0.35294117647058826,
+      "reliable_but_degraded_representation": 0.17647058823529413,
+      "reliable_direction_change_le_repetition": 0.08823529411764706
+    },
+    "frac_change_gt_rep": 0.7352941176470589,
+    "checks": {
+      "multiple_sufficient_runs": true,
+      "mean_cosine_mostly_positive": false,
+      "raw_std_agree_sign": false,
+      "jackknife_not_fragile": false,
+      "not_all_within_repetition": true
+    },
+    "shared_direction_evidence": false,
+    "continue_to_s9_s10": true,
+    "pass": true,
+    "reason": "insufficient stable shared direction, but enough reliable cells to complete Stage 0 controls and GO/NO-GO (LIMITED / METHOD path)"
+  },
+  "elapsed_s": 14.5,
+  "artifact_sha256": {
+    "similarity_summary.csv": "b2b8ccf56437b894894ec0c66ee64d273b605706ea6e386a48e0d11f80d8352e",
+    "pairwise_cosines.csv": "4113b94733907156fe9d68f228e65d21a634c0220114c406642945d6ea159e3e",
+    "signflip.csv": "ab3bb43e992c46fd95f8d24e8f638ae1e04c2506969f69e1afc7991eda04ab03",
+    "jackknife.csv": "dd8997a3d9807976974f2796d4827da3070bdfe1ef4e41ca26fca38d6f74c0c7",
+    "inclusion_table.csv": "470162a88cc7acc87675318377b932d50a92342be4584e06f89a93ffdb8f93ef",
+    "S8_GATE.json": "8926f46eaa287877a3f1d0ceb11322c991201d9fefe4d7f919857279b985f707"
+  },
+  "input_sha256": {
+    "change_vectors.csv": "5ec7c34f4b83d3b3b03ac36b7103bbbbedd8e131d1326bade45149fe5c11e9cb",
+    "change_magnitudes.csv": "634963879921e7e9c3b8013bff70d05e8a598ffcd8a15fda9760ef9e58ba7749",
+    "reliability_t1_t2_t3.csv": "db18e19b6fc92fbafc969b7efe95640bac86ed30cec01ed8fceb2ba345c17190"
+  }
+}

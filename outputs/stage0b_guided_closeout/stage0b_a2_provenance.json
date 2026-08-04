@@ -1,0 +1,30 @@
+{
+  "stage": "STAGE0B_A2",
+  "utc": "2026-08-04T10:13:53+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "closeout": "GUIDED ANALYSIS COMPLETE WITH EXPLORATORY EXTENSIONS",
+  "clustering_justified": false,
+  "p1_p5_supported": false,
+  "elapsed_s": 19.7,
+  "stopped_before": [
+    "free_movement",
+    "structured_vs_free_transfer",
+    "pooled_clustering",
+    "motif_discovery_free",
+    "new_training"
+  ],
+  "artifact_sha256": {
+    "guided_segmentation.csv": "fbbff1aac3c0392db2e2dae2f00dd0a8cc20dabbb942692d48d867e570bad541",
+    "exercise_level_change.csv": "3d4495b72005a045e7738d35a679ca5d7d1f91962d3fdcd8de3938624e4dc116",
+    "temporal_dynamics.csv": "b048984ad4362896ab81a207f5745fc2a2d07f613462669afa05658f50650db2",
+    "repertoire_clustering_feasibility.csv": "4d4ddf01a68085e1c0b310e0440963a9d63c6f9ce2443968280f770e81b29526",
+    "repertoire_summary.json": "bbd04e2c9c8abcbe2e6a88967cb055f176d9a0fced4c66a8b8e9510a109cdb61"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "n_cells": 24,
+  "mean_skill_T1": 0.0010448872027815058,
+  "mean_skill_T2": 0.02187038566884515,
+  "mean_skill_T3": 0.01804583065682737,
+  "frac_positive_T1": 0.75,
+  "frac_positive_T2": 0.9166666666666666,
+  "frac_positive_T3": 0.7916666666666666,
+  "n_fail_T1": 6,
+  "n_fail_T2": 2,
+  "n_fail_T3": 5,
+  "means_positive": true,
+  "majority_positive": true,
+  "gate_pass": true,
+  "gate_rule": "mean skill > 0 at T1/T2/T3 AND \u226550% cells positive at each timepoint; per-cell skill\u22640 still blocks interpretation of that cell"
+}

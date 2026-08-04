@@ -1,0 +1,115 @@
+{
+  "stage": "torch_smoke_test",
+  "utc": "2026-08-03T16:02:16+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "torch": "2.13.0",
+  "numpy": "2.5.1",
+  "python": "3.12.12",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "cuda_available": false,
+  "mps_available": true,
+  "device_used": "cpu",
+  "transformer_parameters": 31036,
+  "conv_baseline_parameters": 13222,
+  "checks": [
+    {
+      "check": "torch imports and runs on CPU",
+      "passed": true,
+      "detail": "torch 2.13.0"
+    },
+    {
+      "check": "numpy interop works with numpy 2.5",
+      "passed": true,
+      "detail": "numpy -> torch -> numpy round trip"
+    },
+    {
+      "check": "transformer stays under 45,000 parameters",
+      "passed": true,
+      "detail": "31,036 parameters (d=32, 2 blocks, 18x24 tokens)"
+    },
+    {
+      "check": "conv baseline stays under 20,000 parameters",
+      "passed": true,
+      "detail": "13,222 parameters, 43% of the transformer"
+    },
+    {
+      "check": "mask ratio 30% achieved",
+      "passed": true,
+      "detail": "requested 30%, achieved 30.6%"
+    },
+    {
+      "check": "mask ratio 50% achieved",
+      "passed": true,
+      "detail": "requested 50%, achieved 50.1%"
+    },
+    {
+      "check": "mask ratio 70% achieved",
+      "passed": true,
+      "detail": "requested 70%, achieved 70.2%"
+    },
+    {
+      "check": "masks are contiguous spans, not scattered patches",
+      "passed": true,
+      "detail": "132 runs, median length 6 patches, 0 shorter than the configured minimum of 3; independent per-token masking at the same ratio would give median 2"
+    },
+    {
+      "check": "masked_6d: forward, loss and backward",
+      "passed": true,
+      "detail": "pred (4, 24, 18, 10, 6), loss 1.3057, 45/45 tensors received gradient"
+    },
+    {
+      "check": "masked_angular_velocity: forward, loss and backward",
+      "passed": true,
+      "detail": "pred (4, 24, 18, 10, 3), loss 1.3006, 45/45 tensors received gradient"
+    },
+    {
+      "check": "conv baseline matches the transformer's output contract",
+      "passed": true,
+      "detail": "pred (4, 24, 18, 10, 6)"
+    },
+    {
+      "check": "unmasked tokens do not contribute to the loss",
+      "passed": true,
+      "detail": "perturbing every unmasked target by +100 leaves the loss unchanged"
+    },
+    {
+      "check": "identical seed gives identical loss",
+      "passed": true,
+      "detail": "1.1139385700 vs 1.1139385700"
+    },
+    {
+      "check": "different seed gives a different trajectory",
+      "passed": true,
+      "detail": "seed 0 1.113939, seed 1 1.163592"
+    },
+    {
+      "check": "loss decreases on a smooth synthetic signal",
+      "passed": true,
+      "detail": "0.8096 -> 0.1368 over 60 steps in 0.7s (12 ms/step at batch 4)"
+    },
+    {
+      "check": "embedding is 32-D, one vector per window",
+      "passed": true,
+      "detail": "(4, 32) from mean pooling 432 final tokens"
+    },
+    {
+      "check": "embedding is deterministic and mask-free",
+      "passed": true,
+      "detail": "two extractions on the same input are bit-identical"
+    },
+    {
+      "check": "a real 2 s window flows through the model",
+      "passed": true,
+      "detail": "w000000 from 252_T1_P1_R1: input (1, 240, 18, 6) -> tokens -> embedding (1, 32)"
+    }
+  ],
+  "all_passed": true
+}

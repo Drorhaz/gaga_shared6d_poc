@@ -1,0 +1,53 @@
+{
+  "stage": "S5_pca",
+  "utc": "2026-08-03T16:29:34+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "pca_dim_requested": 32,
+  "input": "time-mean 6D flattened (108-D) from primary filtered path",
+  "fit": "StandardScaler+PCA on fold training-T1 windows only",
+  "folds": [
+    {
+      "fold": "A",
+      "n_train": 403,
+      "n_early_stop": 120,
+      "n_eval": 304,
+      "pca_dim": 32,
+      "mse_train": 0.002296696231352627,
+      "mse_heldout_t1": 0.005618404008911845,
+      "var_explained_total": 0.9318747050239734,
+      "pc1_energy_corr_heldout_t1": 0.0011609462052617015
+    },
+    {
+      "fold": "B",
+      "n_train": 439,
+      "n_early_stop": 91,
+      "n_eval": 300,
+      "pca_dim": 32,
+      "mse_train": 0.00260973138222531,
+      "mse_heldout_t1": 0.005473781179325564,
+      "var_explained_total": 0.9210247473832496,
+      "pc1_energy_corr_heldout_t1": -0.01499838814314932
+    }
+  ],
+  "identity_probe": [
+    {
+      "fold": "A",
+      "accuracy": 0.7916666666666666,
+      "chance": 0.25,
+      "above_chance": 0.5416666666666666
+    },
+    {
+      "fold": "B",
+      "accuracy": 0.8901098901098901,
+      "chance": 0.25,
+      "above_chance": 0.6401098901098901
+    }
+  ]
+}

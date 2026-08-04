@@ -1,0 +1,39 @@
+{
+  "stage": "S5_explicit",
+  "utc": "2026-08-03T16:29:56+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "n_windows": 1446,
+  "n_recordings": 24,
+  "feature_columns": [
+    "total_energy_deg2_s2",
+    "active_link_count",
+    "active_region_count",
+    "participation_entropy_bits",
+    "effective_dimensionality",
+    "lr_symmetry",
+    "regional_coupling",
+    "trunk_arm_lagged_coupling",
+    "energy_head_neck",
+    "energy_left_arm",
+    "energy_left_leg",
+    "energy_right_arm",
+    "energy_right_leg",
+    "energy_trunk_spine",
+    "total_energy_log",
+    "energy_share_head_neck",
+    "energy_share_left_arm",
+    "energy_share_left_leg",
+    "energy_share_right_arm",
+    "energy_share_right_leg",
+    "energy_share_trunk_spine"
+  ],
+  "amplitude_control": "within-participant linear residual vs total_energy_log",
+  "note": "Descriptive only. No intervention-effect claims."
+}

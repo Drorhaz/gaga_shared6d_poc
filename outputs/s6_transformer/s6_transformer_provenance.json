@@ -1,0 +1,113 @@
+{
+  "stage": "S6_transformer",
+  "utc": "2026-08-04T03:36:13+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "torch": "2.13.0",
+  "device": "cpu",
+  "mask_ratio": 0.3,
+  "n_runs": 12,
+  "selected_objective": "masked_angular_velocity",
+  "selection_reason": "only objective with positive skill in both folds",
+  "architecture_recommendation": "conv",
+  "architecture_reason": "Transformer does not provide a clear, reliable advantage over the matched convolutional baseline; prefer the simpler model",
+  "skill_transformer_mean": 0.029167752445327804,
+  "skill_conv_mean": 0.03589411409314711,
+  "mean_skill_diff": -0.006726361647819313,
+  "identity_probe_transformer": 0.41341575091575095,
+  "identity_probe_conv": 0.44566544566544564,
+  "identity_delta_tf_minus_conv": -0.03224969474969469,
+  "n_params_transformer": 30046,
+  "n_params_conv": 14237,
+  "elapsed_s": 452.7,
+  "reliability_fail_cells": [
+    {
+      "participant": "671",
+      "fold": "A",
+      "seed": 0,
+      "gate_T1_heldout": "positive",
+      "gate_T2": "positive_stable",
+      "gate_T3": "fail_nonpositive"
+    },
+    {
+      "participant": "651",
+      "fold": "A",
+      "seed": 1,
+      "gate_T1_heldout": "fail_nonpositive",
+      "gate_T2": "positive_stable",
+      "gate_T3": "positive_stable"
+    },
+    {
+      "participant": "671",
+      "fold": "A",
+      "seed": 1,
+      "gate_T1_heldout": "positive",
+      "gate_T2": "positive_stable",
+      "gate_T3": "fail_nonpositive"
+    },
+    {
+      "participant": "671",
+      "fold": "A",
+      "seed": 2,
+      "gate_T1_heldout": "positive",
+      "gate_T2": "fail_nonpositive",
+      "gate_T3": "positive_stable"
+    },
+    {
+      "participant": "671",
+      "fold": "B",
+      "seed": 0,
+      "gate_T1_heldout": "positive",
+      "gate_T2": "positive_stable",
+      "gate_T3": "fail_nonpositive"
+    },
+    {
+      "participant": "790",
+      "fold": "B",
+      "seed": 0,
+      "gate_T1_heldout": "fail_nonpositive",
+      "gate_T2": "fail_nonpositive",
+      "gate_T3": "positive_stable"
+    },
+    {
+      "participant": "671",
+      "fold": "B",
+      "seed": 1,
+      "gate_T1_heldout": "fail_nonpositive",
+      "gate_T2": "positive_stable",
+      "gate_T3": "positive_stable"
+    },
+    {
+      "participant": "671",
+      "fold": "B",
+      "seed": 2,
+      "gate_T1_heldout": "fail_nonpositive",
+      "gate_T2": "positive_stable",
+      "gate_T3": "positive_stable"
+    },
+    {
+      "participant": "790",
+      "fold": "B",
+      "seed": 2,
+      "gate_T1_heldout": "fail_nonpositive",
+      "gate_T2": "fail_nonpositive",
+      "gate_T3": "fail_nonpositive"
+    }
+  ],
+  "bootstrap_n": 500,
+  "artifact_sha256": {
+    "run_summary.csv": "b31e611a507c797b3790ede3ea1a89014a906acd015a97c5651b013757921287",
+    "controls.csv": "a99025e7372e2f98bfb0565cef7370f3fea4dd24a4c6a6076fcb24dcb6ef5f4b",
+    "transformer_vs_conv.csv": "d2bd4c79c19c06cd7c0f19987b2e75a3c534281d38fa66bb135f1be9be415505",
+    "reliability_t1_t2_t3.csv": "053713978371783a2c0f96a4e9452088427d5131fd3d01ec84adfca444046ed5",
+    "OBJECTIVE_SELECTION.json": "59280fd42f053a1d3531103e21a1b05ec99325fca49fdf1f30c9cab4dafc1ce4",
+    "recording_embeddings.csv": "676a1cf3e6f914793b3dd5e4f2a1c82af6a998950aab4dfab823ee2796bf1c0c"
+  },
+  "bootstrap_method": "pooled_skill"
+}

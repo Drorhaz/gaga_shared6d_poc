@@ -1,0 +1,32 @@
+{
+  "stage": "S3b_filter_sensitivity",
+  "utc": "2026-08-03T16:12:10+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "subset": [
+    "252_T1_P1_R1",
+    "252_T3_P1_R1",
+    "651_T1_P1_R1",
+    "651_T2_P1_R1",
+    "671_T1_P1_R1",
+    "790_T1_P1_R1"
+  ],
+  "thresholds": {
+    "material_geo_p99_deg": 5.0,
+    "material_embed_cosine": 0.95,
+    "material_hf_ratio_note": "hf_ratio >> 1 is expected; not used alone to swap paths"
+  },
+  "geodesic_median_p99_deg": 0.7373647293721145,
+  "geodesic_worst_max_deg": 147.768415557251,
+  "hf_ratio_median": 3.7480763298300115,
+  "content_cosine_median": 0.9999999995073687,
+  "encoder_cosine_median": 1.0,
+  "recommendation": "KEEP_PRIMARY",
+  "primary_path_replaced": false
+}

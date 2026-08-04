@@ -1,0 +1,47 @@
+participant,timepoint,task_part,repetition,exercise_id,source_sheet,source_end_column,issue,start_frame,end_frame
+252,1,1,2,16,252 - T1P1R2,end_frame,unmarked_boundary,27000.0,
+252,1,1,2,17,252 - T1P1R2,end_frame,unmarked_boundary,,31080.0
+252,2,1,1,16,252 - T2P1R1,end_frame,unmarked_boundary,27120.0,
+252,2,1,1,17,252 - T2P1R1,end_frame,unmarked_boundary,,30960.0
+252,2,1,2,16,252 - T2P1R2,end_frame,unmarked_boundary,27000.0,
+252,2,1,2,17,252 - T2P1R2,end_frame,unmarked_boundary,,30960.0
+252,3,1,1,16,252 - T3P1R1,end_frame,unmarked_boundary,27000.0,
+252,3,1,1,17,252 - T3P1R1,end_frame,unmarked_boundary,,31080.0
+252,3,1,2,16,252 - T3P1R2,end_frame,unmarked_boundary,27600.0,
+252,3,1,2,17,252 - T3P1R2,end_frame,unmarked_boundary,,31440.0
+651,1,1,1,16,651- T1P1R1,end_frame,unmarked_boundary,26400.0,
+651,1,1,1,17,651- T1P1R1,end_frame,unmarked_boundary,,30120.0
+651,1,1,2,16,651- T1P1R2,end_frame,unmarked_boundary,26160.0,
+651,1,1,2,17,651- T1P1R2,end_frame,unmarked_boundary,,29640.0
+651,2,1,1,16,651- T2P1R1,end_frame,unmarked_boundary,27840.0,
+651,2,1,1,17,651- T2P1R1,end_frame,unmarked_boundary,,31560.0
+651,2,1,2,16,651- T2P1R2,end_frame,unmarked_boundary,27120.0,
+651,2,1,2,17,651- T2P1R2,end_frame,unmarked_boundary,,31200.0
+651,3,1,1,16,651- T3P1R1,end_frame,unmarked_boundary,26760.0,
+651,3,1,1,17,651- T3P1R1,end_frame,unmarked_boundary,,30480.0
+651,3,1,2,16,651- T3P1R2,end_frame,unmarked_boundary,26880.0,
+651,3,1,2,17,651- T3P1R2,end_frame,unmarked_boundary,,30840.0
+671,1,1,1,16,671 - T1P1R1,end_frame_exclusive,unmarked_boundary,26400.0,
+671,1,1,1,17,671 - T1P1R1,end_frame_exclusive,unmarked_boundary,,30360.0
+671,1,1,2,17,671 - T1P1R2,end_frame,unmarked_boundary,2844.0,
+671,2,1,1,17,671 - T2P1R1,end_frame,unmarked_boundary,2844.0,
+671,2,1,2,16,671 - T2P1R2,end_frame,unmarked_boundary,26160.0,
+671,2,1,2,17,671 - T2P1R2,end_frame,unmarked_boundary,,30000.0
+671,3,1,1,16,671 - T3P1R1,end_frame,unmarked_boundary,27240.0,
+671,3,1,1,17,671 - T3P1R1,end_frame,unmarked_boundary,,31200.0
+671,3,1,2,16,671 - T3P1R2,end_frame,unmarked_boundary,27120.0,
+671,3,1,2,17,671 - T3P1R2,end_frame,unmarked_boundary,,30840.0
+790,1,1,1,4,790- T1P1R1,end_frame,unmarked_boundary,7800.0,
+790,1,1,1,5,790- T1P1R1,end_frame,unmarked_boundary,,8760.0
+790,1,1,1,16,790- T1P1R1,end_frame,unmarked_boundary,27000.0,
+790,1,1,1,17,790- T1P1R1,end_frame,unmarked_boundary,,30600.0
+790,1,1,2,16,790- T1P1R2,end_frame,unmarked_boundary,27000.0,
+790,1,1,2,17,790- T1P1R2,end_frame,unmarked_boundary,,30960.0
+790,2,1,1,16,790- T2P1R1,end_frame,unmarked_boundary,27240.0,
+790,2,1,1,17,790- T2P1R1,end_frame,unmarked_boundary,,31320.0
+790,2,1,2,16,790- T2P1R2,end_frame,unmarked_boundary,26640.0,
+790,2,1,2,17,790- T2P1R2,end_frame,unmarked_boundary,,30480.0
+790,3,1,1,16,790- T3P1R1,end_frame,unmarked_boundary,27240.0,
+790,3,1,1,17,790- T3P1R1,end_frame,unmarked_boundary,,30840.0
+790,3,1,2,16,790- T3P1R2,end_frame,unmarked_boundary,27120.0,
+790,3,1,2,17,790- T3P1R2,end_frame,unmarked_boundary,,30960.0

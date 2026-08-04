@@ -1,0 +1,50 @@
+# Virtual environments
+.venv/
+venv/
+.env/
+.env.*
+
+# Python caches / tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets / local machine config
+*.pem
+*.key
+credentials*
+secrets*
+
+# Temporary / cache
+tmp/
+temp/
+cache/
+*.log
+
+# Run logs (may contain local machine paths; not scientific outputs)
+outputs/*_run_log.txt
+outputs/**/run_log.txt
+outputs/reproduction/logs/
+
+# Raw / regenerable motion arrays (~400 MB). Checksums live in
+# data/immutable/INPUT_MANIFEST.json and
+# outputs/guided_analysis_finalization/excluded_artifacts_manifest.csv
+data/immutable/rotvec_18link/
+raw_data/
+data/raw/
+
+# Previous artifacts isolated by scripts/reproduce_clean.py
+.quarantine/

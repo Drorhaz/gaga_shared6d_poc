@@ -1,0 +1,101 @@
+# Shared 6D Motion POC - Stage 0 fixed parameters.
+# Every value here is decided in FINAL_METHOD_DECISIONS.md before any
+# T1/T2/T3 separation is viewed. Changing one after seeing results
+# invalidates the pre-registration.
+
+source_project: "../gaga_jcvpca"
+
+capture:
+  frame_rate_hz: 120.0
+  expected_length_units: "Millimeters"   # 252-T3 is Meters; asserted, not assumed
+
+participants: ["252", "651", "671", "790"]
+timepoints: [1, 2, 3]
+repetitions: [1, 2]
+
+exercises:
+  training: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  evaluation: [9, 10, 11, 12, 13]
+  breakdown: 11
+
+# Boundary convention. Sheets carry either `end_frame` or `end_frame_exclusive`.
+# All are normalised to EXCLUSIVE (python slice) semantics. Segment boundaries
+# sit on whole-second multiples of 120, so the inclusive/exclusive ambiguity is
+# one frame (8.3 ms) and immaterial; it is normalised for reproducibility only.
+segmentation:
+  end_frame_is_exclusive: true
+  merge_unmarked_boundaries: true   # 790-T1-R1 ex04/ex05
+
+filter:
+  # Byte-faithful to the validated Layer 2 pipeline in gaga_jcvpca.
+  cutoff_hz: 10.0
+  order: 4
+  filter_type: "butterworth_lowpass"
+
+qc:
+  near_pi_warning_fraction: 0.95
+  jump_fail_rad: 1.0
+  # Extraction must reproduce trusted cached rotations to this tolerance.
+  extraction_match_tol_rad: 1.0e-9
+  # 6D round trip. The gate uses the Frobenius norm of the matrix difference,
+  # which is well conditioned. The geodesic angle is reported for
+  # interpretability but is NOT the gate: its arccos is ill conditioned near
+  # zero, so a bit-perfect float64 round trip still reads ~1e-6 deg.
+  roundtrip_max_frobenius: 1.0e-12
+  roundtrip_report_geodesic_deg: 1.0e-3
+
+windowing:
+  window_seconds: 2.0
+  train_overlap: 0.5
+  eval_overlap: 0.0
+
+model:
+  n_links: 18
+  patch_frames: 10          # tokenization: 240 / 10 = 24 temporal patches
+  n_patches: 24
+  hidden_dim: 32
+  n_blocks: 2
+  ffn_expansion: 2
+  embedding_dim: 32         # mean-pooled encoder output; no separate latent head
+  mask_span_frames: [30, 60]
+  mask_ratio_sweep: [0.30, 0.50, 0.70]
+  objectives: ["masked_6d", "masked_angular_velocity"]
+  seeds: [0, 1, 2]
+  early_stop_block_fraction: 0.20
+
+folds:
+  # Repetition-consistent trajectories. Train on one T1 repetition, traverse the
+  # other repetition across all three timepoints.
+  A:
+    train_repetition: 1
+    trajectory_repetition: 2
+  B:
+    train_repetition: 2
+    trajectory_repetition: 1
+
+# Stage S5 training hyperparameters. Fixed before any T2/T3 separation is viewed.
+s5:
+  pca_dim: 32
+  conv_channels: 34
+  batch_size: 16
+  max_epochs: 60
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stop_patience: 8
+  # mask_span_frames [30,60] / patch_frames 10 → patches
+  mask_span_patches: [3, 6]
+  # Frozen after the Fold-A seed-0 sweep; null until the sweep writes it.
+  frozen_mask_ratio: 0.3
+  trivial_baselines: ["mean_motion", "interpolation"]
+  active_link_energy_quantile: 0.50   # within-window; descriptive only
+
+
+# Stage S6 — Transformer. Hyperparameters reused from s5; nothing retuned after T2/T3.
+s6:
+  batch_size: 16
+  max_epochs: 60
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stop_patience: 8
+  device: "cpu"
+  frozen_mask_ratio: 0.3   # inherited from s5; do not retune

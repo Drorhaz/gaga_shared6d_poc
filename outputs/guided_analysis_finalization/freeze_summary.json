@@ -1,0 +1,321 @@
+{
+  "freeze_date": "2026-08-04",
+  "outcome": "GUIDED RESULTS FROZEN WITH DOCUMENTATION GAPS",
+  "project_root": ".",
+  "git": {
+    "repository_present": false,
+    "commit": null,
+    "branch": null,
+    "note": "gaga_shared6d_poc is not a git repository; freeze uses content hashes instead of commit SHA."
+  },
+  "decision_chain": {
+    "stage0_go_no_go": "LIMITED GO",
+    "shared_direction_evidence": false,
+    "clustering_justified": false,
+    "guided_closeout": "GUIDED ANALYSIS COMPLETE WITH EXPLORATORY EXTENSIONS",
+    "next_scientific_question": "Does the structured-trained Conv representation transfer reliably to free movement?",
+    "next_stage_authorized": false
+  },
+  "hierarchy": {
+    "primary": [
+      "reliability-gated explicit coordination features",
+      "amplitude-residual coordination changes",
+      "longitudinal change vs R1/R2 (Drep)",
+      "participant-level profiles",
+      "exercise-level localization ex09\u2013ex13"
+    ],
+    "supporting": [
+      "Conv |\u0394| / Drep at recording and exercise levels",
+      "Conv\u2013explicit agreement/disagreement",
+      "PCA/identity comparisons"
+    ],
+    "exploratory": [
+      "temporal thirds",
+      "path/spread dynamics",
+      "region occlusion"
+    ],
+    "negative_retained": [
+      "Transformer not better than Conv",
+      "masked 6D failed",
+      "no stable shared direction",
+      "no stable clustering/motifs",
+      "P1\u2013P5 unsupported",
+      "some reliability cells failed"
+    ]
+  },
+  "participants": [
+    {
+      "Participant": "252",
+      "Reliable comparisons": "T1\u2192T2 (6/6 cells; status=reliable_but_le_repetition); T1\u2192T3 (6/6 cells; status=reliable_change_gt_repetition)",
+      "Endpoint reliability": "pos skill cells T1/T2/T3 = 6/6/6 of 6",
+      "Change > Drep": "T1\u2192T2 no/\u2264Drep (median=0.78); T1\u2192T3 yes (median |\u0394|/Drep=2.65)",
+      "Main exercises": "D12: ex10(1.58\u00d7Drep), ex12(1.03\u00d7Drep), ex09(0.80\u00d7Drep); D13: ex10(1.85\u00d7Drep), ex09(1.71\u00d7Drep), ex13(1.40\u00d7Drep)",
+      "Main explicit features": "D12: lr_symmetry, regional_coupling, trunk_arm_lagged_coupling; D13: lr_symmetry, regional_coupling, trunk_arm_lagged_coupling",
+      "Amp-residual findings": "D12: lr_symmetry_amp_residual, effective_dimensionality_amp_residual, trunk_arm_lagged_coupling_amp_residual, regional_coupling_amp_residual, participation_entropy_bits_amp_residual; D13: lr_symmetry_amp_residual, trunk_arm_lagged_coupling_amp_residual, regional_coupling_amp_residual, effective_dimensionality_amp_residual",
+      "Main regions": "symmetry/coupling features more than entropy profile of 651/790",
+      "Temporal findings": "exploratory only",
+      "Conv\u2013feature agreement": "mixed: D13 latent>Drep with amp-residual symmetry/coupling; D12 latent\u2264Drep",
+      "Confidence": "high endpoint reliability (6/6) but T1\u2192T2 change \u2264Drep; T1\u2192T3 stronger",
+      "Main limitation": "T1\u2192T2 not >Drep; feature interpretation still descriptive"
+    },
+    {
+      "Participant": "651",
+      "Reliable comparisons": "T1\u2192T2 (5/6 cells; status=reliable_change_gt_repetition); T1\u2192T3 (5/6 cells; status=reliable_change_gt_repetition)",
+      "Endpoint reliability": "pos skill cells T1/T2/T3 = 5/6/6 of 6",
+      "Change > Drep": "T1\u2192T2 yes (median |\u0394|/Drep=9.25); T1\u2192T3 yes (median |\u0394|/Drep=1.09)",
+      "Main exercises": "D12: ex13(2.85\u00d7Drep), ex09(1.75\u00d7Drep), ex10(1.73\u00d7Drep); D13: ex09(1.23\u00d7Drep), ex13(1.08\u00d7Drep), ex10(0.79\u00d7Drep)",
+      "Main explicit features": "D12: active_region_count, trunk_arm_lagged_coupling, participation_entropy_bits, effective_dimensionality; D13: effective_dimensionality, participation_entropy_bits, active_region_count",
+      "Amp-residual findings": "D12: participation_entropy_bits_amp_residual, active_region_count_amp_residual, effective_dimensionality_amp_residual, trunk_arm_lagged_coupling_amp_residual; D13: participation_entropy_bits_amp_residual, effective_dimensionality_amp_residual, active_region_count_amp_residual, trunk_arm_lagged_coupling_amp_residual",
+      "Main regions": "entropy/dimensionality/active-region features; occlusion exploratory only",
+      "Temporal findings": "exploratory thirds/path only; no confirmatory stage structure",
+      "Conv\u2013feature agreement": "partial: latent |\u0394|>Drep co-occurs with amp-residual entropy/dimensionality exceedances",
+      "Confidence": "moderate\u2013high for reliable cells; one fold/seed cell fails T1 gate",
+      "Main limitation": "Not all 6 fold\u00d7seed cells pass; session\u2013timepoint confounding; N=1 case study"
+    },
+    {
+      "Participant": "671",
+      "Reliable comparisons": "T1\u2192T2 (3/6 cells; status=reliable_change_gt_repetition); T1\u2192T3 limited/weak (1/6; status=limited_reliable_change_gt_repetition)",
+      "Endpoint reliability": "pos skill cells T1/T2/T3 = 3/6/2 of 6",
+      "Change > Drep": "T1\u2192T2 yes (median |\u0394|/Drep=1.68); T1\u2192T3 yes among sparse reliable cells (median=1.24)",
+      "Main exercises": "D12: ex11(2.39\u00d7Drep), ex13(1.31\u00d7Drep), ex12(1.29\u00d7Drep); D13: ex09(1.88\u00d7Drep), ex13(1.30\u00d7Drep), ex12(1.02\u00d7Drep)",
+      "Main explicit features": "D12: trunk_arm_lagged_coupling, regional_coupling; D13: active_region_count, regional_coupling, trunk_arm_lagged_coupling",
+      "Amp-residual findings": "D12: trunk_arm_lagged_coupling_amp_residual, active_region_count_amp_residual; D13: none (majority)",
+      "Main regions": "sparse; coupling/active-region only where cells pass",
+      "Temporal findings": "not interpretable under current reliability",
+      "Conv\u2013feature agreement": "weak: latent>Drep in sparse cells; amp-residual support inconsistent",
+      "Confidence": "low\u2013limited; frequent T1/T3 gate failures (pos T1 3/6, T3 2/6)",
+      "Main limitation": "Limited endpoint reliability; D13 only 1/6 reliable cells; weak amp-residual support on D13"
+    },
+    {
+      "Participant": "790",
+      "Reliable comparisons": "T1\u2192T2 (4/6 cells; status=reliable_change_gt_repetition); T1\u2192T3 (4/6 cells; status=reliable_change_gt_repetition)",
+      "Endpoint reliability": "pos skill cells T1/T2/T3 = 4/4/5 of 6",
+      "Change > Drep": "T1\u2192T2 yes (median |\u0394|/Drep=1.61); T1\u2192T3 yes (median |\u0394|/Drep=5.65)",
+      "Main exercises": "D12: ex13(1.51\u00d7Drep), ex11(1.19\u00d7Drep), ex12(1.16\u00d7Drep); D13: ex11(2.45\u00d7Drep), ex13(1.74\u00d7Drep), ex12(1.05\u00d7Drep)",
+      "Main explicit features": "D12: effective_dimensionality, participation_entropy_bits, trunk_arm_lagged_coupling, active_region_count; D13: participation_entropy_bits, effective_dimensionality, regional_coupling",
+      "Amp-residual findings": "D12: effective_dimensionality_amp_residual, participation_entropy_bits_amp_residual; D13: effective_dimensionality_amp_residual, participation_entropy_bits_amp_residual, lr_symmetry_amp_residual, regional_coupling_amp_residual",
+      "Main regions": "entropy/dimensionality dominant; regional coupling secondary",
+      "Temporal findings": "exploratory only",
+      "Conv\u2013feature agreement": "partial: strong D13 latent ratio with amp-residual entropy/dimensionality",
+      "Confidence": "moderate; 4/6 cells typically reliable; some T1/T2 gate failures",
+      "Main limitation": "Endpoint failures in some fold\u00d7seed cells; identity/session confounds; descriptive features"
+    }
+  ],
+  "reliability_summary": [
+    {
+      "participant": "252",
+      "n_cells": 6,
+      "n_pos_T1": 6,
+      "n_pos_T2": 6,
+      "n_pos_T3": 6,
+      "mean_skill_T1": 0.027981244883024812,
+      "mean_skill_T2": 0.028427886691059594,
+      "mean_skill_T3": 0.027032918283547803
+    },
+    {
+      "participant": "651",
+      "n_cells": 6,
+      "n_pos_T1": 5,
+      "n_pos_T2": 6,
+      "n_pos_T3": 6,
+      "mean_skill_T1": 0.0401193171726413,
+      "mean_skill_T2": 0.04334297879012953,
+      "mean_skill_T3": 0.04071453889729743
+    },
+    {
+      "participant": "671",
+      "n_cells": 6,
+      "n_pos_T1": 3,
+      "n_pos_T2": 6,
+      "n_pos_T3": 2,
+      "mean_skill_T1": -0.07212031518590224,
+      "mean_skill_T2": 0.030339887552721153,
+      "mean_skill_T3": -0.021115116570845544
+    },
+    {
+      "participant": "790",
+      "n_cells": 6,
+      "n_pos_T1": 4,
+      "n_pos_T2": 4,
+      "n_pos_T3": 5,
+      "mean_skill_T1": 0.00819930194136205,
+      "mean_skill_T2": -0.014629210358529834,
+      "mean_skill_T3": 0.02555098201730968
+    }
+  ],
+  "package_versions": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "torch": "2.13.0",
+    "numpy": "2.5.1",
+    "sklearn": "1.9.0",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "pyyaml": "6.0.3"
+  },
+  "critical_output_sha256": {
+    "configs/experiment.yaml": "18ada6ffb21cb627278844672e672a0bb07234034902e42b62ef557b8525af2a",
+    "configs/canonical_links_18.yaml": "4ca8be22f2742e3db4019cc2214cff2dc1543d8a474d34571dffe58881643c58",
+    "outputs/s7_conv/reliability_t1_t2_t3.csv": "db18e19b6fc92fbafc969b7efe95640bac86ed30cec01ed8fceb2ba345c17190",
+    "outputs/s7_conv/change_magnitudes.csv": "634963879921e7e9c3b8013bff70d05e8a598ffcd8a15fda9760ef9e58ba7749",
+    "outputs/s7_conv/window_embeddings.parquet": "0e1788c826d4cd692f9a9507e8ff2711206e171407ae87646a6bca1353c5f6e7",
+    "outputs/s7_conv/RELIABILITY_GATE.json": "acb8d3e85f9ce98f9730ab2e141972abe1c16c4cc37da0f476cdeb4a18962233",
+    "outputs/s7_conv/standardizer_params.json": "32d9b410594d949967842392c9549915a0df949ed900aa2fb2fabc87abb5ff60",
+    "outputs/s8_direction/S8_GATE.json": "8926f46eaa287877a3f1d0ceb11322c991201d9fefe4d7f919857279b985f707",
+    "outputs/s8_direction/pairwise_cosines.csv": "4113b94733907156fe9d68f228e65d21a634c0220114c406642945d6ea159e3e",
+    "outputs/s8_direction/jackknife.csv": "dd8997a3d9807976974f2796d4827da3070bdfe1ef4e41ca26fca38d6f74c0c7",
+    "outputs/s9_final/GO_NO_GO.json": "2a348047fa2a5b9e3e7189980bfbf818a5a12cc73591228e0a7bec236dc8a3c5",
+    "outputs/stage0b_individual_profiles/individual_profiles.csv": "f224fca42ae289d7d879bc90d4408d5e04aea5a1150b0abceb5f6f89879a7a64",
+    "outputs/stage0b_individual_profiles/recording_feature_changes.csv": "d15f0da0244a41f7e038e6dcb407899e2b73d017e5c62c79de63a05c7bd7f85b",
+    "outputs/stage0b_individual_profiles/exercise_contributions.csv": "8f69f29d92d922a5b77e1460fe48dd192f9401f1a632c7c4c165c8e8efff7036",
+    "outputs/stage0b_guided_closeout/exercise_level_change.csv": "3d4495b72005a045e7738d35a679ca5d7d1f91962d3fdcd8de3938624e4dc116",
+    "outputs/stage0b_guided_closeout/repertoire_summary.json": "bbd04e2c9c8abcbe2e6a88967cb055f176d9a0fced4c66a8b8e9510a109cdb61",
+    "outputs/stage0b_guided_closeout/guided_segmentation.csv": "fbbff1aac3c0392db2e2dae2f00dd0a8cc20dabbb942692d48d867e570bad541",
+    "outputs/stage0b_guided_closeout/temporal_dynamics.csv": "b048984ad4362896ab81a207f5745fc2a2d07f613462669afa05658f50650db2"
+  },
+  "selected_checkpoint_sha256": {
+    "outputs/s5_conv/checkpoints/A_masked_angular_velocity_s0.pt": "08cc9e9c8a685663ec4da9246885a886e0274f175b1a0706e91c32fbed6e9d46",
+    "outputs/s5_conv/checkpoints/A_masked_angular_velocity_s1.pt": "d210661f8d2b8c2dfbd59ed3881fec7de275666f925f4f697535fc88bc17748a",
+    "outputs/s5_conv/checkpoints/A_masked_angular_velocity_s2.pt": "902621853ec9100f9f72ade59d33d38cd9811e67216f480d32c938afcbe7dcc3",
+    "outputs/s5_conv/checkpoints/B_masked_angular_velocity_s0.pt": "b301a28b0236c63f6e8edf016542a902724db1eb8617081d7e846e9e748ab169",
+    "outputs/s5_conv/checkpoints/B_masked_angular_velocity_s1.pt": "be067bcf02dbee8bb36270469a1171ef9588c1f3cd8d4ee2ce11afe975166edd",
+    "outputs/s5_conv/checkpoints/B_masked_angular_velocity_s2.pt": "2c13f482282374bf898c071195a1d134980bc93be8afb8eaf3e9d0c44c6af9f0"
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "folds": {
+    "A": {
+      "train_repetition": 1,
+      "trajectory_repetition": 2
+    },
+    "B": {
+      "train_repetition": 2,
+      "trajectory_repetition": 1
+    }
+  },
+  "mask_ratio": 0.3,
+  "objective": "masked_angular_velocity",
+  "embedding_dim": 32,
+  "model": "ConvMaskedPredictor",
+  "evaluation_exercises": [
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "figures_copied": [
+    {
+      "source": "figures/s7_conv/reliability_t1_t2_t3.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig01_reliability_framework.png",
+      "figure_group": 1,
+      "sha256": "c6577f700592011454475c36ae8548ff338d5c2b2abd82365d91d26fa56e784d"
+    },
+    {
+      "source": "figures/s7_conv/change_vs_repetition_D12.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig02a_change_vs_drep_D12.png",
+      "figure_group": 2,
+      "sha256": "685c4fec1bf10964dd2d83be515f36d7411543750a89e8becc3528d5471b4c79"
+    },
+    {
+      "source": "figures/s7_conv/change_vs_repetition_D13.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig02b_change_vs_drep_D13.png",
+      "figure_group": 2,
+      "sha256": "b73938d7480bcc75fba419a9e7211312cf1c50c1fb4e063fabccdf7a96d615c1"
+    },
+    {
+      "source": "figures/stage0b_individual_profiles/profile_latent_ratios.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig02c_participant_latent_ratios.png",
+      "figure_group": 2,
+      "sha256": "d46cd57c014bdbcbfbfb2f6666b71377b45a5ad90dd0b141960b77dde93444b5"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/exercise_ratio_D12.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig03a_exercise_ratio_D12.png",
+      "figure_group": 3,
+      "sha256": "fecca7fa0f054b37b21a431eb9bd9e59bca025f277bb65ab0f0b262d0bc0ae8b"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/exercise_ratio_D13.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig03b_exercise_ratio_D13.png",
+      "figure_group": 3,
+      "sha256": "2d8cfee31aee20409ebbd8dce8e428f8443b8ec98d470b0ed3c8cf1c019a4e43"
+    },
+    {
+      "source": "figures/stage0b_individual_profiles/feature_exceed_D12.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig04a_feature_exceed_D12.png",
+      "figure_group": 4,
+      "sha256": "5c3a4c3ad82a2565b6a2965edbe5af1a7f8c4870bcb4a1ae25985be909d1343f"
+    },
+    {
+      "source": "figures/stage0b_individual_profiles/feature_exceed_D13.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig04b_feature_exceed_D13.png",
+      "figure_group": 4,
+      "sha256": "eb72f242821e3b440065b2a0396527e93eb02bbe4d3d0ea7a54b8e5674f06729"
+    },
+    {
+      "source": "figures/stage0b_individual_profiles/latent_vs_energy.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig04c_latent_vs_energy.png",
+      "figure_group": 4,
+      "sha256": "4fa5b84ac5bf1be02d8eafdb86dbcbd79ba1ce0d13a06f8db420dd08bc38f721"
+    },
+    {
+      "source": "figures/s8_direction/cosine_matrix_D12_std_fA_s0.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig05a_direction_raw_D12.png",
+      "figure_group": 5,
+      "sha256": "1badf46065539f3fb53267422724bccd13cf7b58ef6e7a01a04715c0fe3db110"
+    },
+    {
+      "source": "figures/s8_direction/cosine_matrix_D13_raw_fA_s0.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig05b_direction_raw_D13.png",
+      "figure_group": 5,
+      "sha256": "6de575259650dda63b7a4778771764ff7ea50bdf7a9a64ac22babf6f75f4ca95"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/temporal_mean_position_shift_D13.png",
+      "selected": "figures/guided_analysis_thesis_selected/figX_temporal_mean_shift_D13.png",
+      "figure_group": "X",
+      "sha256": "f76360e515f770f830e74f6fc903350a4334b31c9d52230084ee7da1446e62ab"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/region_occlusion_rel_D13.png",
+      "selected": "figures/guided_analysis_thesis_selected/figX_region_occlusion_D13.png",
+      "figure_group": "X",
+      "sha256": "e24d64a8f3de4c240e93fdf43381f691431d7c1cccd03e6a388a7d2c7840b349"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/profile_252.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig04_profile_252.png",
+      "figure_group": 4,
+      "sha256": "ce1b63a9ffeeaff3bbeb435f1ac7628b8f469daf561f20155a26ebffb305dd61"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/profile_651.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig04_profile_651.png",
+      "figure_group": 4,
+      "sha256": "12efa69ebbfcaac855b065bd4e6f121e79494acede0f8e119d3471644dee5adb"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/profile_671.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig04_profile_671.png",
+      "figure_group": 4,
+      "sha256": "ca098ac0aa68e0958a8f8a77937588ae9097b3fd8bb74d9b0afeea0a375a8820"
+    },
+    {
+      "source": "figures/stage0b_guided_closeout/profile_790.png",
+      "selected": "figures/guided_analysis_thesis_selected/fig04_profile_790.png",
+      "figure_group": 4,
+      "sha256": "5d9551d8a93b2c1550cd5bb886adc72fa7d1141aad09770853b0acfc52c29533"
+    }
+  ],
+  "figures_missing_requested": [],
+  "documentation_gaps": [
+    "No git repository / final commit SHA in gaga_shared6d_poc",
+    "No branch name available",
+    "Historical GO_NO_GO participant wording (252/651 most reliable) differs in emphasis from Stage0B-A strongest-change ranking (651/790); clarified in consistency audit, not silently rewritten",
+    "Some early filename expectations (feature_change_summary.csv, segmentation_map.json) map to recording_feature_changes.csv and guided_segmentation.csv"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "clustering_justified": false,
+  "reasons": [
+    "Cluster assignments unstable across seeds (mean ARI=0.19).",
+    "Motif/clustering analysis not justified on guided data."
+  ],
+  "mean_ari_seed": 0.19323651678166168,
+  "mean_ari_vs_exercise": 0.1121372528309269
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "S9_S10_final",
+  "utc": "2026-08-04T08:17:50+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "decision": "LIMITED GO",
+  "elapsed_s": 0.2,
+  "s8_shared_direction": false
+}

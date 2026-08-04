@@ -1,0 +1,44 @@
+{
+  "selected_objective": "masked_angular_velocity",
+  "selection_reason": "only objective with positive skill in both folds",
+  "selection_inputs": "held-out T1 skill only (+ identity probe tie-break)",
+  "details": {
+    "per_objective": {
+      "mean": {
+        "masked_6d": -0.24279,
+        "masked_angular_velocity": 0.029168
+      },
+      "std": {
+        "masked_6d": 0.172442,
+        "masked_angular_velocity": 0.041802
+      },
+      "min": {
+        "masked_6d": -0.513284,
+        "masked_angular_velocity": 0.011171
+      },
+      "max": {
+        "masked_6d": -0.092926,
+        "masked_angular_velocity": 0.114463
+      },
+      "count": {
+        "masked_6d": 6,
+        "masked_angular_velocity": 6
+      }
+    },
+    "per_fold_mean": {
+      "A": {
+        "masked_6d": -0.271079,
+        "masked_angular_velocity": 0.011178
+      },
+      "B": {
+        "masked_6d": -0.214501,
+        "masked_angular_velocity": 0.047158
+      }
+    },
+    "positive_skill_both_folds": {
+      "masked_6d": false,
+      "masked_angular_velocity": true
+    }
+  },
+  "frozen_before_t2_t3_reliability": true
+}

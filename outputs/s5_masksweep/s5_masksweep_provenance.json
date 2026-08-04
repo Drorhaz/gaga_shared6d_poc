@@ -1,0 +1,115 @@
+{
+  "stage": "S5_masksweep",
+  "utc": "2026-08-03T16:58:21+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "fold": "A",
+  "seed": 0,
+  "ratios": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "selected": 0.3,
+  "selection_reason": "mean skill over positive-skill objectives ['masked_angular_velocity']; best 0.0426; tied within 0.02 among [0.3, 0.5], chose lowest (conservative)",
+  "results": [
+    {
+      "objective": "masked_6d",
+      "mask_ratio": 0.3,
+      "fold": "A",
+      "seed": 0,
+      "best_epoch": 30,
+      "val_loss": 0.032582263151804604,
+      "skill": -1.122946520222509,
+      "trivial_best": 0.01534766082962354,
+      "n_params": 14342,
+      "seconds": 273.5
+    },
+    {
+      "objective": "masked_6d",
+      "mask_ratio": 0.5,
+      "fold": "A",
+      "seed": 0,
+      "best_epoch": 45,
+      "val_loss": 0.037893563012282055,
+      "skill": -0.7541200982247506,
+      "trivial_best": 0.02160260466237863,
+      "n_params": 14342,
+      "seconds": 392.6
+    },
+    {
+      "objective": "masked_6d",
+      "mask_ratio": 0.7,
+      "fold": "A",
+      "seed": 0,
+      "best_epoch": 59,
+      "val_loss": 0.044715208808581035,
+      "skill": -0.4699670868415547,
+      "trivial_best": 0.03041919047633807,
+      "n_params": 14342,
+      "seconds": 461.6
+    },
+    {
+      "objective": "masked_angular_velocity",
+      "mask_ratio": 0.3,
+      "fold": "A",
+      "seed": 0,
+      "best_epoch": 15,
+      "val_loss": 3411.6593424479165,
+      "skill": 0.03565527237204538,
+      "trivial_best": 3537.8005859375,
+      "n_params": 14237,
+      "seconds": 164.8
+    },
+    {
+      "objective": "masked_angular_velocity",
+      "mask_ratio": 0.5,
+      "fold": "A",
+      "seed": 0,
+      "best_epoch": 36,
+      "val_loss": 3415.3592447916667,
+      "skill": 0.042565442424247035,
+      "trivial_best": 3567.1986328125,
+      "n_params": 14237,
+      "seconds": 320.4
+    },
+    {
+      "objective": "masked_angular_velocity",
+      "mask_ratio": 0.7,
+      "fold": "A",
+      "seed": 0,
+      "best_epoch": 1,
+      "val_loss": 3561.4015950520834,
+      "skill": 0.02062198799179354,
+      "trivial_best": 3636.3912109375,
+      "n_params": 14237,
+      "seconds": 74.9
+    }
+  ],
+  "selection_table": [
+    {
+      "mask_ratio": 0.3,
+      "masked_6d": -1.122946520222509,
+      "masked_angular_velocity": 0.03565527237204538,
+      "mean_skill": -0.5436456239252319
+    },
+    {
+      "mask_ratio": 0.5,
+      "masked_6d": -0.7541200982247506,
+      "masked_angular_velocity": 0.042565442424247035,
+      "mean_skill": -0.35577732790025174
+    },
+    {
+      "mask_ratio": 0.7,
+      "masked_6d": -0.4699670868415547,
+      "masked_angular_velocity": 0.02062198799179354,
+      "mean_skill": -0.22467254942488057
+    }
+  ]
+}

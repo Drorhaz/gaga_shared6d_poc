@@ -1,0 +1,29 @@
+# Direct dependencies for gaga_shared6d_poc.
+#
+# This project has its OWN virtual environment at ./.venv. The environment of
+# the read-only source project ../gaga_jcvpca is never modified; it is not on
+# the path at runtime and shares no installed packages with this one.
+#
+# For an exact reproduction use the fully pinned transitive set instead:
+#     pip install -r requirements.lock.txt
+#
+# Setup:
+#     python3.12 -m venv .venv
+#     ./.venv/bin/pip install -r requirements.lock.txt
+
+# --- S1-S4: ingest, extraction, representation, windowing ---
+numpy==2.5.1
+scipy==1.18.0
+pandas==3.0.3
+pyarrow==24.0.0
+matplotlib==3.11.0
+PyYAML==6.0.3
+openpyxl==3.1.5
+
+# --- S5-S6: baselines and the compact transformer ---
+# CPU is sufficient for this project: the model is ~38k parameters trained on
+# ~400 windows per fold. Apple MPS is available on this machine but is NOT used
+# by default, because CPU float32 is deterministic across runs given a fixed
+# seed and MPS is not, and reproducibility outranks speed at this scale.
+torch==2.13.0
+scikit-learn==1.9.0

@@ -1,0 +1,194 @@
+{
+  "data/immutable/INPUT_MANIFEST.json": {
+    "kind": "json_content",
+    "hash": "84fb7fa0eb231bc20503abb27a3ec0f8d8d2d24726beb312a5f866ab278e05d0"
+  },
+  "data/immutable/canonical_link_map.csv": {
+    "kind": "csv_content",
+    "hash": "f6c0a170f2d055e04a1c60ba74c99eba5fe19f66f37917c9e7d055f31fed5a49"
+  },
+  "data/immutable/manifest_252_22link.csv": {
+    "kind": "csv_content",
+    "hash": "67872f703a63f6b166fb83330bf07989b14a2761c786811fca957c5fb3001498"
+  },
+  "data/immutable/manifest_651_18link.csv": {
+    "kind": "csv_content",
+    "hash": "c987c7ae2b69313a52f725e83bc8f22165c274194c2502237353f680a559288d"
+  },
+  "data/immutable/manifest_671_18link.csv": {
+    "kind": "csv_content",
+    "hash": "d03d1262ebaf08211dcbdbbfb3a6dd187799975c41fd8d39f82801ffb4de7de3"
+  },
+  "data/immutable/manifest_790_22link.csv": {
+    "kind": "csv_content",
+    "hash": "6b5868ff05855ca8ebf52a1f39e8bf23a1ddab159630e1bcf2cbadbcd611d43e"
+  },
+  "data/immutable/recording_registry.csv": {
+    "kind": "csv_content",
+    "hash": "ab9a059ecb48efd0c016e114b71607242c47e0996a08f8762734377d2658c2dc"
+  },
+  "data/immutable/rotvec_18link/252_T1_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "e7cb058d03ad645f1b1eac9cff989fb7038c562d873849e3032e38343ca07b71"
+  },
+  "data/immutable/rotvec_18link/252_T1_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "d39037aa57e24ecae24b44fa2368e7dffb090b28c49b84197c4b2a45083bf540"
+  },
+  "data/immutable/rotvec_18link/252_T2_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "dac81c8410ba7ea41367956c8ecc82efa8589a96ab5d9ecac20667e5eb545991"
+  },
+  "data/immutable/rotvec_18link/252_T2_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "7910629a89b49bcbbe4e45f0a5be28f486fdbf22ee80052f88e8116af31acb03"
+  },
+  "data/immutable/rotvec_18link/252_T3_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "1876c93af6b8225aa51e11a541bf0fe418e2288cd4226992f74b1bf1cc1159ef"
+  },
+  "data/immutable/rotvec_18link/252_T3_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "ae085566ad17684b6580637fb538406cc15fede094396c681c7a64bcac0b1235"
+  },
+  "data/immutable/rotvec_18link/651_T1_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "506a796e1a32d5fa44df172b970d62ea7fc2d39133607b3deb3b8b974ae75d85"
+  },
+  "data/immutable/rotvec_18link/651_T1_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "d351c3ecec4fd7f55311f6aafe342d00b432127c325457c09a397a8a4291b449"
+  },
+  "data/immutable/rotvec_18link/651_T2_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "19634329cee38e79f535002333aecc0dacd9e73b9b39acf04155fc3e8e466214"
+  },
+  "data/immutable/rotvec_18link/651_T2_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "f212c6fd8e0a3a4bb5f7b6b4eaaa62e7ee486f3095e24212da1add1682d74635"
+  },
+  "data/immutable/rotvec_18link/651_T3_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "a1a93fe3b1c5f7d8815e5ab7fad17c5488f78e4cbbb223f847fbf735bc3d633e"
+  },
+  "data/immutable/rotvec_18link/651_T3_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "a0f02b64366c8be3ba273e16ae6242a5a07a1a3b87f2613012803b7046ab217f"
+  },
+  "data/immutable/rotvec_18link/671_T1_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "db1e3fc29d3f0ebe0fed61f2f539e5b16ff98a0a3454800357a738d950d2e4a1"
+  },
+  "data/immutable/rotvec_18link/671_T1_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "48ff8f2c30a069013733a69f054bcd1d7ad522c97ae8225cfc806a5106e0a91c"
+  },
+  "data/immutable/rotvec_18link/671_T2_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "8a1e7888517555bde1f4aafa091f82c87ebae455919add2ae11e28f9f9d3e9d1"
+  },
+  "data/immutable/rotvec_18link/671_T2_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "666f5b9f9a37b31950fbe04d65020b7394ce7a1d6bbf2d71bbe6de253dbeb61c"
+  },
+  "data/immutable/rotvec_18link/671_T3_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "b61a27d3439e7fc3cdb4714ad8f56353de712c07aba7b71499505d60ec3667d6"
+  },
+  "data/immutable/rotvec_18link/671_T3_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "c107a1ab6b75b951a6b6527129ccd9b235aa8e0f86549e8f6ddb0e1fbbf035cd"
+  },
+  "data/immutable/rotvec_18link/790_T1_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "de097a4bb92b13d1e3080503a71508a47ea7aa6e114948472f9f231ab66d43ee"
+  },
+  "data/immutable/rotvec_18link/790_T1_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "1a83e1952aabd087154ebcb50e69f25943d0d2d631d86c2c5c480784c106f4c8"
+  },
+  "data/immutable/rotvec_18link/790_T2_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "86db882daffd2480e81180b4d2019a118ebf170bf13711348ae542e282fa7aa5"
+  },
+  "data/immutable/rotvec_18link/790_T2_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "1db33da6878e1862b3dfbb5bf5a1a7eb830b2c8efeff9e61c546b9b8c8a5d402"
+  },
+  "data/immutable/rotvec_18link/790_T3_P1_R1.parquet": {
+    "kind": "parquet_content",
+    "hash": "f51a270e4ddcf173ecfbc4b9003843ac2e4d7238feea5efaa02d9a1ad88c0f55"
+  },
+  "data/immutable/rotvec_18link/790_T3_P1_R2.parquet": {
+    "kind": "parquet_content",
+    "hash": "bfd66d2684c16299639fe543188e51270f7653e48f2aecd439d9038b938bd9d6"
+  },
+  "data/immutable/segmentation_issues.csv": {
+    "kind": "csv_content",
+    "hash": "4fd7233ab75878da71c550e14a6d58841fab85ed13860009fa2a6e186a63d327"
+  },
+  "data/immutable/segmentation_normalized.csv": {
+    "kind": "csv_content",
+    "hash": "49382d04a3f026d68e9aaebb47c0fcdf1c8e4e8a123351d5129af6744527a978"
+  },
+  "outputs/s2_extract/cache_comparison.csv": {
+    "kind": "csv_content",
+    "hash": "7288c422c5321c27cfce3988f74273ecaffedbce861734f370410877e085c009"
+  },
+  "outputs/s2_extract/chain_composition_checks.csv": {
+    "kind": "csv_content",
+    "hash": "9343ac5ec7635a320439e4829d533a901f8b5b82deb9ce6a8f225ae83ce5a2e8"
+  },
+  "outputs/s2_extract/extraction_summary.csv": {
+    "kind": "csv_content",
+    "hash": "ca12c61ee0e7c73fdc879ec7c611730e6ffc2407aabf51c0e73daaa3260248c2"
+  },
+  "outputs/s2_extract/link_qc_flags.csv": {
+    "kind": "csv_content",
+    "hash": "111c430e06e9b821a087850a80659b850b37259469ca96450beceae15fc39695"
+  },
+  "outputs/s2_extract/s2_provenance.json": {
+    "kind": "json_content",
+    "hash": "cce7ee2b4435f5392bdc2f70d5bb9e5f657f22382cc303e2285efbcb92220912"
+  },
+  "outputs/s3_representation/representation_validation.csv": {
+    "kind": "csv_content",
+    "hash": "e860f7e3362696c21599d864fb28734517f1a477fb4fc74fdd08f63bb0a973be"
+  },
+  "outputs/s3_representation/s3_provenance.json": {
+    "kind": "json_content",
+    "hash": "8deac7bdb466c367bb3424cfade626b158a8818c2492e107825858c103be307e"
+  },
+  "outputs/s4_windows/s4_provenance.json": {
+    "kind": "json_content",
+    "hash": "068b540f9393b816befd95b9a106da049b92181f89665073b9b1f893922fde58"
+  },
+  "outputs/s4_windows/window_index.csv": {
+    "kind": "csv_content",
+    "hash": "c4cf697ebf653cdc01144a0da720911291c2bd30da52e6f21ec80eefd22784b3"
+  },
+  "figures/s3_representation/s3_1_roundtrip_error.png": {
+    "kind": "image_pixels",
+    "hash": "e861192f8c7da24bf8ddb297e1bf9fc67fbbf4c08e00c791ff4aca2c7ca978e2"
+  },
+  "figures/s3_representation/s3_2_angle_distribution.png": {
+    "kind": "image_pixels",
+    "hash": "e3db7196715823e9c45747617fee2edfd121566bbf47318fb458d4a1715c48f2"
+  },
+  "figures/s3_representation/s3_3_continuity.png": {
+    "kind": "image_pixels",
+    "hash": "abc6f776b35d1d62913150129141166b40e77e3893bf8a77d9f3e90b9b4e2ede"
+  },
+  "figures/s3_representation/s3_4_visual_verification.png": {
+    "kind": "image_pixels",
+    "hash": "275fdfb0079bd23145a3e8e2f00ecb935b7f60dfa4ab91aeeb4e218bfbc3849d"
+  },
+  "figures/s4_windows/s4_1_window_inventory.png": {
+    "kind": "image_pixels",
+    "hash": "1e0e7757c8f83e76da2f8557ad819bedf9c271371d0686c0c60ae528424ec96a"
+  },
+  "figures/s4_windows/s4_2_window_timelines.png": {
+    "kind": "image_pixels",
+    "hash": "dfe485aadd10b409933e7a68e69a796012260c6f8b47d02487b406ec80263117"
+  }
+}

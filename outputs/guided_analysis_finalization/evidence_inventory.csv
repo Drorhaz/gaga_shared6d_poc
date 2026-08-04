@@ -1,0 +1,19 @@
+result,source_report,source_output,reliability,role,thesis
+Conv reliability gate PASS (means>0; ≥50% positive cells T1/T2/T3),reports/S6B_CONV_RELIABILITY_GATE.md,outputs/s7_conv/RELIABILITY_GATE.json,framework-level PASS; per-cell failures retained,primary,True
+Many reliability-qualified Conv |Δ| exceed Drep (within-session R1/R2),reports/S7_EMBEDDING_CHANGE_REPORT.md,outputs/s7_conv/change_magnitudes.csv,cell-gated,primary,True
+Explicit coordination features vs R1/R2 with amp residuals,reports/STAGE0B_A_FEATURE_INTERPRETATION.md,outputs/stage0b_individual_profiles/recording_feature_changes.csv,descriptive at N=4; majority-fold exceedances,primary,True
+Participant-level profiles (651/790 strongest; 252 mainly D13; 671 limited),reports/STAGE0B_A_INDIVIDUAL_PROFILES.md,outputs/stage0b_individual_profiles/individual_profiles.csv,per-comparison status tags,primary,True
+Exercise localization ex09–ex13 (participant-specific; no shared pattern),reports/STAGE0B_A_EXERCISE_CONTRIBUTIONS.md,outputs/stage0b_guided_closeout/exercise_level_change.csv,reliable cells only,primary,True
+Conv recording/exercise |Δ|/Drep localization,reports/STAGE0B_A2_EXERCISE_TEMPORAL_LOCALIZATION.md,outputs/stage0b_guided_closeout/exercise_level_change.csv,gated,supporting,True
+PCA identity-dominant; reference only,reports/S9_CONTROLS_AND_COMPARISON.md,outputs/s9_final/,n/a method comparison,supporting,True
+Conv vs Transformer: Conv preferred (velocity objective),reports/S6_TRANSFORMER_VS_CONV.md,outputs/s6_transformer/,matched runs,supporting,True
+Early/middle/late thirds within exercises,reports/STAGE0B_A2_EXERCISE_TEMPORAL_LOCALIZATION.md,outputs/stage0b_guided_closeout/tertiary_block_change.csv,exploratory,exploratory,False
+Latent path/spread/mean-shift temporal dynamics,reports/STAGE0B_A2_TEMPORAL_DYNAMICS.md,outputs/stage0b_guided_closeout/temporal_dynamics.csv,exploratory,exploratory,False
+Inference-time region occlusion,reports/STAGE0B_A2_REGION_ATTRIBUTION.md,outputs/stage0b_guided_closeout/region_occlusion_A0.csv,OOD risk; Fold A seed0 sensitivity,exploratory,False
+No stable shared cross-participant direction,reports/S8_DIRECTION_SIMILARITY_REPORT.md,outputs/s8_direction/S8_GATE.json,negative retained,negative,True
+Masked 6D objective failed vs angular velocity,reports/S6_OBJECTIVE_SELECTION.md,outputs/s5_conv/,negative retained,negative,True
+Transformer did not outperform matched Conv,reports/S6_TRANSFORMER_VS_CONV.md,outputs/s6_transformer/,negative retained,negative,True
+Clustering/motifs not justified,reports/STAGE0B_A2_REPERTOIRE_CLUSTERING.md,outputs/stage0b_guided_closeout/repertoire_summary.json,negative retained,negative,True
+P1–P5 progressive cue stages unsupported,reports/STAGE0B_A2_GUIDED_SEGMENTATION.md,outputs/stage0b_guided_closeout/guided_segmentation.csv,annotation fact,negative,True
+Some participant×fold×seed cells fail reliability gate,reports/S6B_CONV_RELIABILITY_GATE.md,outputs/s7_conv/reliability_t1_t2_t3.csv,excluded from interpretable claims,negative,True
+Stage 0 LIMITED GO; guided closeout COMPLETE WITH EXPLORATORY EXTENSIONS,reports/GO_NO_GO_DECISION.md / STAGE0B_A2_FINAL_RECOMMENDATION.md,outputs/s9_final/GO_NO_GO.json,decision,supporting,True

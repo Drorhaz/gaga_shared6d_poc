@@ -1,0 +1,72 @@
+# The 18 canonical links, identical for all four participants.
+#
+# Each link is an ENDPOINT-RELATIVE rotation between two named bones:
+#     q_rel = inv(q_parent_global) * q_child_global
+#
+# For 671/651 these are native parent-child links. For 252/790, `Ab_to_Chest`
+# spans the intermediate Spine2/Spine3/Spine4 bones and `Neck_to_Head` spans
+# the intermediate Neck2 bone. Because a parent-relative chain telescopes
+# exactly, the endpoint-relative rotation IS the composed chain - no chain
+# product is computed, and S2 verifies the identity numerically.
+#
+# `pelvis` denotes the skeleton root bone, which is named after the participant
+# in the Motive export (e.g. `671:671`). It is resolved by hierarchy, not name.
+
+root_token: "pelvis"
+
+links:
+  - {id: pelvis_to_Ab,        parent: pelvis,    child: Ab,        region: trunk_spine, spans: []}
+  - {id: pelvis_to_LThigh,    parent: pelvis,    child: LThigh,    region: left_leg,    spans: []}
+  - {id: pelvis_to_RThigh,    parent: pelvis,    child: RThigh,    region: right_leg,   spans: []}
+
+  # Spans Spine2/Spine3/Spine4 for 252 and 790; native for 671 and 651.
+  - {id: Ab_to_Chest,         parent: Ab,        child: Chest,     region: trunk_spine, spans: [Spine2, Spine3, Spine4]}
+
+  - {id: Chest_to_Neck,       parent: Chest,     child: Neck,      region: head_neck,   spans: []}
+
+  # Spans Neck2 for 252 and 790; native for 671 and 651. Replaces the
+  # Neck2_to_Head -> Neck_to_Head alias used by the source project, which
+  # equated anatomically different joints.
+  - {id: Neck_to_Head,        parent: Neck,      child: Head,      region: head_neck,   spans: [Neck2]}
+
+  - {id: Chest_to_LShoulder,  parent: Chest,     child: LShoulder, region: left_arm,    spans: []}
+  - {id: LShoulder_to_LUArm,  parent: LShoulder, child: LUArm,     region: left_arm,    spans: []}
+  - {id: LUArm_to_LFArm,      parent: LUArm,     child: LFArm,     region: left_arm,    spans: []}
+  - {id: LFArm_to_LHand,      parent: LFArm,     child: LHand,     region: left_arm,    spans: []}
+
+  - {id: Chest_to_RShoulder,  parent: Chest,     child: RShoulder, region: right_arm,   spans: []}
+  - {id: RShoulder_to_RUArm,  parent: RShoulder, child: RUArm,     region: right_arm,   spans: []}
+  - {id: RUArm_to_RFArm,      parent: RUArm,     child: RFArm,     region: right_arm,   spans: []}
+  - {id: RFArm_to_RHand,      parent: RFArm,     child: RHand,     region: right_arm,   spans: []}
+
+  - {id: LThigh_to_LShin,     parent: LThigh,    child: LShin,     region: left_leg,    spans: []}
+  - {id: LShin_to_LFoot,      parent: LShin,     child: LFoot,     region: left_leg,    spans: []}
+  - {id: RThigh_to_RShin,     parent: RThigh,    child: RShin,     region: right_leg,   spans: []}
+  - {id: RShin_to_RFoot,      parent: RShin,     child: RFoot,     region: right_leg,   spans: []}
+
+# Mirror pairs for the left/right sanity check in S3.
+mirror_pairs:
+  - [pelvis_to_LThigh,   pelvis_to_RThigh]
+  - [Chest_to_LShoulder, Chest_to_RShoulder]
+  - [LShoulder_to_LUArm, RShoulder_to_RUArm]
+  - [LUArm_to_LFArm,     RUArm_to_RFArm]
+  - [LFArm_to_LHand,     RFArm_to_RHand]
+  - [LThigh_to_LShin,    RThigh_to_RShin]
+  - [LShin_to_LFoot,     RShin_to_RFoot]
+
+# Six regions. Each link belongs to exactly one region - this fixes the
+# Chest_to_Neck double assignment (head_neck AND trunk_spine) in the source
+# project's body_regions.yaml.
+regions:
+  trunk_spine: "Trunk / Spine"
+  head_neck:   "Head / Neck"
+  left_arm:    "Left arm"
+  right_arm:   "Right arm"
+  left_leg:    "Left leg"
+  right_leg:   "Right leg"
+
+# Present in the source skeletons but deliberately excluded from the common
+# space. Their information is retained in aggregate by the spanning links.
+excluded_participant_specific:
+  "252_790": [Ab_to_Spine2, Spine2_to_Spine3, Spine3_to_Spine4, Spine4_to_Chest, Neck_to_Neck2]
+  "671_651": []

@@ -1,0 +1,47 @@
+{
+  "stage": "S7_conv_embeddings_change",
+  "utc": "2026-08-04T08:00:33+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "objective": "masked_angular_velocity",
+  "architecture": "conv",
+  "gate_pass": true,
+  "reliability": {
+    "n_cells": 24,
+    "mean_skill_T1": 0.0010448872027815058,
+    "mean_skill_T2": 0.02187038566884515,
+    "mean_skill_T3": 0.01804583065682737,
+    "frac_positive_T1": 0.75,
+    "frac_positive_T2": 0.9166666666666666,
+    "frac_positive_T3": 0.7916666666666666,
+    "n_fail_T1": 6,
+    "n_fail_T2": 2,
+    "n_fail_T3": 5,
+    "means_positive": true,
+    "majority_positive": true,
+    "gate_pass": true,
+    "gate_rule": "mean skill > 0 at T1/T2/T3 AND \u226550% cells positive at each timepoint; per-cell skill\u22640 still blocks interpretation of that cell"
+  },
+  "n_recording_embeddings": 144,
+  "n_change_rows": 72,
+  "n_magnitude_rows": 24,
+  "interpretable_D12": 18,
+  "interpretable_D13": 16,
+  "interpretable_D23": 18,
+  "elapsed_s": 51.6,
+  "stopped_before": "S8",
+  "artifact_sha256": {
+    "reliability_t1_t2_t3.csv": "db18e19b6fc92fbafc969b7efe95640bac86ed30cec01ed8fceb2ba345c17190",
+    "recording_embeddings.csv": "db379f3bc027687de2b3acf1ccc3c5c27d47e15361157200c2c20d806d810c5d",
+    "change_vectors.csv": "5ec7c34f4b83d3b3b03ac36b7103bbbbedd8e131d1326bade45149fe5c11e9cb",
+    "change_magnitudes.csv": "634963879921e7e9c3b8013bff70d05e8a598ffcd8a15fda9760ef9e58ba7749",
+    "standardizer_params.json": "32d9b410594d949967842392c9549915a0df949ed900aa2fb2fabc87abb5ff60",
+    "RELIABILITY_GATE.json": "acb8d3e85f9ce98f9730ab2e141972abe1c16c4cc37da0f476cdeb4a18962233"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "choice": "conv",
+  "reason": "Transformer does not provide a clear, reliable advantage over the matched convolutional baseline; prefer the simpler model",
+  "selected_objective": "masked_angular_velocity",
+  "skill_transformer_mean": 0.029167752445327804,
+  "skill_conv_mean": 0.03589411409314711,
+  "mean_diff": -0.006726361647819313,
+  "identity_delta": -0.03224969474969469,
+  "consistently_higher": false,
+  "identity_ok": true,
+  "bootstrap": "pooled_skill_on_resampled_windows",
+  "tf_wins_out_of_6": 1
+}

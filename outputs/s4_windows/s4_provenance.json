@@ -1,0 +1,86 @@
+{
+  "stage": "S4_windows",
+  "utc": "2026-08-03T16:02:03+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "window_frames": 240,
+  "window_seconds": 2.0,
+  "train_stride": 120,
+  "eval_stride": 240,
+  "early_stop_seed": 20260803,
+  "folds": {
+    "A": {
+      "train_repetition": 1,
+      "trajectory_repetition": 2,
+      "training_recordings": [
+        "252_T1_P1_R1",
+        "651_T1_P1_R1",
+        "671_T1_P1_R1",
+        "790_T1_P1_R1"
+      ],
+      "n_blocks": 59,
+      "n_early_stop_blocks": 12,
+      "early_stop_blocks": [
+        "252_T1_R1_ex04",
+        "252_T1_R1_ex12",
+        "252_T1_R1_ex15",
+        "651_T1_R1_ex10",
+        "651_T1_R1_ex13",
+        "651_T1_R1_ex14",
+        "671_T1_R1_ex09",
+        "671_T1_R1_ex10",
+        "671_T1_R1_ex15",
+        "790_T1_R1_ex01",
+        "790_T1_R1_ex04",
+        "790_T1_R1_ex13"
+      ]
+    },
+    "B": {
+      "train_repetition": 2,
+      "trajectory_repetition": 1,
+      "training_recordings": [
+        "252_T1_P1_R2",
+        "651_T1_P1_R2",
+        "671_T1_P1_R2",
+        "790_T1_P1_R2"
+      ],
+      "n_blocks": 60,
+      "n_early_stop_blocks": 12,
+      "early_stop_blocks": [
+        "252_T1_R2_ex04",
+        "252_T1_R2_ex12",
+        "252_T1_R2_ex13",
+        "651_T1_R2_ex01",
+        "651_T1_R2_ex13",
+        "651_T1_R2_ex15",
+        "671_T1_R2_ex04",
+        "671_T1_R2_ex06",
+        "671_T1_R2_ex07",
+        "790_T1_R2_ex06",
+        "790_T1_R2_ex09",
+        "790_T1_R2_ex12"
+      ]
+    }
+  },
+  "blocks_too_short_for_a_window": [],
+  "n_windows": 1657,
+  "n_by_role": {
+    "training": 842,
+    "evaluation": 604,
+    "early_stop": 211
+  },
+  "eval_windows_per_recording": {
+    "min": 23,
+    "median": 25.0,
+    "max": 28
+  },
+  "windows_crossing_boundaries": 0,
+  "blocks_split_across_roles": 0,
+  "windows_with_missing_data": 0
+}

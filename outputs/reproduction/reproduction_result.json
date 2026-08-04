@@ -1,0 +1,84 @@
+{
+  "stage": "clean_reproduction",
+  "utc": "2026-08-03T16:02:04+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "quarantine": ".quarantine/20260803_190035",
+  "stage_timings_s": {
+    "s1_ingest.py": 4.5,
+    "s2_extract.py": 60.2,
+    "s3_validate_repr.py": 19.5,
+    "s4_window.py": 3.1
+  },
+  "n_artifacts": 48,
+  "comparison_counts": {
+    "identical": 48,
+    "changed": 0,
+    "missing_after": 0,
+    "new_after": 0
+  },
+  "changed": [],
+  "missing_after": [],
+  "new_after": [],
+  "gate": [
+    {
+      "check": "24 recordings ordered by embedded Capture Start Time",
+      "passed": true,
+      "detail": "24 recordings; monotonic T1<T2<T3 for 4/4 participants; 2 filename/capture-date mismatches correctly overridden"
+    },
+    {
+      "check": "length units recorded and 252-T3 Meters handled",
+      "passed": true,
+      "detail": "Meters: ['252_T3_P1_R1', '252_T3_P1_R2']; all other 22 Millimeters; orientation extraction for 252-T3 still bit-identical to cache (32 links), confirming the orientation pipeline is unit-invariant"
+    },
+    {
+      "check": "identical canonical 18-link space across all recordings",
+      "passed": true,
+      "detail": "18 links configured; every one of 24 recordings yields 18 links (templates present: ['51bone_basic', '55bone_extended'])"
+    },
+    {
+      "check": "zero unexplained extraction mismatches",
+      "passed": true,
+      "detail": "378 bit-identical, 6 alias-explained, 0 unexplained, of 384 comparable link-recordings"
+    },
+    {
+      "check": "telescoping chain-composition identity holds",
+      "passed": true,
+      "detail": "36 checks on 18 recordings, worst 3.735e-14 deg"
+    },
+    {
+      "check": "exactly 1657 windows",
+      "passed": true,
+      "detail": "1657 windows: early_stop 211, evaluation 604, training 842"
+    },
+    {
+      "check": "zero exercise-boundary crossings",
+      "passed": true,
+      "detail": "0 crossings"
+    },
+    {
+      "check": "zero blocks split across roles",
+      "passed": true,
+      "detail": "0 split blocks"
+    },
+    {
+      "check": "zero missing values in any window",
+      "passed": true,
+      "detail": "0 windows with non-finite data; min per-window finite fraction 1.000"
+    },
+    {
+      "check": "identical training and evaluation inventories",
+      "passed": true,
+      "detail": "window_index content hash matches the pre-wipe run; evaluation windows per recording 23-28 (median 25); fold A 403 train / 120 early-stop, fold B 439 / 91"
+    }
+  ],
+  "byte_identical_content": true,
+  "gate_passed": true,
+  "operationally_reproducible": true
+}

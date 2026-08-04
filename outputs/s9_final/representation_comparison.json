@@ -1,0 +1,38 @@
+{
+  "conv_identity_mean": 0.44566544566544564,
+  "conv_identity_sd": 0.04468679313204255,
+  "pca_identity_mean": 0.8408882783882783,
+  "conv_heldout_t1_skill_mean": 0.03589411409314711,
+  "conv_heldout_t1_skill_sd": 0.004482009456631641,
+  "tf_heldout_t1_skill_mean": 0.029167752445327752,
+  "conv_frac_positive_T1": 0.75,
+  "conv_frac_positive_T2": 0.9166666666666666,
+  "conv_frac_positive_T3": 0.7916666666666666,
+  "D12_median_ratio_vs_rep": 1.5341534359178204,
+  "D12_frac_gt_rep": 0.6666666666666666,
+  "D12_n_interpretable": 18,
+  "D13_median_ratio_vs_rep": 2.483417287686134,
+  "D13_frac_gt_rep": 0.8125,
+  "D13_n_interpretable": 16,
+  "shared_direction_evidence": false,
+  "s8_stability": {
+    "D12_raw_frac_positive": 0.25,
+    "D12_raw_mean": -0.09075416865828238,
+    "D13_raw_frac_positive": 0.3333333333333333,
+    "D13_raw_mean": 0.020418575206232706,
+    "D12_std_frac_positive": 0.25,
+    "D12_std_mean": -0.12407446844284334,
+    "D13_std_frac_positive": 1.0,
+    "D13_std_mean": 0.12504740184621124
+  },
+  "s8_jackknife_sign_flip_rate": 0.4583333333333333,
+  "explicit_entropy_residual_by_tp": {
+    "1": -0.044226860781012,
+    "2": 0.017885681235303052,
+    "3": 0.026341179545711448
+  },
+  "pca_distance_table_rows": 16,
+  "tf_sufficient_direction_runs": 13,
+  "tf_mean_pairwise_among_sufficient": 0.0852439935264607,
+  "tf_frac_positive_among_sufficient": 0.6153846153846154
+}

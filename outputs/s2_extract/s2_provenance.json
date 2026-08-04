@@ -1,0 +1,43 @@
+{
+  "stage": "S2_extract",
+  "utc": "2026-08-03T16:01:40+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "n_links": 18,
+  "link_ids": [
+    "pelvis_to_Ab",
+    "pelvis_to_LThigh",
+    "pelvis_to_RThigh",
+    "Ab_to_Chest",
+    "Chest_to_Neck",
+    "Neck_to_Head",
+    "Chest_to_LShoulder",
+    "LShoulder_to_LUArm",
+    "LUArm_to_LFArm",
+    "LFArm_to_LHand",
+    "Chest_to_RShoulder",
+    "RShoulder_to_RUArm",
+    "RUArm_to_RFArm",
+    "RFArm_to_RHand",
+    "LThigh_to_LShin",
+    "LShin_to_LFoot",
+    "RThigh_to_RShin",
+    "RShin_to_RFoot"
+  ],
+  "filter": {
+    "cutoff_hz": 10.0,
+    "order": 4,
+    "filter_type": "butterworth_lowpass"
+  },
+  "n_recordings": 24,
+  "cache_exact_agreements": 378,
+  "cache_alias_explained": 6,
+  "cache_unexplained": 0,
+  "chain_worst_error_deg": 3.7349857384609015e-14
+}

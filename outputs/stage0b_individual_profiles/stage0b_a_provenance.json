@@ -1,0 +1,38 @@
+{
+  "stage": "STAGE0B_A",
+  "utc": "2026-08-04T10:03:46+00:00",
+  "environment": {
+    "python": "3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "preprocessing_version": "s6d-0.1.0"
+  },
+  "decision_context": "LIMITED GO",
+  "gate": {
+    "q1": "252 (D13), 651 (D12,D13), 671 (D12,D13), 790 (D12,D13)",
+    "q2": "T1\u2192T2: ['651', '671', '790']; T1\u2192T3: ['252', '651', '671', '790']; both: ['651', '671', '790']",
+    "q3": "252/D12: ex10, ex9; 252/D13: ex12, ex10; 651/D12: ex11, ex13; 651/D13: ex10, ex11; 671/D12: ex11, ex13; 671/D13: ex9, ex13; 790/D12: ex11, ex13; 790/D13: ex11, ex13",
+    "q4": "252/D12: lr_symmetry, lr_symmetry_amp_residual, regional_coupling, total_energy_deg2_s2; 252/D13: lr_symmetry_amp_residual, lr_symmetry, regional_coupling, trunk_arm_lagged_coupling; 651/D12: active_region_count, energy_share_trunk_spine, trunk_arm_lagged_coupling, participation_entropy_bits; 651/D13: effective_dimensionality, participation_entropy_bits_amp_residual, participation_entropy_bits, effective_dimensionality_amp_residual; 671/D12: trunk_arm_lagged_coupling, trunk_arm_lagged_coupling_amp_residual, total_energy_deg2_s2, regional_coupling; 671/D13: active_region_count, energy_share_trunk_spine, regional_coupling, total_energy_deg2_s2; 790/D12: effective_dimensionality, participation_entropy_bits, trunk_arm_lagged_coupling, energy_share_head_neck; 790/D13: energy_share_right_leg, participation_entropy_bits, effective_dimensionality, effective_dimensionality_amp_residual",
+    "q5": "Amplitude-dominated cases: none. Cases with amp-residual feature support: [('252', 'D13'), ('651', 'D12'), ('651', 'D13'), ('671', 'D12'), ('790', 'D12'), ('790', 'D13')]. Overall: latent changes are not uniformly amplitude-only; check per participant.",
+    "q6": "Across participants, top-2 exercise contribution patterns for T1\u2192T2 yield 2 distinct ordered pairs among 4 participants with data \u2014 suggests differentiated exercise drivers. Feature exceedance sets also differ (see profiles). Not a shared-direction claim.",
+    "q7": "Yes, cautiously: Conv shows reliability-gated individual latent changes that often exceed repetition variability for multiple participants, with at least some cases not flagged as amplitude-dominated. Transfer should be a frozen-encoder test with the same skill/Drep discipline \u2014 not a search for shared direction.",
+    "next_stage": "structured-versus-free transfer benchmark",
+    "next_stage_reason": "Prefer a structured-versus-free transfer benchmark over dumping free movement into an untested latent space: embed free sessions with frozen Conv, compare neighbourhoods / reconstruction skill / feature alignment to structured exercises within participant, and keep R1\u2013R2 and reliability gates. Direct unsupervised free-movement interpretation is premature.",
+    "conv_suitable_for_transfer": true,
+    "participants_reliable_gt_rep": [
+      "252",
+      "651",
+      "671",
+      "790"
+    ]
+  },
+  "elapsed_s": 1.6,
+  "artifact_sha256": {
+    "individual_profiles.csv": "f224fca42ae289d7d879bc90d4408d5e04aea5a1150b0abceb5f6f89879a7a64",
+    "exercise_contributions.csv": "8f69f29d92d922a5b77e1460fe48dd192f9401f1a632c7c4c165c8e8efff7036",
+    "recording_feature_changes.csv": "d15f0da0244a41f7e038e6dcb407899e2b73d017e5c62c79de63a05c7bd7f85b",
+    "STAGE0B_A_GATE.json": "d756f61d664ca25dd84661141c1405a16a25e25194db13633a5490886dd35637"
+  }
+}
