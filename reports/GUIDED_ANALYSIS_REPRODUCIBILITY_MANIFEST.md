@@ -11,6 +11,7 @@
 | Repository name | `gaga_shared6d_poc` |
 | Git repository present | **Yes** (local freeze; GitHub push pending `gh` auth) |
 | Branch | `main` |
+| Freeze commit | `5062e22bfc6df5107153bb37aa39f363fb303597` |
 | Freeze tag | `guided-analysis-freeze-v1` |
 | Git freeze date | 2026-08-04 |
 | Dependency lock file | `requirements.lock.txt` |

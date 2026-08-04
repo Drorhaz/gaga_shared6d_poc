@@ -21,7 +21,7 @@ Not created. After authorizing GitHub, create a **private** empty repo and run t
 
 ## 3. Commit hash
 
-Filled after commit (see verification below / `git log -1`).
+`5062e22bfc6df5107153bb37aa39f363fb303597` (`5062e22`)
 
 ## 4. Freeze tag
 
@@ -95,3 +95,18 @@ Do **not** make the repository public. Do **not** push if a non-empty unrelated 
 - Working tree freeze commit represents the completed guided-improvisation scientific state.
 - No free-movement, transfer, RQA, clustering, motif, or new training work was started.
 - Scientific numerical outputs were not regenerated for this Git freeze.
+
+
+---
+
+## Verification (local)
+
+```text
+git status          # clean after hash-doc commit
+git log -1 --oneline
+git tag --list
+git rev-list -n1 guided-analysis-freeze-v1
+# tag target: 5062e22bfc6df5107153bb37aa39f363fb303597
+```
+
+GitHub push was not performed (`gh` not installed).
