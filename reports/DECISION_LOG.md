@@ -39,3 +39,11 @@
 - Shared-direction remains closed; free-movement / transfer **not** started.
 - Documentation gap: no git repo/commit in `gaga_shared6d_poc`; content hashes used.
 - Next question (unauthorized): structured-trained Conv transfer to free movement.
+
+## 2026-08-04 — Local Git freeze
+
+- Initialized local git on `main`.
+- Freeze commit: `5062e22` tagged `guided-analysis-freeze-v1`.
+- Hash recorded in follow-up commit `8836bfa` (tag remains on freeze commit).
+- GitHub push not performed (`gh` not installed).
+- No analyses rerun; rotvec arrays and `.venv` excluded.
