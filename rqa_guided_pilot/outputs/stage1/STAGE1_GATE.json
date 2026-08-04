@@ -1,0 +1,48 @@
+{
+  "parameter_lock_exists": true,
+  "primary_rate_hz": 120,
+  "tau_frames": 18,
+  "m": 4,
+  "rr_median_amp_preserving": 0.03562005679909605,
+  "rr_in_diagnostic_band_0.01_0.10": true,
+  "median_DET_drop_full_shuffle": 0.9258874997673989,
+  "median_LAM_drop_full_shuffle": 0.8977884849538467,
+  "fraction_cells_DET_drop_shuffle_gt0": 1.0,
+  "surrogate_disrupts_DET": true,
+  "r1r2_summary": [
+    {
+      "metric": "DET",
+      "median_Drep": 0.008231782779017427,
+      "mean_IQR": 0.011927629140048523,
+      "median_Drep_over_IQR": 0.6901440917020277
+    },
+    {
+      "metric": "LAM",
+      "median_Drep": 0.0033539737055441887,
+      "mean_IQR": 0.006030767530912251,
+      "median_Drep_over_IQR": 0.5561437558905286
+    },
+    {
+      "metric": "Lmean",
+      "median_Drep": 1.2477035305172954,
+      "mean_IQR": 1.6782469681096739,
+      "median_Drep_over_IQR": 0.7434564484407623
+    },
+    {
+      "metric": "ENTR",
+      "median_Drep": 0.3360479279691082,
+      "mean_IQR": 0.4539870873741432,
+      "median_Drep_over_IQR": 0.7402147270593226
+    }
+  ],
+  "r1r2_not_pathological": true,
+  "frac_longitudinal_ratio_DET_gt1_amp": 0.225,
+  "frac_longitudinal_ratio_DET_gt1_zscore": 0.3,
+  "median_abs_delta_DET_truncation": 0.0,
+  "duration_truncation_not_abolishing": true,
+  "median_abs_DET_diff_across_tau_band": 0.0007630898153297427,
+  "tau_band_moderately_stable": true,
+  "stage1_decision": "PASS_TO_STAGE2",
+  "n_metric_rows": 680,
+  "n_longitudinal_rows": 80
+}

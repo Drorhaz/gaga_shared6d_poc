@@ -1,0 +1,89 @@
+# Locked scientific design for the guided-improvisation RQA pilot.
+# Parameter values (tau, m, primary rate) are written to outputs/locks/ after T1 diagnostics.
+
+native_fps: 120.0
+rates_hz: [120, 60, 30]
+diagnostic_rate_hz: 30
+
+regions_primary:
+  - trunk_spine
+  - left_arm
+  - right_arm
+  - left_leg
+  - right_leg
+
+exercises_eval: [9, 10, 11, 12, 13]
+
+# AMI / FNN estimation sample (T1 only)
+ami_fnn:
+  participants: ["252", "651", "671", "790"]
+  timepoints: [1]
+  repetitions: [1, 2]
+  exercises: [9, 10, 11, 12, 13]
+  max_tau_seconds: 0.50
+  fnn_max_m: 8
+  fnn_rtol: 15.0
+  fnn_atol: 2.0
+
+# Stage 1 longitudinal subset
+stage1:
+  participants: ["651", "790"]
+  exercises: [11, 13]
+  timepoints: [1, 3]
+  repetitions: [1, 2]
+
+metrics_primary:
+  - RR
+  - DET
+  - Lmean
+  - LAM
+  - ENTR
+metrics_secondary:
+  - Lmax_over_N
+  - TT
+metrics_diagnostic:
+  - Lmax
+  - duration_s
+  - n_samples
+  - N_embed
+  - epsilon
+  - mean_distance
+
+# Threshold hierarchy (roles locked; numeric ops locked after T1)
+threshold:
+  amp_preserving_auto: "fixed_mean_rescaled"
+  trial_zscore_auto: "target_rr"
+  compact_mdrqa: "target_rr"
+  crqa: "target_rr"
+  target_rr: 0.03
+  fixed_radius_frac_mean_dist: [0.30, 0.35, 0.40]
+  rr_diagnostic_lo: 0.01
+  rr_diagnostic_hi: 0.10
+
+lmin_default: 2
+theiler_mult: [1, 2]
+
+normalization:
+  - amp_preserving
+  - trial_zscore
+
+surrogates:
+  - identity
+  - full_shuffle
+  - block_shuffle
+
+# Provisional until T1 lock file exists
+provisional:
+  tau_frames_at_120: [12, 18, 24]   # 100–200 ms band hint; overwritten by AMI
+  m: 4
+  block_shuffle_seconds: 0.25
+  primary_rate_hz: null
+
+interpretation:
+  auto_rqa: "recurrence and temporal organization of regional angular-velocity-magnitude dynamics"
+  mdrqa: "recurrence of multiregional angular-velocity states"
+  forbid:
+    - posture recurrence
+    - anatomical pose recurrence
+    - body configuration return
+    - stable movement motifs

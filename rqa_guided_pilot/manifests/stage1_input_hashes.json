@@ -1,0 +1,21 @@
+{
+  "algo": "sha256",
+  "n_files": 15,
+  "files": {
+    "outputs/s4_windows/window_index.csv": "c8ba7aeaaee09382b68ac91006bfd131c8420a2e971a078754f111ff1defa4a1",
+    "configs/canonical_links_18.yaml": "4ca8be22f2742e3db4019cc2214cff2dc1543d8a474d34571dffe58881643c58",
+    "configs/experiment.yaml": "18ada6ffb21cb627278844672e672a0bb07234034902e42b62ef557b8525af2a",
+    "data/immutable/rotvec_18link/252_T1_P1_R1.parquet": "a0437778c975d4e744e9eb294cc9905868492e04bf5207f00581623b6b55ddc7",
+    "data/immutable/rotvec_18link/252_T1_P1_R2.parquet": "6b753f68890a25eaee2958d3dc45ac674f042fe32a0e5f2f46e9b0903d6178f5",
+    "data/immutable/rotvec_18link/651_T1_P1_R1.parquet": "3a5835600975a962e35e2c307264e7979599c6a70905bb4b06778e4e21e22e25",
+    "data/immutable/rotvec_18link/651_T1_P1_R2.parquet": "3633246dd9b3f45184236737151667ce3aed8477c2a711d22359855aa28c7dbb",
+    "data/immutable/rotvec_18link/651_T3_P1_R1.parquet": "af184463c122490b442ac01cf72d1aff9da2cf4e651a274d78787aa89e7b10a5",
+    "data/immutable/rotvec_18link/651_T3_P1_R2.parquet": "1435d1fca7fe3d428e7efdb3196f5d1366a1804822d2e45ccc9d0545fd041625",
+    "data/immutable/rotvec_18link/671_T1_P1_R1.parquet": "39d3bb09750a138202f933956e9e5dcd8093b7095f11df4c820517b9c13b074f",
+    "data/immutable/rotvec_18link/671_T1_P1_R2.parquet": "85c5aaa3c98bdc23e6cfef19d1db6b2b3cdf668f2ca70182b7fdb40dea3bc179",
+    "data/immutable/rotvec_18link/790_T1_P1_R1.parquet": "e8605d7d8c16662e03037590c37df120fe4d528fbdc1259321929e3dec449461",
+    "data/immutable/rotvec_18link/790_T1_P1_R2.parquet": "b97b79bd446a2bf1686fb07feadaad3fedf1eb3d5b0d2a3d49cf50eb8f4d050a",
+    "data/immutable/rotvec_18link/790_T3_P1_R1.parquet": "c668d29a0d5c575d4821496ec9fe87d494123a3d94db2b7172e14c3293a6cf84",
+    "data/immutable/rotvec_18link/790_T3_P1_R2.parquet": "f5eefa38c51b5cc5ab987d2c541e2c4bf8f3b64928d566b63773c45b3e0d6773"
+  }
+}

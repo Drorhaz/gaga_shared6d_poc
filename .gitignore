@@ -34,6 +34,11 @@ temp/
 cache/
 *.log
 
+# RQA guided pilot — regenerable heavy intermediates (keep metrics/reports/manifests)
+rqa_guided_pilot/cache/
+rqa_guided_pilot/**/__pycache__/
+rqa_guided_pilot/.pytest_cache/
+
 # Run logs (may contain local machine paths; not scientific outputs)
 outputs/*_run_log.txt
 outputs/**/run_log.txt

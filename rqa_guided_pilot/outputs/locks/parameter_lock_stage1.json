@@ -1,0 +1,117 @@
+{
+  "locked_from": "T1-only AMI/FNN + Stage1-T1 rate bake-off",
+  "primary_rate_hz": 120,
+  "diagnostic_rate_hz": 30,
+  "rates_compared_hz": [
+    120,
+    60,
+    30
+  ],
+  "tau_seconds": 0.15,
+  "tau_frames_at_primary": 18,
+  "tau_band_frames_at_primary": [
+    17,
+    18,
+    19
+  ],
+  "m": 4,
+  "theiler_default": 18,
+  "lmin_default": 2,
+  "block_shuffle_seconds": 0.3,
+  "block_shuffle_frames_at_primary": 36,
+  "threshold": {
+    "amp_preserving_auto": "fixed_mean_rescaled",
+    "fixed_radius_frac_mean_dist_default": 0.35,
+    "trial_zscore_auto": "target_rr",
+    "target_rr": 0.03,
+    "radius_selection_note": "Raised from 0.20 to 0.35 after Stage-1 RR diagnostic (median RR~0.5% at 0.20; ~3-5% expected at 0.35 on T1 sample). Selection used T1 Stage-1 cells only; not tuned on longitudinal separation."
+  },
+  "rate_scores": {
+    "30": {
+      "median_DET_drop_shuffle": 0.3479622769378903,
+      "median_drep_DET": 0.12004209171444948,
+      "median_RR": 0.004453504563108178,
+      "median_n_samples": 330.0,
+      "score": -0.46205876891933445
+    },
+    "60": {
+      "median_DET_drop_shuffle": 0.6408001908397758,
+      "median_drep_DET": 0.1906949736816378,
+      "median_RR": 0.004011526308230602,
+      "median_n_samples": 660.0,
+      "score": 0.045452703998956956
+    },
+    "120": {
+      "median_DET_drop_shuffle": 0.9039998010348038,
+      "median_drep_DET": 0.05685832811352215,
+      "median_RR": 0.004007276574057472,
+      "median_n_samples": 1319.0,
+      "score": 0.3755706369780427
+    }
+  },
+  "ami_fnn_aggregate_prefer_rate": "60",
+  "interpretation": {
+    "auto_rqa": "recurrence and temporal organization of regional angular-velocity-magnitude dynamics",
+    "mdrqa": "recurrence of multiregional angular-velocity states",
+    "forbid": [
+      "posture recurrence",
+      "anatomical pose recurrence",
+      "body configuration return",
+      "stable movement motifs"
+    ]
+  },
+  "physical_time": {
+    "tau_seconds": 0.15,
+    "tau_frames_at_120": 18,
+    "embedding_span_seconds": 0.45,
+    "embedding_span_frames_at_120": 54,
+    "theiler_seconds": 0.15,
+    "block_shuffle_seconds": 0.3,
+    "rate_physical_match": {
+      "120": {
+        "tau_frames": 18,
+        "tau_seconds": 0.15,
+        "embed_span_seconds": 0.45
+      },
+      "60": {
+        "tau_frames": 9,
+        "tau_seconds": 0.15,
+        "embed_span_seconds": 0.45
+      },
+      "30": {
+        "tau_frames": 4,
+        "tau_seconds": 0.1333,
+        "embed_span_seconds": 0.4
+      }
+    }
+  },
+  "rate_scores_physical_r035": {
+    "30": {
+      "median_DET_drop_shuffle": 0.6240623636839684,
+      "median_drep_DET": 0.13572014120707235,
+      "median_RR": 0.0356658923732094,
+      "median_Lmean_seconds": 0.10916548376546285,
+      "median_n_samples": 345.0,
+      "score_note": "Physically matched tau; radius 0.35; T1-only Stage1 cohort"
+    },
+    "60": {
+      "median_DET_drop_shuffle": 0.836948936766692,
+      "median_drep_DET": 0.07442968736762146,
+      "median_RR": 0.033250214936048,
+      "median_Lmean_seconds": 0.06452033172358651,
+      "median_n_samples": 690.0,
+      "score_note": "Physically matched tau; radius 0.35; T1-only Stage1 cohort"
+    },
+    "120": {
+      "median_DET_drop_shuffle": 0.9315574718632662,
+      "median_drep_DET": 0.01414834781150975,
+      "median_RR": 0.033256889554294,
+      "median_Lmean_seconds": 0.05120335395019335,
+      "median_n_samples": 1379.0,
+      "score_note": "Physically matched tau; radius 0.35; T1-only Stage1 cohort"
+    }
+  },
+  "rate_selection_rationale": "120 Hz selected for lowest T1 R1/R2 DET variability and strongest full-shuffle DET disruption under physically matched tau=0.15s / m=4 / radius=0.35. Not selected solely for sample count. 60 Hz qualitatively consistent; 30 Hz weaker repeatability.",
+  "block_shuffle_interpretation": "Secondary graded control. Full shuffle is primary negative control for DET/LAM. At DET near-ceiling with Lmin=2, block shuffle (0.20\u20131.0s) only weakly reduces DET but reduces Lmean; 0.30s retained from AMI-derived 2*tau rule. Stage 2 should include Lmin=3 sensitivity.",
+  "det_ceiling_note": "Median DET ~0.98 under amp-preserving fixed radius; monitor Lmin=3 in Stage 2."
+}

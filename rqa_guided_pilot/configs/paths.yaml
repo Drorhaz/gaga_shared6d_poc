@@ -1,0 +1,20 @@
+# Read-only paths relative to the repository root (parent of rqa_guided_pilot/).
+# This module must never write to these locations.
+
+repo_root_relative: ".."
+
+readonly:
+  rotvec_dir: "data/immutable/rotvec_18link"
+  window_index: "outputs/s4_windows/window_index.csv"
+  canonical_links: "configs/canonical_links_18.yaml"
+  experiment_config: "configs/experiment.yaml"
+  freeze_tag: "guided-analysis-freeze-v1"
+  freeze_commit: "5062e22"
+
+# All writes stay under rqa_guided_pilot/
+rqa_root: "."
+outputs: "outputs"
+figures: "figures"
+cache: "cache"
+manifests: "manifests"
+reports: "reports"

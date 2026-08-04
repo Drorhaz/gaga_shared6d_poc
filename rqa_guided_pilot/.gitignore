@@ -1,0 +1,5 @@
+# Regenerable heavy intermediates
+cache/
+**/__pycache__/
+.pytest_cache/
+*.pyc

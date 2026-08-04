@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-08-04T15:28:59.781639+00:00",
+  "package": "rqa_guided_pilot",
+  "stage": "stage1",
+  "scripts": [
+    "00_build_segment_index.py",
+    "02_t1_ami_fnn_rate_diagnostics.py",
+    "03_lock_parameters.py",
+    "04_stage1_auto_rqa.py",
+    "05_stage1_gate.py"
+  ],
+  "timings_s": {
+    "00_build_segment_index.py": 0.7537388801574707,
+    "02_t1_ami_fnn_rate_diagnostics.py": 60.567858934402466,
+    "03_lock_parameters.py": 8.587844133377075,
+    "04_stage1_auto_rqa.py": 69.46010184288025,
+    "05_stage1_gate.py": 1.0760669708251953
+  },
+  "readonly_inputs": [
+    "data/immutable/rotvec_18link/",
+    "outputs/s4_windows/window_index.csv",
+    "configs/canonical_links_18.yaml"
+  ],
+  "writes_confined_to": "rqa_guided_pilot/",
+  "freeze_tag": "guided-analysis-freeze-v1",
+  "freeze_commit": "5062e22"
+}
