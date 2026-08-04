@@ -13,11 +13,13 @@
 | Repository name | `gaga_shared6d_poc` |
 | Local branch | `main` |
 | Intended GitHub visibility | **private** |
-| GitHub remote created in this step | **No** — `gh` CLI not installed / not authenticated |
+| GitHub remote created in this step | **Yes** — empty repo provided by user; push completed 2026-08-04 |
 
 ## 2. Remote URL
 
-Not created. After authorizing GitHub, create a **private** empty repo and run the commands in §9.
+https://github.com/Drorhaz/gaga_shared6d_poc.git
+
+**Visibility note:** GitHub currently lists this repository as **Public**. Prefer switching to **Private** if participant-linked research materials should not be world-readable.
 
 ## 3. Commit hash
 
@@ -70,25 +72,15 @@ Message: *Frozen guided-improvisation analysis: thesis-ready scientific results 
 
 ## 9. Remaining manual action (GitHub)
 
-`gh` is not installed on this machine. After installing/authenticating GitHub CLI (or creating a private repo in the UI):
+Push completed to the user-provided empty repository.
+
+Recommended follow-up if privacy is required:
 
 ```bash
-cd /path/to/gaga_shared6d_poc
-# If creating via gh:
-gh repo create gaga_shared6d_poc --private --source=. --remote=origin
-git push -u origin main
-git push origin guided-analysis-freeze-v1
+# In GitHub UI: Settings → General → Danger Zone → Change repository visibility → Private
+# or, if gh is installed:
+gh repo edit Drorhaz/gaga_shared6d_poc --visibility private
 ```
-
-Or, if the private repo already exists empty:
-
-```bash
-git remote add origin <REMOTE_URL>
-git push -u origin main
-git push origin guided-analysis-freeze-v1
-```
-
-Do **not** make the repository public. Do **not** push if a non-empty unrelated remote already exists.
 
 ## 10. Confirmation
 
@@ -109,4 +101,4 @@ git rev-list -n1 guided-analysis-freeze-v1
 # tag target: 5062e22bfc6df5107153bb37aa39f363fb303597
 ```
 
-GitHub push was not performed (`gh` not installed).
+GitHub push completed: `main` and `guided-analysis-freeze-v1` on https://github.com/Drorhaz/gaga_shared6d_poc.git
