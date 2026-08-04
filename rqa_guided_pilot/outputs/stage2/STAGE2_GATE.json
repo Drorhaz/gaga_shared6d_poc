@@ -1,0 +1,17 @@
+{
+  "decision": "LIMITED_PASS_STOP",
+  "n_qualified_pid_ex_delta_zscore": 0,
+  "n_amp_preserving_complementary_pid_ex_delta": 2,
+  "n_novel_zscore_rows": 0,
+  "surrogate_DET_drop_median": 0.9239596758323635,
+  "surrogate_ok": true,
+  "truncation_median_abs_dDET": 0.0003465683996576874,
+  "truncation_ok": true,
+  "sensitivity_median_abs_dDET": 0.0047778821692693,
+  "sensitivity_ok": true,
+  "novelty_counts": {
+    "UNSTABLE": 22,
+    "COMPLEMENTARY_INTERPRETATION": 2
+  },
+  "focus_table": []
+}
