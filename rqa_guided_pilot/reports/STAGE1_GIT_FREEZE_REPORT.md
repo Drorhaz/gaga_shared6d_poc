@@ -9,9 +9,9 @@
 
 | Item | Value |
 |---|---|
-| Annotated tag tip | `dd345bac487d72e8d1c6ef6c19a170d9c2e3e145` (`dd345ba`) |
+| Annotated tag tip | `e3ab3f3bd81c1697c5bfbf8d6298edd04a662f0b` (`e3ab3f3`) |
 | Content freeze commit | `09951ada359efd1c7b9f543313a0a9bce082afe5` (`09951ad`) |
-| Annotated tag | `rqa-stage1-feasibility-pass-v1` → tip `dd345ba` |
+| Annotated tag | `rqa-stage1-feasibility-pass-v1` → tip `e3ab3f3` |
 | Tag message | RQA Stage 1 technical feasibility pass; A1 validated; parameters locked; Stage 2 not included |
 
 **Note:** An earlier technical freeze existed at `4ed2305`. This freeze supersedes that tag object to include required paper-code and source/feature audits completed after the initial parameter lock. Scientific Stage 1 metrics and locks are unchanged.
@@ -66,6 +66,9 @@
 - 120 Hz; τ=18 (0.15 s); m=4; radius 0.35×mean; block shuffle 0.30 s
 
 ## Remote verification
+
+Push performed in session 2026-08-06. Expected: tag tip `e3ab3f3`; `guided-analysis-freeze-v1` remains `5062e22`.
+
 
 Pending push of branch + annotated tag in this session.
 
