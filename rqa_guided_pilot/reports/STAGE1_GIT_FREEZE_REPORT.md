@@ -9,8 +9,9 @@
 
 | Item | Value |
 |---|---|
-| Stage 1 freeze commit | `09951ada359efd1c7b9f543313a0a9bce082afe5` (`09951ad`) |
-| Annotated tag | `rqa-stage1-feasibility-pass-v1` |
+| Annotated tag tip | `34c78b364c37e767776c94a0d98bba773180ed1b` (`34c78b3`) |
+| Content freeze commit | `09951ada359efd1c7b9f543313a0a9bce082afe5` (`09951ad`) |
+| Annotated tag | `rqa-stage1-feasibility-pass-v1` → tip `34c78b3` |
 | Tag message | RQA Stage 1 technical feasibility pass; A1 validated; parameters locked; Stage 2 not included |
 
 **Note:** An earlier technical freeze existed at `4ed2305`. This freeze supersedes that tag object to include required paper-code and source/feature audits completed after the initial parameter lock. Scientific Stage 1 metrics and locks are unchanged.
