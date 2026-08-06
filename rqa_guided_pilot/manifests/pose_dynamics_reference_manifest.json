@@ -1,0 +1,54 @@
+{
+  "purpose": "Read-only external reference for Stage 1 pre-freeze methodological/numerical validation against the RQA methods paper companion code.",
+  "local_archive_path": "rqa_guided_pilot/Pose-Dynamics-main",
+  "local_archive_role": "read_only_reference_do_not_replace_pilot",
+  "paper_repo": {
+    "name": "Pose-Dynamics",
+    "claimed_upstream": "https://github.com/MInD-Laboratory/Pose-Dynamics",
+    "license_in_archive": "NONE_FOUND",
+    "license_status": "unclear_do_not_vendor_or_copy_into_primary_implementation",
+    "pyproject_version": "0.1.0",
+    "submodules_in_archive": {
+      "src/pose_dynamics/rqa": "EMPTY_NOT_POPULATED",
+      "src/pose_dynamics/rqa_submodule": "EMPTY_NOT_POPULATED",
+      "projects/MATB/Measuring_Workload_Dynamics_in_OpenMATB": "EMPTY_OR_ABSENT"
+    },
+    "gitmodules_urls": [
+      "https://github.com/xkiwilabs/Recurrence-Quantification-Analysis.git",
+      "https://github.com/xkiwilabs/Recurrence-Quantification-Analysis",
+      "https://github.com/MInD-Laboratory/Measuring_Workload_Dynamics_in_OpenMATB.git"
+    ]
+  },
+  "rqa_backend_fetch": {
+    "executed": true,
+    "isolated_only": true,
+    "vendored_into_gaga_shared6d_poc": false,
+    "committed_to_repo": false,
+    "install_location": "rqa_guided_pilot/cache/pose_dynamics_iso_venv (gitignored)",
+    "source_clone_location": "rqa_guided_pilot/cache/pose_dynamics_rqa_backend_ref (gitignored)",
+    "repository_url": "https://github.com/xkiwilabs/Recurrence-Quantification-Analysis.git",
+    "commit": "30fddb9a00e6e84837852992df57f244266f5228",
+    "commit_date": "2026-03-28",
+    "package_name": "rqa-analysis",
+    "package_version": "1.0.1",
+    "license": "Apache-2.0",
+    "python": "3.12",
+    "cpp_extension_built": true
+  },
+  "execution_status": {
+    "pose_dynamics_wrappers_run": false,
+    "pose_dynamics_wrappers_blocked_by": "empty rqa / rqa_submodule directories in local archive",
+    "ami_fnn_paper_python_executed": true,
+    "rqa_backend_cpp_executed": true,
+    "project_main_env_modified": false
+  },
+  "parity_artifacts": {
+    "suite_script": "rqa_guided_pilot/scripts/paper_code_parity_suite.py",
+    "synthetic_json": "rqa_guided_pilot/outputs/paper_reference/synthetic_parity.json",
+    "t1_json": "rqa_guided_pilot/outputs/paper_reference/t1_parity.json",
+    "audit_report": "rqa_guided_pilot/reports/PAPER_CODE_REFERENCE_AUDIT.md"
+  },
+  "stage1_impact_classification": "NO_MATERIAL_DISCREPANCY_RETAIN_PRIMARY",
+  "primary_implementation": "rqa_guided_pilot/src/rqa_pilot",
+  "locked_params_unchanged": true
+}

@@ -1,0 +1,63 @@
+{
+  "audit": "source_data_and_feature_representation",
+  "date": "2026-08-04",
+  "classification": "CURRENT_FEATURE_VALID_ADD_SECONDARY_LATER",
+  "stage1_technical_correction": false,
+  "primary_feature": {
+    "id": "A1",
+    "name": "regional_angular_velocity_magnitude",
+    "status": "PRIMARY",
+    "formula": "s_region(t) = mean_l in region [ degrees(||r_l(t+1)-r_l(t)||) * fps ]",
+    "units": "deg/s",
+    "source": "data/immutable/rotvec_18link (filtered parent-relative link rotvecs)",
+    "locks_apply": true
+  },
+  "candidates": {
+    "A1_rotvec_fd": "PRIMARY",
+    "A2_quaternion_geodesic": "SENSITIVITY_ONLY",
+    "B1_global_positional_speed": "REJECTED",
+    "B2_root_relative_positional_speed": "SECONDARY_COMPLEMENTARY",
+    "C_compact_hybrid": "SENSITIVITY_ONLY"
+  },
+  "a1_a2_agreement": {
+    "n_frame_link_pairs": 850320,
+    "median_abs_diff_deg_s": 0.0595,
+    "median_rel_diff": 0.00186,
+    "corr": 0.9979,
+    "rqa_DET_median_rel_diff": 0.00071,
+    "ami_tau_both": 18,
+    "fnn_m_both": 4,
+    "same_stage1_technical_conclusion": true
+  },
+  "positional_notes": {
+    "hand_global_vs_root_median_corr": 0.145,
+    "hand_rootrel_vs_A1_arm_median_corr": 0.21,
+    "size_proxy_cv_across_participants": 0.075,
+    "t1_length_units": "Millimeters_all_T1",
+    "meters_anomaly": "252_T3_only_not_in_T1_audit"
+  },
+  "artifacts": {
+    "suite": "rqa_guided_pilot/scripts/feature_representation_audit.py",
+    "outputs": "rqa_guided_pilot/outputs/feature_audit/",
+    "source_audit": "rqa_guided_pilot/reports/SOURCE_DATA_AND_FEATURE_AUDIT.md",
+    "decision": "rqa_guided_pilot/reports/FEATURE_REPRESENTATION_DECISION.md",
+    "paper_code_audit": "rqa_guided_pilot/reports/PAPER_CODE_REFERENCE_AUDIT.md"
+  },
+  "stage1_locks": {
+    "invalidate": false,
+    "rerun_required": false,
+    "values_remain": {
+      "rate_hz": 120,
+      "tau_frames": 18,
+      "m": 4,
+      "radius_frac_mean": 0.35,
+      "block_shuffle_s": 0.3
+    }
+  },
+  "stage2_positional": {
+    "enter_as_primary": false,
+    "optional_secondary_channels": ["LHand_rootrel", "RHand_rootrel"],
+    "requires_own_parameter_estimation": true,
+    "unit_guard": "assert_length_units_and_convert_to_meters; never mix mm/m"
+  }
+}

@@ -39,6 +39,10 @@ rqa_guided_pilot/cache/
 rqa_guided_pilot/**/__pycache__/
 rqa_guided_pilot/.pytest_cache/
 
+# External paper companion archive and local PDFs (read-only reference; do not vendor)
+rqa_guided_pilot/Pose-Dynamics-main/
+*.pdf
+
 # Run logs (may contain local machine paths; not scientific outputs)
 outputs/*_run_log.txt
 outputs/**/run_log.txt

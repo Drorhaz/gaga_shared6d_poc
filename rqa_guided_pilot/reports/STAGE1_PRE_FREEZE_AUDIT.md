@@ -5,15 +5,25 @@
 **Scientific freeze (untouched):** `guided-analysis-freeze-v1` → `5062e22`  
 **Classification:** `STAGE1_FREEZE_APPROVED_WITH_DOCUMENTATION_FIXES`
 
+**External / feature audits (required before freeze):**
+
+| Audit | Path | Result |
+|---|---|---|
+| Paper-code RQA reference | `PAPER_CODE_REFERENCE_AUDIT.md` | `NO_MATERIAL_DISCREPANCY_RETAIN_PRIMARY` |
+| Source data & feature representation | `SOURCE_DATA_AND_FEATURE_AUDIT.md` | `CURRENT_FEATURE_VALID_ADD_SECONDARY_LATER` |
+| Feature decision | `FEATURE_REPRESENTATION_DECISION.md` | A1 primary; A2 sensitivity; B2 secondary later |
+
 ---
 
 ## Verdict summary
 
 Stage 1 technical feasibility is supported. The rate bake-off used **physically matched** delays. Selection of 120 Hz is defensible from T1 R1/R2 and surrogate evidence, not sample count alone. Full-shuffle surrogates strongly validate that DET/LAM/Lmean detect temporal organization. Parameter locks used balanced T1-only samples without T2/T3 outcome shopping.
 
+The paper-code reference audit confirmed metric conventions against the pinned RQA backend. The source-data / feature audit confirmed that the primary input — regional angular-velocity magnitude from filtered parent-relative rotvecs — is mathematically adequate (geodesic A2 equivalent for Stage 1 conclusions) and scientifically appropriate; root-relative positional speed is optional secondary later and does **not** invalidate locks.
+
 Documentation fixes are required before freeze: physical-time fields in the lock, revised rate-bakeoff table at radius 0.35, block-shuffle graded-control interpretation, input hashes, and environment manifest. These do **not** change the Stage 1 pass conclusion.
 
-**Stage 2 may proceed after freeze.**
+**Stage 2 may proceed after freeze** on the angular-speed primary.
 
 ---
 
@@ -156,13 +166,19 @@ No evidence of selecting settings to maximize T1→T3 separation.
 4. Updated parameter lock with physical-time fields, revised rate scores, block-shuffle interpretation, DET-ceiling note.
 5. Added input hashes + environment manifests.
 6. Updated Stage 1 summary/gate language for block-shuffle and physical-time.
+7. Added paper-code reference audit (`PAPER_CODE_REFERENCE_AUDIT.md`).
+8. Added source-data / feature-representation audit and decision reports.
 
-**No longitudinal T2/T3 retuning. No change to frozen scientific outputs outside `rqa_guided_pilot/`.**
+**No longitudinal T2/T3 retuning. No change to frozen scientific outputs outside `rqa_guided_pilot/`.**  
+**No Stage 1 feature replacement; no parameter-lock invalidation.**
 
 ---
 
 ## Final classification
 
 # `STAGE1_FREEZE_APPROVED_WITH_DOCUMENTATION_FIXES`
+
+Supporting feature decision: `CURRENT_FEATURE_VALID_ADD_SECONDARY_LATER`  
+Supporting paper-code decision: `NO_MATERIAL_DISCREPANCY_RETAIN_PRIMARY`
 
 Stage 2 may proceed after Git freeze of Stage 1.

@@ -1,0 +1,17 @@
+{
+  "region_link_counts": {
+    "trunk_spine": 2,
+    "left_leg": 3,
+    "right_leg": 3,
+    "head_neck": 2,
+    "left_arm": 4,
+    "right_arm": 4
+  },
+  "locked_params_used_for_diagnostics_only": {
+    "tau": 18,
+    "m": 4,
+    "radius_frac": 0.35,
+    "theiler": 18,
+    "note": "Angular-speed locks applied to positional candidates only for comparative diagnostics; not proposed as positional locks."
+  }
+}

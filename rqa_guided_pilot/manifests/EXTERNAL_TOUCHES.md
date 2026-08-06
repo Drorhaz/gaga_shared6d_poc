@@ -6,7 +6,7 @@ This package is required to confine RQA artifacts under `rqa_guided_pilot/`.
 
 | Path | Change | Why | Adapter alternative? | Affects frozen results? |
 |---|---|---|---|---|
-| `.gitignore` | Ignore `rqa_guided_pilot/cache/` and local Python caches | Explicitly requested so large regenerable intermediates are not versioned | Could use a nested gitignore only inside `rqa_guided_pilot/`; root update keeps one project ignore list | **No** — not a scientific output |
+| `.gitignore` | Ignore `rqa_guided_pilot/cache/`, local Python caches, `Pose-Dynamics-main/`, and `*.pdf` | Keep regenerable/heavy/external reference material out of version control; paper archive must not be vendored | Nested gitignore only inside `rqa_guided_pilot/` | **No** — not a scientific output |
 
 ## Planning-report relocation
 

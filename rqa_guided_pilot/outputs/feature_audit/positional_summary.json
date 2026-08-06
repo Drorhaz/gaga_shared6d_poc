@@ -1,0 +1,91 @@
+{
+  "by_feature": {
+    "A1_left_arm": {
+      "median_RR": 0.030787090187331115,
+      "median_DET": 0.9662642686775331,
+      "median_Lmean": 5.028646953995105,
+      "median_DET_drop": 0.9037106815996649,
+      "median_amp": 133.381915888117,
+      "n": 16,
+      "median_R1R2_absdiff_DET": 0.018907484425276233
+    },
+    "A1_trunk": {
+      "median_RR": 0.0317512356033968,
+      "median_DET": 0.9807139524234914,
+      "median_Lmean": 5.423609028151656,
+      "median_DET_drop": 0.9303805635717858,
+      "median_amp": 35.02482921264301,
+      "n": 16,
+      "median_R1R2_absdiff_DET": 0.0076402259723681865
+    },
+    "B1_root": {
+      "median_RR": 0.044797851598785195,
+      "median_DET": 0.8337883185481846,
+      "median_Lmean": 6.610134580663246,
+      "median_DET_drop": 0.7885580492254846,
+      "median_amp": 0.23972619361965408,
+      "n": 16,
+      "median_R1R2_absdiff_DET": 0.03653181192425259
+    },
+    "Chest_rootrel": {
+      "median_RR": 0.03554287264456084,
+      "median_DET": 0.6989689478497683,
+      "median_Lmean": 4.082857606699511,
+      "median_DET_drop": 0.6590733830613328,
+      "median_amp": 0.18437716136016533,
+      "n": 16,
+      "median_R1R2_absdiff_DET": 0.05788089797001397
+    },
+    "LHand_global": {
+      "median_RR": 0.036670167338930366,
+      "median_DET": 0.9330281503975553,
+      "median_Lmean": 7.684098061077229,
+      "median_DET_drop": 0.8888290714293821,
+      "median_amp": 1.6137043669426658,
+      "n": 16,
+      "median_R1R2_absdiff_DET": 0.039587500366413564
+    },
+    "LHand_rootrel": {
+      "median_RR": 0.038155472464750886,
+      "median_DET": 0.920747633951405,
+      "median_Lmean": 7.509561603117927,
+      "median_DET_drop": 0.8771969660502678,
+      "median_amp": 1.587200662848819,
+      "n": 16,
+      "median_R1R2_absdiff_DET": 0.027919563088140142
+    }
+  },
+  "translation_dominance": {
+    "LHand_global_vs_root": {
+      "median_corr": 0.14549278633512425,
+      "n": 40
+    },
+    "LHand_rootrel_vs_A1_arm": {
+      "median_corr": 0.21033516400609495,
+      "n": 40
+    },
+    "RHand_global_vs_root": {
+      "median_corr": 0.1459005792429292,
+      "n": 40
+    },
+    "RHand_rootrel_vs_A1_arm": {
+      "median_corr": 0.20805417601130077,
+      "n": 40
+    }
+  },
+  "size_spread": {
+    "size_proxy_by_participant": {
+      "252": 0.5095232820111792,
+      "651": 0.5845701281893124,
+      "671": 0.49407661937936287,
+      "790": 0.5350288363955902
+    },
+    "root_travel_by_participant_m": {
+      "252": 48.05081877851718,
+      "651": 33.37950812485639,
+      "671": 31.847883807742637,
+      "790": 34.06855232849662
+    },
+    "cv_size_proxy": 0.07465145610254056
+  }
+}

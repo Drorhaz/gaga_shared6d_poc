@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "A1_rotvec_fd": {
+      "median_RR": 0.031259012592084065,
+      "median_DET": 0.9756583869852309,
+      "median_Lmean": 5.127852490494478,
+      "median_LAM": 0.9887584790208407,
+      "median_ENTR": 3.220953515052744,
+      "median_DET_drop_shuffle": 0.9215019352918021,
+      "median_ami_tau": 18.0,
+      "median_fnn_m": 4.0,
+      "n_cells": 48,
+      "median_R1R2_absdiff_DET": 0.01414834781150981,
+      "median_R1R2_absdiff_LAM": 0.0062913642413974236,
+      "median_R1R2_absdiff_Lmean": 1.1138457866919906
+    },
+    "A2_geodesic": {
+      "median_RR": 0.030725935109913425,
+      "median_DET": 0.9752818678444292,
+      "median_Lmean": 5.131906380191843,
+      "median_LAM": 0.988274807027749,
+      "median_ENTR": 3.2249668689970177,
+      "median_DET_drop_shuffle": 0.9235343761140269,
+      "median_ami_tau": 18.0,
+      "median_fnn_m": 4.0,
+      "n_cells": 48,
+      "median_R1R2_absdiff_DET": 0.014025414076012876,
+      "median_R1R2_absdiff_LAM": 0.006197112266597304,
+      "median_R1R2_absdiff_Lmean": 1.1231305698961358
+    }
+  },
+  "pairwise_A1_vs_A2": {
+    "RR": {
+      "median_abs_diff": 0.0004182382893420395,
+      "median_rel_diff": 0.013318245327104053,
+      "corr": 0.9931813722433168,
+      "n": 48
+    },
+    "DET": {
+      "median_abs_diff": 0.0006982134078492575,
+      "median_rel_diff": 0.0007140501181751604,
+      "corr": 0.9944671197510576,
+      "n": 48
+    },
+    "Lmean": {
+      "median_abs_diff": 0.046899235354823876,
+      "median_rel_diff": 0.008703053469372193,
+      "corr": 0.9971007425860513,
+      "n": 48
+    },
+    "LAM": {
+      "median_abs_diff": 0.0003339856252030926,
+      "median_rel_diff": 0.0003377970486300057,
+      "corr": 0.9900162073782511,
+      "n": 48
+    },
+    "ENTR": {
+      "median_abs_diff": 0.01505983271912359,
+      "median_rel_diff": 0.004407668757079675,
+      "corr": 0.9974234483422764,
+      "n": 48
+    },
+    "DET_drop": {
+      "median_abs_diff": 0.000871381824093298,
+      "median_rel_diff": 0.0009559739274486243,
+      "corr": 0.9948485028705104,
+      "n": 48
+    }
+  }
+}
