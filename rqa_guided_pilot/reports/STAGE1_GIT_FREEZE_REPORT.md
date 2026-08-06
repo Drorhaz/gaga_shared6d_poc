@@ -9,7 +9,7 @@
 
 | Item | Value |
 |---|---|
-| Stage 1 freeze commit | `4f6a04fdbe5e45b9c42419a8424364ec8b4c6e31` (`4f6a04f`) |
+| Stage 1 freeze commit | `09951ada359efd1c7b9f543313a0a9bce082afe5` (`09951ad`) |
 | Annotated tag | `rqa-stage1-feasibility-pass-v1` |
 | Tag message | RQA Stage 1 technical feasibility pass; A1 validated; parameters locked; Stage 2 not included |
 
@@ -66,7 +66,7 @@
 
 ## Remote verification
 
-*(filled after push)*
+Pending push of branch + annotated tag in this session.
 
 ## Confirmation
 
