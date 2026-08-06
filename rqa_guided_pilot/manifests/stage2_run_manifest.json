@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-08-04T16:03:43.171931+00:00",
+  "stage": "stage2",
+  "branch": "exploratory/guided-rqa-stage2",
+  "stage1_tag": "rqa-stage1-feasibility-pass-v1",
+  "decision": "LIMITED_PASS_STOP",
+  "locked_params": {
+    "rate_hz": 120,
+    "tau_frames": 18,
+    "m": 4,
+    "radius": 0.35
+  },
+  "outputs": [
+    "STAGE2_GATE.json",
+    "amplitude_control_pairs.csv",
+    "auto_rqa_metrics.csv",
+    "compact_mdrqa.csv",
+    "crqa_trunk_arms.csv",
+    "exercise_level_comparison.csv",
+    "longitudinal_deltas.csv",
+    "r1r2_drep.csv",
+    "sensitivity_summary.csv",
+    "surrogate_drops.csv",
+    "truncation_sensitivity.csv"
+  ],
+  "reports": [
+    "STAGE2_METHOD_REPORT.md",
+    "STAGE2_LONGITUDINAL_RESULTS.md",
+    "STAGE2_R1_R2_RELIABILITY.md",
+    "STAGE2_DURATION_AND_SURROGATE_CHECKS.md",
+    "STAGE2_AMPLITUDE_CONTROL.md",
+    "STAGE2_COMPARISON_WITH_EXISTING_METHODS.md",
+    "STAGE2_NOVELTY_ASSESSMENT.md",
+    "STAGE2_GATE_REPORT.md"
+  ]
+}
