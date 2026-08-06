@@ -1,0 +1,9 @@
+{
+  "python": "3.12.12",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "numpy": "2.5.1",
+  "scipy": "1.18.0",
+  "pandas": "3.0.3",
+  "primary_feature": "A1_regional_angular_velocity_magnitude",
+  "stage2_branch_base": "rqa-stage1-feasibility-pass-v1"
+}

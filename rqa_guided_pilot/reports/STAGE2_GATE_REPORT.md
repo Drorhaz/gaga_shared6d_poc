@@ -2,7 +2,10 @@
 
 # Decision: `LIMITED_PASS_STOP`
 
-## Gate inputs
+**Primary representation:** A1 regional angular-velocity magnitude  
+**B2 secondary:** `SECONDARY_COMPLEMENTARY_SUPPORTED` (does **not** alter this gate)
+
+## Gate inputs (A1 primary)
 
 | Check | Value |
 |---|---|
@@ -19,6 +22,7 @@
 - Compact MdRQA median DET drop vs shuffle: 0.923
 - CRQA trunk–arms median DET drop (shuffle-one): 0.890
 - CRQA run as a limited trunk–arm coordination check; interpret relative to existing `trunk_arm_lagged_coupling`.
+- **B2** root-relative hand speed: own T1 params (60 Hz, τ=12, m=3, r=0.30×mean); median corr vs A1 arm ≈ 0.21; shuffle DET drop ≈ 0.89; classified `SECONDARY_COMPLEMENTARY_SUPPORTED`; **cannot rescue A1**; not promoted to primary. See `STAGE2_B2_SECONDARY_ANALYSIS.md`.
 
 ## Sensitivity summary
 

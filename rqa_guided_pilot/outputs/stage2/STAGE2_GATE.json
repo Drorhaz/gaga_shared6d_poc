@@ -1,5 +1,6 @@
 {
   "decision": "LIMITED_PASS_STOP",
+  "primary_feature": "A1_regional_angular_velocity_magnitude",
   "n_qualified_pid_ex_delta_zscore": 0,
   "n_amp_preserving_complementary_pid_ex_delta": 2,
   "n_novel_zscore_rows": 0,
@@ -13,5 +14,11 @@
     "UNSTABLE": 22,
     "COMPLEMENTARY_INTERPRETATION": 2
   },
-  "focus_table": []
+  "focus_table": [],
+  "b2_secondary": {
+    "classification": "SECONDARY_COMPLEMENTARY_SUPPORTED",
+    "cannot_rescue_A1_gate": true,
+    "promote_to_primary": false
+  },
+  "stage3_recommended": false
 }

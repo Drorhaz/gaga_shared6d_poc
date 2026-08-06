@@ -1,0 +1,61 @@
+{
+  "representation": "B2_root_relative_hand_speed_m_s",
+  "selected_from": "T1-only 651/790 ex11/13 L/R hand",
+  "primary_rate_hz": 60,
+  "tau_frames": 12,
+  "tau_seconds": 0.2,
+  "m": 3,
+  "theiler": 12,
+  "lmin": 2,
+  "radius_frac_mean": 0.3,
+  "block_shuffle_seconds": 0.3,
+  "note": "B2-specific lock; not A1 Stage 1 parameters",
+  "ami_tau_median_at_120": 25,
+  "fnn_m_median": 3,
+  "rate_bakeoff": [
+    {
+      "rate": 120,
+      "tau_frames": 25,
+      "median_DET_drop": 0.8520884202608265,
+      "median_RR": 0.04780187603964459,
+      "n": 16
+    },
+    {
+      "rate": 60,
+      "tau_frames": 12,
+      "median_DET_drop": 0.8558437308564113,
+      "median_RR": 0.04916329975575186,
+      "n": 16
+    },
+    {
+      "rate": 30,
+      "tau_frames": 6,
+      "median_DET_drop": 0.7865435884724166,
+      "median_RR": 0.0489654092595269,
+      "n": 16
+    }
+  ],
+  "radius_scan": [
+    {
+      "radius_frac": 0.25,
+      "median_RR": 0.01946231849190285
+    },
+    {
+      "radius_frac": 0.3,
+      "median_RR": 0.03236766514643556
+    },
+    {
+      "radius_frac": 0.35,
+      "median_RR": 0.04916329975575186
+    },
+    {
+      "radius_frac": 0.4,
+      "median_RR": 0.07054439680646865
+    },
+    {
+      "radius_frac": 0.45,
+      "median_RR": 0.09657239751951283
+    }
+  ],
+  "t1_pass": true
+}

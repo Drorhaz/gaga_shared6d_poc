@@ -1,0 +1,163 @@
+{
+  "classification": "SECONDARY_COMPLEMENTARY_SUPPORTED",
+  "reason": "Distinct from A1 (moderate corr) with some z-score longitudinal exceedances",
+  "median_corr_vs_A1_arm": 0.207092029977048,
+  "median_DET_drop_full_shuffle": 0.8880929195416003,
+  "median_T1_R1R2_absdiff_DET": 0.021428055141615387,
+  "zscore_longitudinal_hits": [
+    {
+      "pid": "651",
+      "ex": 11,
+      "hand": "LHand",
+      "delta": "D12",
+      "median_ratio": 1.3080306750880173
+    },
+    {
+      "pid": "651",
+      "ex": 11,
+      "hand": "LHand",
+      "delta": "D13",
+      "median_ratio": 1.3668185705975915
+    },
+    {
+      "pid": "651",
+      "ex": 13,
+      "hand": "LHand",
+      "delta": "D12",
+      "median_ratio": 1.412680467728078
+    },
+    {
+      "pid": "651",
+      "ex": 13,
+      "hand": "LHand",
+      "delta": "D13",
+      "median_ratio": 1.8902377576002076
+    },
+    {
+      "pid": "651",
+      "ex": 13,
+      "hand": "RHand",
+      "delta": "D12",
+      "median_ratio": 2.2993618831923603
+    },
+    {
+      "pid": "651",
+      "ex": 13,
+      "hand": "RHand",
+      "delta": "D13",
+      "median_ratio": 2.835859601507153
+    },
+    {
+      "pid": "790",
+      "ex": 11,
+      "hand": "LHand",
+      "delta": "D12",
+      "median_ratio": 1.761923629430279
+    },
+    {
+      "pid": "790",
+      "ex": 11,
+      "hand": "LHand",
+      "delta": "D13",
+      "median_ratio": 2.3858087594302058
+    },
+    {
+      "pid": "790",
+      "ex": 11,
+      "hand": "RHand",
+      "delta": "D13",
+      "median_ratio": 1.1022730408045112
+    },
+    {
+      "pid": "790",
+      "ex": 13,
+      "hand": "LHand",
+      "delta": "D12",
+      "median_ratio": 2.064900194669432
+    },
+    {
+      "pid": "790",
+      "ex": 13,
+      "hand": "LHand",
+      "delta": "D13",
+      "median_ratio": 1.7376774080186475
+    },
+    {
+      "pid": "790",
+      "ex": 13,
+      "hand": "RHand",
+      "delta": "D12",
+      "median_ratio": 1.7602248081918925
+    },
+    {
+      "pid": "790",
+      "ex": 13,
+      "hand": "RHand",
+      "delta": "D13",
+      "median_ratio": 2.287568462302093
+    }
+  ],
+  "lock": {
+    "representation": "B2_root_relative_hand_speed_m_s",
+    "selected_from": "T1-only 651/790 ex11/13 L/R hand",
+    "primary_rate_hz": 60,
+    "tau_frames": 12,
+    "tau_seconds": 0.2,
+    "m": 3,
+    "theiler": 12,
+    "lmin": 2,
+    "radius_frac_mean": 0.3,
+    "block_shuffle_seconds": 0.3,
+    "note": "B2-specific lock; not A1 Stage 1 parameters",
+    "ami_tau_median_at_120": 25,
+    "fnn_m_median": 3,
+    "rate_bakeoff": [
+      {
+        "rate": 120,
+        "tau_frames": 25,
+        "median_DET_drop": 0.8520884202608265,
+        "median_RR": 0.04780187603964459,
+        "n": 16
+      },
+      {
+        "rate": 60,
+        "tau_frames": 12,
+        "median_DET_drop": 0.8558437308564113,
+        "median_RR": 0.04916329975575186,
+        "n": 16
+      },
+      {
+        "rate": 30,
+        "tau_frames": 6,
+        "median_DET_drop": 0.7865435884724166,
+        "median_RR": 0.0489654092595269,
+        "n": 16
+      }
+    ],
+    "radius_scan": [
+      {
+        "radius_frac": 0.25,
+        "median_RR": 0.01946231849190285
+      },
+      {
+        "radius_frac": 0.3,
+        "median_RR": 0.03236766514643556
+      },
+      {
+        "radius_frac": 0.35,
+        "median_RR": 0.04916329975575186
+      },
+      {
+        "radius_frac": 0.4,
+        "median_RR": 0.07054439680646865
+      },
+      {
+        "radius_frac": 0.45,
+        "median_RR": 0.09657239751951283
+      }
+    ],
+    "t1_pass": true
+  },
+  "cannot_rescue_A1_gate": true,
+  "promote_to_primary": false
+}

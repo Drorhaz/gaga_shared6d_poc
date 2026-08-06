@@ -32,5 +32,12 @@
     "STAGE2_COMPARISON_WITH_EXISTING_METHODS.md",
     "STAGE2_NOVELTY_ASSESSMENT.md",
     "STAGE2_GATE_REPORT.md"
-  ]
+  ],
+  "b2_secondary": {
+    "script": "14_stage2_b2_secondary.py",
+    "classification": "SECONDARY_COMPLEMENTARY_SUPPORTED",
+    "outputs": "outputs/stage2/b2/"
+  },
+  "gate": "LIMITED_PASS_STOP",
+  "primary_feature": "A1"
 }

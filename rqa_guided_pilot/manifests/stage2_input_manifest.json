@@ -1,0 +1,28 @@
+{
+  "readonly_inputs": {
+    "rotvec_dir": "data/immutable/rotvec_18link",
+    "window_index": "outputs/s4_windows/window_index.csv",
+    "canonical_links": "configs/canonical_links_18.yaml",
+    "raw_skeleton_for_B2_only": "../gaga_jcvpca/data/raw_skeleton",
+    "conv_exercise_level": "outputs/stage0b_guided_closeout/exercise_level_change.csv",
+    "explicit_features": "read-only via existing Stage 0 outputs"
+  },
+  "stage1_lock": "rqa_guided_pilot/outputs/locks/parameter_lock_stage1.json",
+  "scientific_freeze": "guided-analysis-freeze-v1 @ 5062e22",
+  "rqa_stage1_tag": "rqa-stage1-feasibility-pass-v1 @ e3ab3f3",
+  "scope": {
+    "participants": [
+      "651",
+      "790"
+    ],
+    "exercises": [
+      11,
+      13
+    ],
+    "timepoints": [
+      1,
+      2,
+      3
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 # Stage 2 Method Report
 
 **Branch:** `exploratory/guided-rqa-stage2`  
-**Stage 1 freeze:** `rqa-stage1-feasibility-pass-v1` @ `120 Hz lock`  
+**Stage 1 freeze:** `rqa-stage1-feasibility-pass-v1` @ `e3ab3f3` (A1 validated)  
 **Scientific freeze untouched:** `guided-analysis-freeze-v1` @ `5062e22`
 
 ## Scope
@@ -10,8 +10,10 @@
 - Exercises: ex11, ex13
 - Timepoints: T1, T2, T3
 - Repetitions: R1, R2
-- Primary method: regional Auto-RQA on angular-velocity-magnitude dynamics
+- Primary method: regional Auto-RQA on **A1** regional angular-velocity-magnitude dynamics
 - Views: amplitude-preserving (fixed radius); trial z-score (target RR)
+- Secondary (after A1 gate): **B2** root-relative hand positional speed — own T1 params; see `STAGE2_B2_SECONDARY_ANALYSIS.md`
+- Not run as primary: A2 (sensitivity only), B1 (rejected), Hybrid C (deferred)
 
 ## Locked parameters (not retuned on T2/T3)
 
