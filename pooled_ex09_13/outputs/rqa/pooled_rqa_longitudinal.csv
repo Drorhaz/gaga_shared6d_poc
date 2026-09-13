@@ -1,0 +1,9 @@
+participant,comparison_alias,scope,metric,category,note,exercises_available,T1_R1,T1_R2,Tk_R1,Tk_R2,Drep_T1,Delta_mean,direction,complete_ex09_13_grid,estimand,source
+252,D12,PRIMARY,DET,NOT_COMPUTABLE_IN_PHASE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache,,,,,,,,,,,
+252,D13,SUPPLEMENTAL,DET,NOT_COMPUTABLE_IN_PHASE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache,,,,,,,,,,,
+651,D12,PRIMARY,DET,NOT_COMPUTABLE_IN_PHASE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache,11;13,,,,,,,,,,
+651,D13,SUPPLEMENTAL,DET,NOT_COMPUTABLE_IN_PHASE,,,0.989772628967141,0.9793827001320026,0.9745886629339595,0.9866511015836715,0.010389928835138451,-0.003957782290756273,UNCLEAR,False,B_boundary_block_equal_weight,rqa_guided_pilot/outputs/stage1/auto_rqa_metrics.csv (subset) + equal-weight pool
+671,D12,PRIMARY,DET,NOT_COMPUTABLE_IN_PHASE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache,,,,,,,,,,,
+671,D13,SUPPLEMENTAL,DET,NOT_COMPUTABLE_IN_PHASE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache,,,,,,,,,,,
+790,D12,PRIMARY,DET,NOT_COMPUTABLE_IN_PHASE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache,11;13,,,,,,,,,,
+790,D13,SUPPLEMENTAL,DET,NOT_COMPUTABLE_IN_PHASE,,,0.9855054171870057,0.9917276007923564,0.9845120968060433,0.9829325801407414,0.006222183605350762,-0.0048941705162887095,DECREASE,False,B_boundary_block_equal_weight,rqa_guided_pilot/outputs/stage1/auto_rqa_metrics.csv (subset) + equal-weight pool

@@ -1,0 +1,259 @@
+{
+  "file_id": "05_FIGURE_REVIEW_AND_VISUAL_SPEC",
+  "package_version": 2,
+  "extraction_date_utc": "2026-08-08T17:36:24Z",
+  "audience": "PhD admission committee",
+  "g3_strategy_comparison_after_robustness_export": {
+    "OPTION_A_longitudinal_capability": {
+      "scientific_question": "Can the framework track validated body-link changes as Gaga practice accumulates?",
+      "committee_understands_in_3_seconds": "Validated link changes appear at ~4 classes and again at ~10 classes, differently across people; coverage is not equal.",
+      "exact_data_used": "File 03 A2 flags for D12 and D13; coverage bands; optional persistence labels",
+      "visual_form": "Per participant: two compact body-link glyphs / evidence rings (\u22484 classes | \u224810 classes). Highlight = beyond own repetition variability AND directionally stable. Explicit coverage markers. No trajectory connecting counts as learning magnitude.",
+      "main_risk": "Uneven T3 coverage; link-count misread as amount of learning; partial adjacency to G4 anatomy",
+      "duplicates_G2_or_G4": "Distinct from G2. Adjacent to G4 but asks longitudinal capability across exposures rather than detailed anatomical localization.",
+      "communicates_PhD_trajectory": true,
+      "recommendation": "MAIN",
+      "a2_counts_verified": {
+        "252": {
+          "D12": 3,
+          "D12_n": 20,
+          "D13": 12,
+          "D13_n": 20,
+          "D12_cov": "adequate",
+          "D13_cov": "limited"
+        },
+        "651": {
+          "D12": 4,
+          "D12_n": 10,
+          "D13": 2,
+          "D13_n": 10,
+          "D12_cov": "adequate",
+          "D13_cov": "limited"
+        },
+        "671": {
+          "D12": 8,
+          "D12_n": 18,
+          "D13": 9,
+          "D13_n": 17,
+          "D12_cov": "adequate",
+          "D13_cov": "limited"
+        },
+        "790": {
+          "D12": 7,
+          "D12_n": 20,
+          "D13": 3,
+          "D13_n": 18,
+          "D12_cov": "adequate",
+          "D13_cov": "adequate"
+        }
+      }
+    },
+    "OPTION_B_repetition_analytical_robustness": {
+      "scientific_question": "Does the JcvPCA contribution pattern remain similar for pooled R1+R2, R1-only, and R2-only, and under PC-count / QC variants?",
+      "committee_understands_in_3_seconds": "The analysis was stress-tested across repetition designs and analytical variants; stability varies by participant.",
+      "exact_data_used": "File 06 comparison-level overlaps + k-grid + qc_drop + functional bands; link-level pooled/R1/R2 signed values",
+      "visual_form": "Per participant\u00d7comparison: Pooled \u2194 R1 \u2194 R2 overlap representation; restrained k-grid sparkline; authoritative overall label only",
+      "main_risk": "Technical/dashboard-like; top-5 overlap is a coarse stability proxy",
+      "duplicates_G2_or_G4": "No",
+      "communicates_PhD_trajectory": "Indirectly (method readiness)",
+      "recommendation": "BACKUP",
+      "robustness_snapshot": [
+        {
+          "participant": "252",
+          "comparison": "Baseline \u2192 \u22484 classes",
+          "pooled_vs_R1": 0.6,
+          "pooled_vs_R2": 0.4,
+          "R1_vs_R2": 0.6,
+          "overall_label": "partial",
+          "k_median": 0.2,
+          "coverage": "adequate"
+        },
+        {
+          "participant": "252",
+          "comparison": "Baseline \u2192 \u224810 classes",
+          "pooled_vs_R1": 0.6,
+          "pooled_vs_R2": 0.6,
+          "R1_vs_R2": 0.2,
+          "overall_label": "stable",
+          "k_median": 0.8,
+          "coverage": "limited"
+        },
+        {
+          "participant": "651",
+          "comparison": "Baseline \u2192 \u22484 classes",
+          "pooled_vs_R1": 0.4,
+          "pooled_vs_R2": 0.4,
+          "R1_vs_R2": 0.6,
+          "overall_label": "partial",
+          "k_median": 0.6,
+          "coverage": "adequate"
+        },
+        {
+          "participant": "651",
+          "comparison": "Baseline \u2192 \u224810 classes",
+          "pooled_vs_R1": 0.8,
+          "pooled_vs_R2": 0.6,
+          "R1_vs_R2": 0.8,
+          "overall_label": "stable",
+          "k_median": 0.6,
+          "coverage": "limited"
+        },
+        {
+          "participant": "671",
+          "comparison": "Baseline \u2192 \u22484 classes",
+          "pooled_vs_R1": 0.6,
+          "pooled_vs_R2": 0.4,
+          "R1_vs_R2": 0.6,
+          "overall_label": "stable",
+          "k_median": 0.6,
+          "coverage": "adequate"
+        },
+        {
+          "participant": "671",
+          "comparison": "Baseline \u2192 \u224810 classes",
+          "pooled_vs_R1": 0.6,
+          "pooled_vs_R2": 0.2,
+          "R1_vs_R2": 0.4,
+          "overall_label": "stable",
+          "k_median": 0.6,
+          "coverage": "limited"
+        },
+        {
+          "participant": "790",
+          "comparison": "Baseline \u2192 \u22484 classes",
+          "pooled_vs_R1": 0.6,
+          "pooled_vs_R2": 0.6,
+          "R1_vs_R2": 0.4,
+          "overall_label": "partial",
+          "k_median": 0.4,
+          "coverage": "adequate"
+        },
+        {
+          "participant": "790",
+          "comparison": "Baseline \u2192 \u224810 classes",
+          "pooled_vs_R1": 0.4,
+          "pooled_vs_R2": 0.6,
+          "R1_vs_R2": 0.4,
+          "overall_label": "partial",
+          "k_median": 0.2,
+          "coverage": "adequate"
+        }
+      ]
+    },
+    "OPTION_C_dual_exposure_status_without_count_trajectory": {
+      "scientific_question": "Which validated links appear early, later, both, or neither \u2014 without ranking participants by count?",
+      "committee_understands_in_3_seconds": "Some validated changes persist across exposures; others appear only early or only later.",
+      "exact_data_used": "07_persistence_t2_t3.csv + file 03 A2; coverage markers",
+      "visual_form": "Categorical link status chips (early / later / both / neither) + coverage badges",
+      "main_risk": "Denser than Option A; still needs anti-learning caption",
+      "duplicates_G2_or_G4": "Less anatomical than G4; more longitudinal than G2",
+      "communicates_PhD_trajectory": true,
+      "recommendation": "BACKUP"
+    },
+    "selected_G3": "OPTION_A_longitudinal_capability",
+    "selection_rationale": [
+      "Best match to admissions narrative: preliminary capability toward the longitudinal PhD design",
+      "Uses validated matched-single-rep A2 body-link evidence without mixing pooled/NV estimands",
+      "Robustness evidence is real and valuable but better as BACKUP due to dashboard risk",
+      "Old validation-layers / 68\u219236\u219222\u21924 funnel remains REJECT as main"
+    ],
+    "rejected_old_validation_layers_as_main": true
+  },
+  "overall_recommendation": {
+    "keep_four_graphs": true,
+    "why_four_not_three": "G1 paradigm, G2 measurement behavior, G3 longitudinal capability, G4 anatomical interpretability are four distinct questions.",
+    "g2_and_g3_genuinely_different": true,
+    "t3_visible": "Yes via G3 dual-exposure panels with honest limited-coverage markers; full T3 rows retained in 03/04/06",
+    "methodological_rigor_without_thesis_defense": "G2 motivates the repetition reference; G3 shows preliminary longitudinal capability; robustness file 06 supports BACKUP method-stress figure rather than a filtering hierarchy slide",
+    "jcvpca_understandable_without_internal_terms": true,
+    "pooled_unmistakable": true,
+    "leads_to_future_full_study": true,
+    "desired_narrative": "PARADIGM \u2192 MEASUREMENT BEHAVIOR \u2192 PRELIMINARY LONGITUDINAL CAPABILITY \u2192 ANATOMICAL INTERPRETABILITY \u2192 FUTURE FULL / UNBLINDED STUDY",
+    "strongest_graph": "G4 anatomical contribution map",
+    "preferred_G3": "OPTION_A",
+    "backup_G3": "OPTION_B"
+  },
+  "g2_annotation_policy": {
+    "endpoint_positive_sessions": "12/12",
+    "slope_positive_sessions": "12/12",
+    "main_visual_annotation": "12/12 sessions: Whole body > Hands",
+    "slope_role": "validation metadata / backup annotation only; do not conflate with endpoint",
+    "field_rename": "valid_sample_count \u2192 valid_link_count",
+    "duration_field": "duration_frames_or_seconds left empty; duration_availability=unavailable_in_source_table"
+  },
+  "graphs": [
+    {
+      "graph_id": "G1",
+      "working_title": "From progressive movement exploration to interpretable whole-body coordination",
+      "scientific_question": "What are we actually measuring?",
+      "decision": "KEEP_WITH_REVISION",
+      "recommended_visualization": "Hands \u2192 +Elbows \u2192 +Shoulders \u2192 +Head/Nose \u2192 Whole body; bracket to ONE POOLED PROGRESSIVE MOVEMENT SEQUENCE; JcvPCA \u2192 body-link contribution pattern; secondary corrected study timeline",
+      "slide_role": "Slide 1 left",
+      "priority": 1
+    },
+    {
+      "graph_id": "G2",
+      "working_title": "Natural repetition variability across progressive body involvement",
+      "scientific_question": "Does the measurement respond sensibly to the movement paradigm?",
+      "decision": "KEEP_WITH_REVISION",
+      "annotations": [
+        "12/12 sessions: Whole body > Hands",
+        "Slope check retained as metadata only"
+      ],
+      "slide_role": "Slide 1 right",
+      "priority": 2,
+      "data_source": "02_REPETITION_VARIABILITY.csv"
+    },
+    {
+      "graph_id": "G3",
+      "working_title": "Tracking validated body-link changes across practice exposure",
+      "scientific_question": "Can the framework track validated body-link changes as Gaga practice accumulates?",
+      "decision": "KEEP_WITH_REVISION",
+      "recommended_visualization": "OPTION A dual-exposure validated link glyphs with coverage markers; no count trajectory",
+      "alternative_visualization": "BACKUP OPTION B robustness from file 06",
+      "slide_role": "Slide 2 left",
+      "priority": 2,
+      "data_source": "03_LONGITUDINAL_LINK_EVIDENCE.csv; backup 06_JCVPCA_ROBUSTNESS.json",
+      "does_not_use_validation_layers_funnel_as_main": true
+    },
+    {
+      "graph_id": "G4",
+      "working_title": "Preliminary anatomical patterns of movement reorganization",
+      "scientific_question": "What can this framework reveal that a single movement score cannot?",
+      "decision": "KEEP",
+      "recommended_visualization": "Anatomical contribution maps using visual_segment_start/end on embedded reference poses; main panels Baseline\u2192\u22484 classes",
+      "slide_role": "Slide 2 right (hero)",
+      "priority": 1,
+      "data_source": "04_ANATOMICAL_CONTRIBUTION_MAP_DATA.csv + embedded geometry in 01"
+    }
+  ],
+  "two_slide_storyboard_primary": {
+    "slide_1": {
+      "title": "Measuring individual change in a progressive whole-body movement sequence",
+      "left": "G1 paradigm + corrected secondary study-context timeline",
+      "right": "G2 progressive repetition variability"
+    },
+    "slide_2": {
+      "title": "Preliminary longitudinal capability and anatomical interpretability",
+      "left": "G3 dual-exposure validated link evidence (\u22484 vs \u224810 classes)",
+      "right": "G4 anatomical contribution maps"
+    }
+  },
+  "estimand_separation_reminder": {
+    "A_pooled_descriptive": "T1(R1+R2) vs T{k}(R1+R2) on pooled ex09\u2013ex13 block (file 06).",
+    "B_matched_single_rep_vs_NV": "T1_R1\u2192T{k}_R1 compared with T1_R1\u2192T1_R2 (+ reference-swap direction stability). Primary A2 evidence in file 03.",
+    "C_repetition_sensitivity": "Whether the pattern depends strongly on pooled vs R1-only vs R2-only (file 06).",
+    "forbidden": "Do NOT create pooled_longitudinal_change / single_rep_NV ratios. Do NOT treat pooled and matched-single-rep footings as numerically interchangeable."
+  },
+  "visual_language_shared": {
+    "light_neutral_gray": "reference / non-highlighted anatomy / natural variability",
+    "strong_accent": "validated beyond-repetition-variability evidence",
+    "excluded": "hatch / broken boundary",
+    "avoid": [
+      "continuous-surface false precision",
+      "learning-magnitude trajectories from link counts",
+      "A2/S3/D12 audience labels",
+      "dashboard robustness matrices as main G3"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+# Whole-body configuration-space RQA — design constants.
+# Numeric radius/Theiler locks are NOT stored here; they are written only by A3.
+# A0–A3 may use timepoint 1 only.
+
+stage: A0
+allowed_timepoint: 1
+participants: ["252", "651", "671", "790"]
+repetitions: [1, 2]
+exercises: [9, 10, 11, 12, 13]
+native_fps: 120.0
+
+validity:
+  interpolation: forbidden
+  min_valid_frame_fraction: 0.95
+  min_duration_s: 5.0
+  min_samples: 600
+  near_pi_fraction_of_pi: 0.95
+  jump_fail_rad: 1.0
+  near_pi_fail_frac: 0.05
+
+expected_n_t1_cells: 40
+expected_n_links: 18
+expected_n_regions: 6
+expected_regions:
+  - trunk_spine
+  - head_neck
+  - left_arm
+  - right_arm
+  - left_leg
+  - right_leg

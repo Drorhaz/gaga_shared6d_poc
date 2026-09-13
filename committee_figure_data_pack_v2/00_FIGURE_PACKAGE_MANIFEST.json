@@ -1,0 +1,480 @@
+{
+  "package_name": "committee_figure_data_pack",
+  "package_version": 2,
+  "supersedes": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_shared6d_poc/committee_figure_data_pack",
+  "extraction_date_utc": "2026-08-08T17:36:24Z",
+  "project_overview": {
+    "scientific_question": "Can an interpretable body-link framework detect individual longitudinal changes in whole-body coordination relative to each participant\u2019s own natural repetition-to-repetition variability?",
+    "committee_presentation_objective": "Demonstrate a difficult measurement problem, a thoughtful analytical solution, methodological validation, preliminary interpretable proof-of-concept results, and a clear path to the full blinded longitudinal / later unblinded PhD study \u2014 without claiming proven treatment effects.",
+    "not_a_completed_treatment_effect_study": true
+  },
+  "source_of_truth_hierarchy": [
+    "gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/",
+    "gaga_jcvpca/docs/rep_sensitivity_nv_panels/",
+    "gaga_jcvpca/data/link_mapping/canonical_link_map.csv",
+    "gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/ (embedded for layout only)",
+    "poster_scientific_story_and_figure_plan.md (timeline schematic wording)"
+  ],
+  "git_provenance": {
+    "gaga_jcvpca": {
+      "commit": "728c871edf0423aa6ea526651023253c38ea118f",
+      "branch": "feature/qc-tab3-manifest"
+    },
+    "gaga_shared6d_poc": {
+      "commit": "4c3f0754f93aae87f6c2b2d72044371b068f33e0",
+      "branch": "exploratory/guided-rqa-stage2"
+    }
+  },
+  "participants": [
+    "252",
+    "651",
+    "671",
+    "790"
+  ],
+  "timepoint_definitions": {
+    "T1": {
+      "display": "Baseline"
+    },
+    "T2": {
+      "display": "\u22484 classes",
+      "approximate_classes": 4,
+      "internal": "D12"
+    },
+    "T3": {
+      "display": "\u224810 classes",
+      "approximate_classes": 10,
+      "internal": "D13"
+    },
+    "class_count_labels_require_protocol_confirmation": true
+  },
+  "study_timeline_corrected": {
+    "primary_documented_sequence": "3Layers_project/results/active/canonical_batch/poster_scientific_story_and_figure_plan.md Candidate Figure 1",
+    "documented_phrase": "T1 baseline \u2192 3 Gaga classes \u2192 dosing \u2192 24h class \u2192 T2 \u2192 6 classes \u2192 T3",
+    "user_requested_alignment": "Baseline \u2192 Gaga 1\u20133 \u2192 blinded intervention \u2192 Gaga class 4 + integration \u2192 early assessment \u22484 classes \u2192 Gaga 5\u201310 \u2192 post-training \u224810 classes",
+    "class_count_labels_require_protocol_confirmation": true,
+    "verification_status": "Aligned with poster/study-design schematic wording; approximate class counts remain presentation labels pending formal protocol lock."
+  },
+  "estimand_separation": {
+    "A_pooled_descriptive": "T1(R1+R2) vs T{k}(R1+R2) on pooled ex09\u2013ex13 block (file 06).",
+    "B_matched_single_rep_vs_NV": "T1_R1\u2192T{k}_R1 compared with T1_R1\u2192T1_R2 (+ reference-swap direction stability). Primary A2 evidence in file 03.",
+    "C_repetition_sensitivity": "Whether the pattern depends strongly on pooled vs R1-only vs R2-only (file 06).",
+    "forbidden": "Do NOT create pooled_longitudinal_change / single_rep_NV ratios. Do NOT treat pooled and matched-single-rep footings as numerically interchangeable."
+  },
+  "coverage_rules": {
+    "D12": {
+      "252": "adequate",
+      "651": "adequate",
+      "671": "adequate",
+      "790": "adequate"
+    },
+    "D13": {
+      "252": "limited",
+      "651": "limited",
+      "671": "limited",
+      "790": "adequate"
+    },
+    "denominators_D12": {
+      "252": 20,
+      "651": 10,
+      "671": 18,
+      "790": 20
+    },
+    "denominators_D13": {
+      "252": 20,
+      "651": 10,
+      "671": 17,
+      "790": 18
+    }
+  },
+  "headline_a2_verified": [
+    {
+      "participant": "671",
+      "comparison": "T1_vs_T2",
+      "n_links": 18,
+      "A2": 8,
+      "S3": 4,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "671",
+      "comparison": "T1_vs_T3",
+      "n_links": 17,
+      "A2": 9,
+      "S3": 0,
+      "coverage_band": "limited"
+    },
+    {
+      "participant": "252",
+      "comparison": "T1_vs_T2",
+      "n_links": 20,
+      "A2": 3,
+      "S3": 0,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "252",
+      "comparison": "T1_vs_T3",
+      "n_links": 20,
+      "A2": 12,
+      "S3": 0,
+      "coverage_band": "limited"
+    },
+    {
+      "participant": "651",
+      "comparison": "T1_vs_T2",
+      "n_links": 10,
+      "A2": 4,
+      "S3": 0,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "651",
+      "comparison": "T1_vs_T3",
+      "n_links": 10,
+      "A2": 2,
+      "S3": 0,
+      "coverage_band": "limited"
+    },
+    {
+      "participant": "790",
+      "comparison": "T1_vs_T2",
+      "n_links": 20,
+      "A2": 7,
+      "S3": 0,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "790",
+      "comparison": "T1_vs_T3",
+      "n_links": 18,
+      "A2": 3,
+      "S3": 0,
+      "coverage_band": "adequate"
+    }
+  ],
+  "consistency_checks_run": [
+    {
+      "check": "NV_PROFILE matches headline",
+      "results": [
+        {
+          "participant": "671",
+          "comparison": "T1_vs_T2",
+          "n_obs": 18,
+          "n_expected": 18,
+          "a2_obs": 8,
+          "a2_expected": 8,
+          "pass": true
+        },
+        {
+          "participant": "671",
+          "comparison": "T1_vs_T3",
+          "n_obs": 17,
+          "n_expected": 17,
+          "a2_obs": 9,
+          "a2_expected": 9,
+          "pass": true
+        },
+        {
+          "participant": "252",
+          "comparison": "T1_vs_T2",
+          "n_obs": 20,
+          "n_expected": 20,
+          "a2_obs": 3,
+          "a2_expected": 3,
+          "pass": true
+        },
+        {
+          "participant": "252",
+          "comparison": "T1_vs_T3",
+          "n_obs": 20,
+          "n_expected": 20,
+          "a2_obs": 12,
+          "a2_expected": 12,
+          "pass": true
+        },
+        {
+          "participant": "651",
+          "comparison": "T1_vs_T2",
+          "n_obs": 10,
+          "n_expected": 10,
+          "a2_obs": 4,
+          "a2_expected": 4,
+          "pass": true
+        },
+        {
+          "participant": "651",
+          "comparison": "T1_vs_T3",
+          "n_obs": 10,
+          "n_expected": 10,
+          "a2_obs": 2,
+          "a2_expected": 2,
+          "pass": true
+        },
+        {
+          "participant": "790",
+          "comparison": "T1_vs_T2",
+          "n_obs": 20,
+          "n_expected": 20,
+          "a2_obs": 7,
+          "a2_expected": 7,
+          "pass": true
+        },
+        {
+          "participant": "790",
+          "comparison": "T1_vs_T3",
+          "n_obs": 18,
+          "n_expected": 18,
+          "a2_obs": 3,
+          "a2_expected": 3,
+          "pass": true
+        }
+      ],
+      "all_pass": true
+    },
+    {
+      "check": "G2 endpoint and slope",
+      "n_sessions": 12,
+      "endpoint_positive": 12,
+      "slope_positive": 12
+    },
+    {
+      "check": "G2 field rename",
+      "old": "valid_sample_count",
+      "new": "valid_link_count"
+    },
+    {
+      "check": "embedded geometry checksums match source pose files",
+      "pass": true
+    },
+    {
+      "check": "no stale avatar denominators imported",
+      "pass": true
+    },
+    {
+      "check": "no new scientific gates invented",
+      "pass": true
+    },
+    {
+      "check": "R2 link-level values available",
+      "n_rows": 130
+    }
+  ],
+  "known_conflicts": [
+    {
+      "issue": "avatar_verified provenance_manifest denominators disagree with headline",
+      "resolution": "Geometry embedded for layout only; A2 denominators from NV_PROFILE/headline only"
+    }
+  ],
+  "known_limitations": [
+    "n=4; blinded; two-repetition NV reference",
+    "\u22484/\u224810 class labels approximate pending protocol confirmation",
+    "D13 coverage limited for 252/651/671",
+    "No continuous body-surface mesh",
+    "Pooled descriptive and matched-single-rep-vs-NV footings must remain separate"
+  ],
+  "valid_comparisons": [
+    "Within-participant Baseline\u2192\u22484/\u224810 classes matched-single-rep change vs own NV",
+    "Within-participant pooled R1+R2 descriptive longitudinal pattern",
+    "Repetition-design / k-grid / QC-drop top-5 overlap robustness",
+    "Within-session progressive-sequence NV (descriptive)"
+  ],
+  "invalid_comparisons": [
+    "pooled_change / single_rep_NV as a new ratio",
+    "Cross-participant ranking of learning magnitude by A2 counts",
+    "Treatment-effect attribution while blinded",
+    "Continuous-surface physiological activation readings from contribution overlays"
+  ],
+  "units": {
+    "signed_link_values": "EVR-weighted signed JcvPCA link contribution change (project-internal scalar)",
+    "normalized_variability": "unitless relative to session-mean median_abs_nv",
+    "top5_overlap": "unitless fraction of shared top-5 links"
+  },
+  "exported_files": [
+    {
+      "name": "00_FIGURE_PACKAGE_MANIFEST.json",
+      "role": "Manifest / schema / provenance"
+    },
+    {
+      "name": "01_PARADIGM_AND_METHOD.json",
+      "role": "G1 + corrected timeline + embedded geometry"
+    },
+    {
+      "name": "02_REPETITION_VARIABILITY.csv",
+      "role": "G2; valid_link_count; endpoint+slope"
+    },
+    {
+      "name": "03_LONGITUDINAL_LINK_EVIDENCE.csv",
+      "role": "Matched single-rep vs NV evidence D12+D13"
+    },
+    {
+      "name": "04_ANATOMICAL_CONTRIBUTION_MAP_DATA.csv",
+      "role": "G4 contribution map + visual_segment_*"
+    },
+    {
+      "name": "05_FIGURE_REVIEW_AND_VISUAL_SPEC.json",
+      "role": "Critique; G3 Option A selected"
+    },
+    {
+      "name": "06_JCVPCA_ROBUSTNESS.json",
+      "role": "Pooled + R1/R2 + k-grid + QC robustness"
+    },
+    {
+      "name": "README.md",
+      "role": "Reading order"
+    }
+  ],
+  "g3_visual_decision": {
+    "preferred_main": "OPTION_A_longitudinal_capability",
+    "backup": "OPTION_B_repetition_analytical_robustness",
+    "rejected_as_main": [
+      "validation_layers_funnel_68_36_22_4",
+      "671_only_funnel"
+    ]
+  },
+  "g4_naming_decision": {
+    "concept_name": "anatomical contribution map",
+    "visual_segment_fields": "presentation-only mapping for renderer resolution"
+  },
+  "portability": {
+    "embedded_reference_geometry": true,
+    "location": "01_PARADIGM_AND_METHOD.json -> embedded_reference_geometry",
+    "absolute_external_paths_still_listed_for_provenance": true
+  },
+  "unavailable_fields": {
+    "02_duration_frames_or_seconds": "unavailable_in_source_table; not inferred"
+  },
+  "source_files_used": [
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/step08_nv_and_stability/NV_PROFILE.csv",
+      "sha256": "571cb5d72797f7e1554e38f556910f225654b9d35c0e89c40e959f3f679963b8",
+      "nbytes": 20412,
+      "mtime_utc": "2026-07-28T13:03:38Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/step08_nv_and_stability/exercise_level_nv.csv",
+      "sha256": "eba52f10e180e6286f636ca7657d48b42192ce72c8bc15dc2889c6971d6a11e5",
+      "nbytes": 7918,
+      "mtime_utc": "2026-07-28T13:03:38Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/09_headline_a2_summary.csv",
+      "sha256": "c05e792290e6ba3e7d806a60ece4fee0d28b99543fb79a04acc2e85919bc26e6",
+      "nbytes": 513,
+      "mtime_utc": "2026-07-28T13:03:46Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/02_comparison_link_exclusions.csv",
+      "sha256": "7d4d573f91061e60f39afde9f339b7ae17089e4593d076d2e825808d3aa68edb",
+      "nbytes": 12780,
+      "mtime_utc": "2026-07-19T18:07:47Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/06_coverage_gate_a2_estimand.csv",
+      "sha256": "3dc55f2dfc2d23f6e906f59a68ba7bd3802478e91c2453bade8044fb0aa466f5",
+      "nbytes": 623,
+      "mtime_utc": "2026-07-28T13:03:46Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/09_pooled_vs_single_by_link.csv",
+      "sha256": "20307cd98d22c2194f1a2b917da8e17d32ffbebfb4f04a76c25f0735d1dd3ee6",
+      "nbytes": 17740,
+      "mtime_utc": "2026-07-21T12:04:21Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/09_pooled_vs_single_headline.csv",
+      "sha256": "5c2ceb28cef362bb3e6ee698fa14d6bfe09cecc92442a97085fa03e59d9fb97e",
+      "nbytes": 851,
+      "mtime_utc": "2026-07-21T12:04:21Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/07_persistence_t2_t3.csv",
+      "sha256": "e54728e1be15cfc5c57c31d3a92f3705dd88216081f4195a83275a0a34f42ebd",
+      "nbytes": 4643,
+      "mtime_utc": "2026-07-19T18:07:52Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/11_r1_r2_same_sign_exceed_agreement.csv",
+      "sha256": "7a02620b8c56aa9155a2f6b318e6d97e7874e89774c3e28c4b49bb78deb5e07a",
+      "nbytes": 369,
+      "mtime_utc": "2026-07-21T10:47:39Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/step04_primary_runs/robustness.csv",
+      "sha256": "29f52fd95df5d5746575d15bc858e2eaf7f9481dbb35460b9246461a87542924",
+      "nbytes": 4389,
+      "mtime_utc": "2026-07-19T18:05:26Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/step04_primary_runs/ROBUSTNESS_FRAMEWORK.md",
+      "sha256": "b6e285d5ebea9283d145252973c0e03b9be91e9b75c8f7404db00dc56aa565ba",
+      "nbytes": 2484,
+      "mtime_utc": "2026-07-19T18:05:26Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/step04_primary_runs/functional_pc_bands.csv",
+      "sha256": "88e8baefdb239b4a27de095bd1d725bc531dae7a3524336baf9447df92a23f9b",
+      "nbytes": 2550,
+      "mtime_utc": "2026-07-19T18:05:26Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/data/link_mapping/canonical_link_map.csv",
+      "sha256": "566f4c04a9eaf2130145b8868fc7c6ad7dcac6d7e0c43aca2cb3c3330a443517",
+      "nbytes": 5955,
+      "mtime_utc": "2026-07-14T13:09:41Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/3Layers_project/results/active/canonical_batch/poster_scientific_story_and_figure_plan.md",
+      "sha256": "74b4e95e19cd438f736567c4c95ceca6c769e9c5db28c4e277508897eb201bee",
+      "nbytes": 36352,
+      "mtime_utc": "2026-07-05T18:00:57Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/252_reference_pose.json",
+      "sha256": "b41eb09ebb284098896dd9bef03908550f0a38cbc48b9f6165e491b04b727334",
+      "nbytes": 3201,
+      "mtime_utc": "2026-07-30T08:10:25Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/rep_sensitivity_nv_panels/252_rep_sensitivity_nv_flags.csv",
+      "sha256": "e47f7135c10a1a78f18dc2420b7cfc54057f5692ff6645fdc4e997290f6cd211",
+      "nbytes": 7402,
+      "mtime_utc": "2026-07-21T10:29:08Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/651_reference_pose.json",
+      "sha256": "ce1e09d2ab5f6d46ea8ae2899094765becc284b30e4acdf9f7f8b3328b1b34cc",
+      "nbytes": 2721,
+      "mtime_utc": "2026-07-30T08:10:26Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/rep_sensitivity_nv_panels/651_rep_sensitivity_nv_flags.csv",
+      "sha256": "a48562a4899c98727912b5870b04cea5327a9586a3935c34f708e88c9ffc98ff",
+      "nbytes": 7409,
+      "mtime_utc": "2026-07-21T10:29:09Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/671_reference_pose.json",
+      "sha256": "51111f0c7daa2e1563689970dfe54ded216fccb216ecfd8e12db359c7f69d6f2",
+      "nbytes": 2716,
+      "mtime_utc": "2026-07-30T08:10:23Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/rep_sensitivity_nv_panels/671_rep_sensitivity_nv_flags.csv",
+      "sha256": "ddfa8297ec6845ca90a414c1ba51f53ddcb17999809df20807ab6b94eac454ed",
+      "nbytes": 5978,
+      "mtime_utc": "2026-07-21T10:29:07Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/790_reference_pose.json",
+      "sha256": "c3576bb6cb71b47c5e394b44da31ab7c7f0d54e43271edc3348bf4843aeb1d3c",
+      "nbytes": 3226,
+      "mtime_utc": "2026-07-30T08:10:28Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/rep_sensitivity_nv_panels/790_rep_sensitivity_nv_flags.csv",
+      "sha256": "fd44db4c4dcd64a35716b9101fa43a32de4a99bccc0413caee21b835ce5efcaf",
+      "nbytes": 7729,
+      "mtime_utc": "2026-07-21T10:29:10Z"
+    }
+  ]
+}

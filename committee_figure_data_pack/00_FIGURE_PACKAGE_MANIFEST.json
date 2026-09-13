@@ -1,0 +1,481 @@
+{
+  "package_name": "committee_figure_data_pack",
+  "extraction_date_utc": "2026-08-08T17:02:40Z",
+  "project_overview": {
+    "scientific_question": "Can an interpretable body-link framework detect individual longitudinal changes in whole-body coordination relative to each participant\u2019s own natural repetition-to-repetition variability?",
+    "committee_presentation_objective": "Demonstrate a difficult measurement problem, a thoughtful analytical solution, methodological validation, preliminary interpretable proof-of-concept results, and a clear path to the full blinded longitudinal / later unblinded PhD study \u2014 without claiming proven treatment effects.",
+    "current_analysis_focus": "Method development and within-person longitudinal change detection on pooled progressive sequence ex09\u2013ex13; blinded; n=4 participants.",
+    "not_a_completed_treatment_effect_study": true
+  },
+  "source_of_truth_hierarchy": [
+    "gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/ (authoritative A2/NV/exclusions)",
+    "gaga_jcvpca/data/link_mapping/canonical_link_map.csv (anatomy crosswalk)",
+    "gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/ (pose geometry only)",
+    "gaga_shared6d_poc/pooled_ex09_13/ (pooled method context; coupling not primary in this pack)"
+  ],
+  "git_provenance": {
+    "gaga_jcvpca": {
+      "commit": "728c871edf0423aa6ea526651023253c38ea118f",
+      "branch": "feature/qc-tab3-manifest",
+      "authoritative_results_subtree": "results_committee_case/marker_gap_policy_ex09_13"
+    },
+    "gaga_shared6d_poc": {
+      "commit": "4c3f0754f93aae87f6c2b2d72044371b068f33e0",
+      "branch": "exploratory/guided-rqa-stage2",
+      "pooled_run_provenance": "pooled_ex09_13/manifests/run_provenance.json"
+    }
+  },
+  "participants": [
+    "252",
+    "651",
+    "671",
+    "790"
+  ],
+  "timepoint_definitions": {
+    "T1": {
+      "display": "Baseline",
+      "classes_at_followup": null
+    },
+    "T2": {
+      "display": "4 classes",
+      "approximate_classes": 4,
+      "internal_comparison_from_baseline": "D12"
+    },
+    "T3": {
+      "display": "10 classes",
+      "approximate_classes": 10,
+      "internal_comparison_from_baseline": "D13"
+    },
+    "class_count_labels_require_protocol_confirmation": true
+  },
+  "repetition_definitions": {
+    "R1": "First within-session repetition",
+    "R2": "Second within-session repetition",
+    "natural_repetition_variability": "Within-session R1 vs R2 difference used as participant-specific reference"
+  },
+  "progressive_sequence_definition": "ex09\u2013ex13 form ONE progressive guided movement sequence (Group4 curvilinear exploration), not five independent exercises.",
+  "pooled_definition": "The main JcvPCA longitudinal analysis treats ex09\u2013ex13 as ONE POOLED progressive movement block (contiguous concatenation in frame order). It is NOT a sixth exercise, NOT an average of five independent task results, and NOT the mean of five exercise-level effects.",
+  "jcvpca_plain_language_definition": "JcvPCA compares how different body links contribute to the shared structure of whole-body movement across matched recordings.",
+  "internal_to_presentation_terminology": {
+    "T1": "Baseline",
+    "T2": "4 classes",
+    "T3": "10 classes",
+    "D12": "Baseline \u2192 4 classes",
+    "D13": "Baseline \u2192 10 classes",
+    "NV": "Natural within-session repetition variability",
+    "A2": "Change exceeds own repetition variability and is directionally stable",
+    "S0": "Within repetition variability",
+    "S1": "Exceeds variability but direction unstable",
+    "S2": "Exceeds variability and directionally stable (A2 minimum)",
+    "S3": "Interpretive candidate (stricter stack; not the only meaningful links)",
+    "rep_pass": "Robustness pass across repetition-design checks",
+    "pooled ex09\u2013ex13": "One pooled progressive movement sequence"
+  },
+  "missing_data_conventions": {
+    "excluded_or_unavailable": "display_excluded / presentation_status=unavailable_excluded; must not be drawn as no-effect",
+    "measured_no_clear_validated_change": "a2_pass=False and not excluded",
+    "empty_numeric_fields": "Empty string means not applicable or not valid for that row",
+    "booleans_in_csv": "True/False for evaluated rows; empty for exclusion-only rows where gate does not apply"
+  },
+  "coverage_rules": {
+    "primary_main_figure_comparison": "Baseline \u2192 4 classes (D12) because coverage adequate for all four participants",
+    "D13_coverage": {
+      "252": "limited",
+      "651": "limited",
+      "671": "limited",
+      "790": "adequate"
+    },
+    "denominators_D12_evaluated_links": {
+      "252": 20,
+      "651": 10,
+      "671": 18,
+      "790": 20
+    },
+    "denominators_D13_evaluated_links": {
+      "252": 20,
+      "651": 10,
+      "671": 17,
+      "790": 18
+    }
+  },
+  "headline_a2_verified": [
+    {
+      "participant": "671",
+      "comparison": "T1_vs_T2",
+      "n_links": 18,
+      "A2": 8,
+      "S3": 4,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "671",
+      "comparison": "T1_vs_T3",
+      "n_links": 17,
+      "A2": 9,
+      "S3": 0,
+      "coverage_band": "limited"
+    },
+    {
+      "participant": "252",
+      "comparison": "T1_vs_T2",
+      "n_links": 20,
+      "A2": 3,
+      "S3": 0,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "252",
+      "comparison": "T1_vs_T3",
+      "n_links": 20,
+      "A2": 12,
+      "S3": 0,
+      "coverage_band": "limited"
+    },
+    {
+      "participant": "651",
+      "comparison": "T1_vs_T2",
+      "n_links": 10,
+      "A2": 4,
+      "S3": 0,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "651",
+      "comparison": "T1_vs_T3",
+      "n_links": 10,
+      "A2": 2,
+      "S3": 0,
+      "coverage_band": "limited"
+    },
+    {
+      "participant": "790",
+      "comparison": "T1_vs_T2",
+      "n_links": 20,
+      "A2": 7,
+      "S3": 0,
+      "coverage_band": "adequate"
+    },
+    {
+      "participant": "790",
+      "comparison": "T1_vs_T3",
+      "n_links": 18,
+      "A2": 3,
+      "S3": 0,
+      "coverage_band": "adequate"
+    }
+  ],
+  "consistency_checks_run": [
+    {
+      "check": "NV_PROFILE A2/n_links match 09_headline_a2_summary.csv",
+      "results": [
+        {
+          "participant": "671",
+          "comparison": "T1_vs_T2",
+          "n_obs": 18,
+          "n_expected": 18,
+          "a2_obs": 8,
+          "a2_expected": 8,
+          "pass": true
+        },
+        {
+          "participant": "671",
+          "comparison": "T1_vs_T3",
+          "n_obs": 17,
+          "n_expected": 17,
+          "a2_obs": 9,
+          "a2_expected": 9,
+          "pass": true
+        },
+        {
+          "participant": "252",
+          "comparison": "T1_vs_T2",
+          "n_obs": 20,
+          "n_expected": 20,
+          "a2_obs": 3,
+          "a2_expected": 3,
+          "pass": true
+        },
+        {
+          "participant": "252",
+          "comparison": "T1_vs_T3",
+          "n_obs": 20,
+          "n_expected": 20,
+          "a2_obs": 12,
+          "a2_expected": 12,
+          "pass": true
+        },
+        {
+          "participant": "651",
+          "comparison": "T1_vs_T2",
+          "n_obs": 10,
+          "n_expected": 10,
+          "a2_obs": 4,
+          "a2_expected": 4,
+          "pass": true
+        },
+        {
+          "participant": "651",
+          "comparison": "T1_vs_T3",
+          "n_obs": 10,
+          "n_expected": 10,
+          "a2_obs": 2,
+          "a2_expected": 2,
+          "pass": true
+        },
+        {
+          "participant": "790",
+          "comparison": "T1_vs_T2",
+          "n_obs": 20,
+          "n_expected": 20,
+          "a2_obs": 7,
+          "a2_expected": 7,
+          "pass": true
+        },
+        {
+          "participant": "790",
+          "comparison": "T1_vs_T3",
+          "n_obs": 18,
+          "n_expected": 18,
+          "a2_obs": 3,
+          "a2_expected": 3,
+          "pass": true
+        }
+      ],
+      "all_pass": true
+    },
+    {
+      "check": "G2 session counts",
+      "n_sessions": 12,
+      "slope_positive": 12,
+      "endpoint_positive": 12
+    },
+    {
+      "check": "S3 only on 671 T1_vs_T2",
+      "s3_rows": [
+        {
+          "participant": "671",
+          "comparison": "671_T1_vs_T2",
+          "link_id": "671_to_LThigh"
+        },
+        {
+          "participant": "671",
+          "comparison": "671_T1_vs_T2",
+          "link_id": "LFArm_to_LHand"
+        },
+        {
+          "participant": "671",
+          "comparison": "671_T1_vs_T2",
+          "link_id": "LShin_to_LFoot"
+        },
+        {
+          "participant": "671",
+          "comparison": "671_T1_vs_T2",
+          "link_id": "LThigh_to_LShin"
+        }
+      ]
+    }
+  ],
+  "known_conflicts": [
+    {
+      "issue": "avatar_verified/provenance_manifest.json denominators disagree with headline A2 denominators",
+      "resolution": "Use NV_PROFILE / 09_headline_a2_summary.csv for all A2 denominators; use avatar_verified geometry JSON only for pose layout",
+      "example": "provenance says 651 n_links=18 / 252 n_links=22; authoritative D12 evaluated links are 651=10 / 252=20"
+    },
+    {
+      "issue": "avatar_pooled estimand differs from matched single-rep A2",
+      "resolution": "Do not use avatar_pooled tables for A2 pass/fail"
+    },
+    {
+      "issue": "Pre-policy / 2026-07-18 supervisor figures stale",
+      "resolution": "Ignored for numerical export"
+    }
+  ],
+  "known_limitations": [
+    "n=4 participants; within-person descriptive framework",
+    "Only two repetitions for natural variability reference",
+    "Blinded design; no treatment attribution",
+    "Layer-2 progressive NV is descriptive and firewalled from A2",
+    "D13 coverage limited for three participants",
+    "No verified continuous body-surface mesh; contribution maps are link/region resolution",
+    "Approximate class counts require protocol confirmation"
+  ],
+  "valid_comparisons": [
+    "Within-participant Baseline\u21924 classes link contribution change vs own T1 repetition variability",
+    "Within-participant Baseline\u219210 classes link contribution change vs own T1 repetition variability (with coverage caveat)",
+    "Within-session progressive-sequence NV trajectories (descriptive)"
+  ],
+  "invalid_comparisons": [
+    "Cross-participant ranking of effect magnitudes as better/worse",
+    "Pooled vs single-exercise magnitude on one axis",
+    "Interpreting S3=4 as the only meaningful links",
+    "Interpreting summed layer counts as a cohort A3 result",
+    "Attributing changes to psilocybin or Gaga treatment effect while blinded",
+    "Treating continuous avatar glow as a continuous surface measurement"
+  ],
+  "units": {
+    "repetition_variability_value / longitudinal_change_signed": "EVR-weighted signed JcvPCA link contribution change (project-internal signed scalar; comparable within participant/link context, not a physical SI unit)",
+    "normalized_variability": "unitless; relative to session-mean median_abs_nv across five stages",
+    "matched_abs_ratio": "unitless |long|/|nv|",
+    "coverage_rel": "unitless relative coverage of follow-up in T1 retained subspace"
+  },
+  "exported_files": [
+    {
+      "name": "00_FIGURE_PACKAGE_MANIFEST.json",
+      "role": "Package schema, provenance, limitations"
+    },
+    {
+      "name": "01_PARADIGM_AND_METHOD.json",
+      "role": "G1 paradigm/method/study-context timeline"
+    },
+    {
+      "name": "02_REPETITION_VARIABILITY.csv",
+      "role": "G2 session\u00d7stage variability with endpoint and slope helpers"
+    },
+    {
+      "name": "03_LONGITUDINAL_LINK_EVIDENCE.csv",
+      "role": "Core D12+D13 link-level validation evidence"
+    },
+    {
+      "name": "04_ANATOMICAL_CONTRIBUTION_MAP_DATA.csv",
+      "role": "G4 anatomical contribution map display table (not continuous surface heatmap)"
+    },
+    {
+      "name": "05_FIGURE_REVIEW_AND_VISUAL_SPEC.json",
+      "role": "Independent critique and visual specs"
+    }
+  ],
+  "package_schema": {
+    "02_REPETITION_VARIABILITY.csv": {
+      "grain": "participant \u00d7 timepoint \u00d7 progressive stage",
+      "key_fields": [
+        "participant_id",
+        "timepoint_internal",
+        "exercise_id"
+      ],
+      "raw_vs_derived": {
+        "raw_variability": "authoritative from exercise_level_nv.csv median_abs_nv",
+        "normalized_variability": "derived visualization helper",
+        "session_fitted_progression_slope": "derived visualization helper",
+        "session_endpoint_change_ex13_minus_ex09": "derived visualization helper"
+      }
+    },
+    "03_LONGITUDINAL_LINK_EVIDENCE.csv": {
+      "grain": "participant \u00d7 longitudinal comparison \u00d7 body link",
+      "includes_both_comparisons": [
+        "Baseline \u2192 4 classes",
+        "Baseline \u2192 10 classes"
+      ],
+      "authoritative_gates_preserved_separately": [
+        "change_exceeds_repetition_variability",
+        "direction_consistent_across_reference_swap",
+        "a2_pass",
+        "nv_profile_tier",
+        "coverage_pass",
+        "rep_pass",
+        "step5_organization"
+      ],
+      "presentation_helpers": [
+        "presentation_status",
+        "presentation_direction",
+        "presentation_note"
+      ]
+    },
+    "04_ANATOMICAL_CONTRIBUTION_MAP_DATA.csv": {
+      "grain": "participant \u00d7 comparison \u00d7 body link",
+      "measurement_resolution": "body_link_or_region",
+      "not_continuous_body_surface_measurement": true,
+      "requires_visual_mapping": true,
+      "main_figure_panel_flag": "main_figure_panel true for D12; secondary_badge_only true for D13"
+    }
+  },
+  "source_files_used": [
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/step08_nv_and_stability/NV_PROFILE.csv",
+      "sha256": "571cb5d72797f7e1554e38f556910f225654b9d35c0e89c40e959f3f679963b8",
+      "nbytes": 20412,
+      "mtime_utc": "2026-07-28T13:03:38Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/step08_nv_and_stability/exercise_level_nv.csv",
+      "sha256": "eba52f10e180e6286f636ca7657d48b42192ce72c8bc15dc2889c6971d6a11e5",
+      "nbytes": 7918,
+      "mtime_utc": "2026-07-28T13:03:38Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/09_headline_a2_summary.csv",
+      "sha256": "c05e792290e6ba3e7d806a60ece4fee0d28b99543fb79a04acc2e85919bc26e6",
+      "nbytes": 513,
+      "mtime_utc": "2026-07-28T13:03:46Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/02_comparison_link_exclusions.csv",
+      "sha256": "7d4d573f91061e60f39afde9f339b7ae17089e4593d076d2e825808d3aa68edb",
+      "nbytes": 12780,
+      "mtime_utc": "2026-07-19T18:07:47Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/data/link_mapping/canonical_link_map.csv",
+      "sha256": "566f4c04a9eaf2130145b8868fc7c6ad7dcac6d7e0c43aca2cb3c3330a443517",
+      "nbytes": 5955,
+      "mtime_utc": "2026-07-14T13:09:41Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/06_coverage_gate_a2_estimand.csv",
+      "sha256": "3dc55f2dfc2d23f6e906f59a68ba7bd3802478e91c2453bade8044fb0aa466f5",
+      "nbytes": 623,
+      "mtime_utc": "2026-07-28T13:03:46Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/05_nv_profile_signed_tiers.csv",
+      "sha256": "571cb5d72797f7e1554e38f556910f225654b9d35c0e89c40e959f3f679963b8",
+      "nbytes": 20412,
+      "mtime_utc": "2026-07-28T13:03:46Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/671_reference_pose.json",
+      "sha256": "51111f0c7daa2e1563689970dfe54ded216fccb216ecfd8e12db359c7f69d6f2",
+      "nbytes": 2716,
+      "mtime_utc": "2026-07-30T08:10:23Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/252_reference_pose.json",
+      "sha256": "b41eb09ebb284098896dd9bef03908550f0a38cbc48b9f6165e491b04b727334",
+      "nbytes": 3201,
+      "mtime_utc": "2026-07-30T08:10:25Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/651_reference_pose.json",
+      "sha256": "ce1e09d2ab5f6d46ea8ae2899094765becc284b30e4acdf9f7f8b3328b1b34cc",
+      "nbytes": 2721,
+      "mtime_utc": "2026-07-30T08:10:26Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/790_reference_pose.json",
+      "sha256": "c3576bb6cb71b47c5e394b44da31ab7c7f0d54e43271edc3348bf4843aeb1d3c",
+      "nbytes": 3226,
+      "mtime_utc": "2026-07-30T08:10:28Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_shared6d_poc/pooled_ex09_13/manifests/run_provenance.json",
+      "sha256": "8b927b31bc651963cc5f796b1e3f4674c4c9e79dc65371159a2baf2f990c5d44",
+      "nbytes": 182,
+      "mtime_utc": "2026-08-07T12:59:23Z"
+    },
+    {
+      "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_shared6d_poc/pooled_ex09_13/reports/FINAL_FIGURE_STRATEGY_REVIEW.md",
+      "sha256": "48bf52bdc608dc18ad601f8f6e7ea4a27a1c9b0d2a08fda40ba88f9a1b367b66",
+      "nbytes": 22085,
+      "mtime_utc": "2026-08-07T13:13:51Z"
+    }
+  ],
+  "g3_visual_decision": {
+    "preferred": "validation_layers",
+    "funnel_68_36_22_4": "candidate_statistics_only_BACKUP_visual",
+    "reason": "Funnel risks implying only final 4 links are meaningful and fabricating a group-level result"
+  },
+  "g4_naming_decision": {
+    "concept_name": "anatomical contribution map",
+    "file_name": "04_ANATOMICAL_CONTRIBUTION_MAP_DATA.csv",
+    "avoid_term_in_audience_facing_copy": "heatmap as implying continuous body-surface measurement"
+  }
+}

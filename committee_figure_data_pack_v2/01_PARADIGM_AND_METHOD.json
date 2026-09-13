@@ -1,0 +1,1288 @@
+{
+  "file_id": "01_PARADIGM_AND_METHOD",
+  "package_version": 2,
+  "purpose": "Support G1 paradigm + method schematic for PhD admissions committee",
+  "progressive_movement_sequence": {
+    "definition": "ex09\u2013ex13 form ONE progressive guided movement sequence (Group4 curvilinear exploration), not five independent exercises.",
+    "pooled_definition": "The main JcvPCA longitudinal analysis treats ex09\u2013ex13 as ONE POOLED progressive movement block (contiguous concatenation in frame order). It is NOT a sixth exercise, NOT an average of five independent task results, and NOT the mean of five exercise-level effects.",
+    "stages": [
+      {
+        "stage_order": 1,
+        "exercise_id": "ex09",
+        "stage_display": "Hands",
+        "body_involvement_description": "Hands",
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 2,
+        "exercise_id": "ex10",
+        "stage_display": "+ Elbows",
+        "body_involvement_description": "Hands + elbows",
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 3,
+        "exercise_id": "ex11",
+        "stage_display": "+ Shoulders",
+        "body_involvement_description": "Hands + elbows + shoulders",
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 4,
+        "exercise_id": "ex12",
+        "stage_display": "+ Head/Nose",
+        "body_involvement_description": "Hands + elbows + shoulders + head/nose",
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 5,
+        "exercise_id": "ex13",
+        "stage_display": "Whole body",
+        "body_involvement_description": "Whole body",
+        "retains_previous_stages": true
+      }
+    ],
+    "display_arrow": "Hands \u2192 + Elbows \u2192 + Shoulders \u2192 + Head/Nose \u2192 Whole body"
+  },
+  "recording_structure": {
+    "participants": [
+      "252",
+      "651",
+      "671",
+      "790"
+    ],
+    "timepoints_internal": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "timepoints_display": {
+      "T1": "Baseline",
+      "T2": "Early assessment after approximately 4 Gaga classes",
+      "T3": "Post-training assessment after approximately 10 Gaga classes"
+    },
+    "class_count_labels_require_protocol_confirmation": true,
+    "repetitions": {
+      "R1": "First within-session repetition of the movement sequence",
+      "R2": "Second within-session repetition of the movement sequence"
+    },
+    "natural_repetition_variability": {
+      "plain_language": "Difference between repetition 1 and repetition 2 within the same session provides an internal estimate of natural within-session repetition variability for that participant.",
+      "not_a_universal_noise_floor": true,
+      "limitations": "Only two repetitions; not a complete measurement-noise model."
+    }
+  },
+  "study_context_timeline": {
+    "role_in_G1": "Visually secondary strip. Communicates broader PhD design. Do not imply treatment effect. Current movement analysis remains blinded.",
+    "source_verification": {
+      "primary_documented_sequence": "3Layers_project/results/active/canonical_batch/poster_scientific_story_and_figure_plan.md Candidate Figure 1",
+      "documented_phrase": "T1 baseline \u2192 3 Gaga classes \u2192 dosing \u2192 24h class \u2192 T2 \u2192 6 classes \u2192 T3",
+      "user_requested_alignment": "Baseline \u2192 Gaga 1\u20133 \u2192 blinded intervention \u2192 Gaga class 4 + integration \u2192 early assessment \u22484 classes \u2192 Gaga 5\u201310 \u2192 post-training \u224810 classes",
+      "class_count_labels_require_protocol_confirmation": true,
+      "verification_status": "Aligned with poster/study-design schematic wording; approximate class counts remain presentation labels pending formal protocol lock."
+    },
+    "events": [
+      {
+        "order": 1,
+        "label": "Baseline assessment",
+        "internal_timepoint": "T1",
+        "display": "Baseline"
+      },
+      {
+        "order": 2,
+        "label": "Gaga classes 1\u20133",
+        "internal_timepoint": null,
+        "display": "Gaga classes 1\u20133"
+      },
+      {
+        "order": 3,
+        "label": "Blinded psilocybin / active-placebo intervention",
+        "internal_timepoint": null,
+        "display": "Blinded intervention (dosing)",
+        "note": "Occurs after initial Gaga practice, not before all Gaga classes. No treatment-effect claim."
+      },
+      {
+        "order": 4,
+        "label": "Gaga class 4 + integration context",
+        "internal_timepoint": null,
+        "display": "Class 4 + integration",
+        "note": "Corresponds to documented 24h-class / integration context after dosing."
+      },
+      {
+        "order": 5,
+        "label": "Early assessment after approximately 4 Gaga classes",
+        "internal_timepoint": "T2",
+        "display": "\u22484 classes assessment"
+      },
+      {
+        "order": 6,
+        "label": "Gaga classes 5\u201310",
+        "internal_timepoint": null,
+        "display": "Gaga classes 5\u201310"
+      },
+      {
+        "order": 7,
+        "label": "Post-training assessment after approximately 10 Gaga classes",
+        "internal_timepoint": "T3",
+        "display": "\u224810 classes assessment"
+      }
+    ],
+    "core_comparisons_for_figures": [
+      "Baseline \u2192 \u22484 classes (T1\u2192T2 / D12) \u2014 primary matched-coverage comparison",
+      "Baseline \u2192 \u224810 classes (T1\u2192T3 / D13) \u2014 retained; coverage limited for 252/651/671"
+    ],
+    "forbidden_implication": "Do not imply proven psilocybin effect, proven Gaga treatment effect, intervention-before-all-practice, or one common trajectory."
+  },
+  "motion_capture": {
+    "sample_rate_hz": 120,
+    "length_units": "Millimeters",
+    "representation_for_analysis": "Relative rotations / angular features of body links",
+    "skeleton_setups": {
+      "Setup_A": {
+        "participants": [
+          "671",
+          "651"
+        ],
+        "nominal_links": 18
+      },
+      "Setup_B": {
+        "participants": [
+          "252",
+          "790"
+        ],
+        "nominal_links": 22
+      }
+    }
+  },
+  "analysis_pipeline_presentation_level": [
+    "Motion capture of progressive movement sequence",
+    "QC and marker-gap policy",
+    "Body-link relative rotation representation",
+    "JcvPCA \u2192 anatomically interpretable body-link contribution pattern",
+    "Compare longitudinal change with within-session repetition variability (matched single-rep footing)",
+    "Complementary pooled R1+R2 descriptive analysis + repetition-design robustness (see 06)"
+  ],
+  "jcvpca_plain_language": {
+    "working_explanation": "JcvPCA compares how different body links contribute to the shared structure of whole-body movement across matched recordings.",
+    "steps": [
+      "One matched recording defines a PCA movement space",
+      "Another recording is projected into the same space",
+      "The analysis compares how body links contribute to the shared movement-variance structure",
+      "The output remains anatomically interpretable at the body-link level"
+    ],
+    "not_a_single_movement_score": true,
+    "estimand_separation": {
+      "A_pooled_descriptive": "T1(R1+R2) vs T{k}(R1+R2) on pooled ex09\u2013ex13 block (file 06).",
+      "B_matched_single_rep_vs_NV": "T1_R1\u2192T{k}_R1 compared with T1_R1\u2192T1_R2 (+ reference-swap direction stability). Primary A2 evidence in file 03.",
+      "C_repetition_sensitivity": "Whether the pattern depends strongly on pooled vs R1-only vs R2-only (file 06).",
+      "forbidden": "Do NOT create pooled_longitudinal_change / single_rep_NV ratios. Do NOT treat pooled and matched-single-rep footings as numerically interchangeable."
+    }
+  },
+  "body_links": [
+    {
+      "canonical_link_id": "pelvis_to_Ab",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Pelvis root to abdomen",
+      "comparability": "participant_only",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "671_to_Ab",
+        "252": "252_to_Ab",
+        "651": "651_to_Ab",
+        "790": "790_to_Ab"
+      }
+    },
+    {
+      "canonical_link_id": "pelvis_to_LThigh",
+      "region_id": "left_leg",
+      "anatomical_description": "Pelvis root to left thigh",
+      "comparability": "participant_only",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "671_to_LThigh",
+        "252": "252_to_LThigh",
+        "651": "651_to_LThigh",
+        "790": "790_to_LThigh"
+      }
+    },
+    {
+      "canonical_link_id": "pelvis_to_RThigh",
+      "region_id": "right_leg",
+      "anatomical_description": "Pelvis root to right thigh",
+      "comparability": "participant_only",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "671_to_RThigh",
+        "252": "252_to_RThigh",
+        "651": "651_to_RThigh",
+        "790": "790_to_RThigh"
+      }
+    },
+    {
+      "canonical_link_id": "Ab_to_Chest",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Abdomen to chest (direct)",
+      "comparability": "topology_variant",
+      "present_in": [
+        "671",
+        "651"
+      ],
+      "per_participant_stems": {
+        "671": "Ab_to_Chest",
+        "651": "Ab_to_Chest"
+      }
+    },
+    {
+      "canonical_link_id": "Ab_to_Spine2",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Abdomen to upper lumbar (Spine2)",
+      "comparability": "setup_specific",
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Ab_to_Spine2",
+        "790": "Ab_to_Spine2"
+      }
+    },
+    {
+      "canonical_link_id": "Spine2_to_Spine3",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Lumbar spine segment",
+      "comparability": "setup_specific",
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Spine2_to_Spine3",
+        "790": "Spine2_to_Spine3"
+      }
+    },
+    {
+      "canonical_link_id": "Spine3_to_Spine4",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Thoracic spine segment",
+      "comparability": "setup_specific",
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Spine3_to_Spine4",
+        "790": "Spine3_to_Spine4"
+      }
+    },
+    {
+      "canonical_link_id": "Spine4_to_Chest",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Upper trunk to chest",
+      "comparability": "setup_specific",
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Spine4_to_Chest",
+        "790": "Spine4_to_Chest"
+      }
+    },
+    {
+      "canonical_link_id": "Chest_to_Neck",
+      "region_id": "head_neck",
+      "anatomical_description": "Chest to neck base",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Chest_to_Neck",
+        "252": "Chest_to_Neck",
+        "651": "Chest_to_Neck",
+        "790": "Chest_to_Neck"
+      }
+    },
+    {
+      "canonical_link_id": "Neck_to_Neck2",
+      "region_id": "head_neck",
+      "anatomical_description": "Neck to upper neck (Neck2)",
+      "comparability": "setup_specific",
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Neck_to_Neck2",
+        "790": "Neck_to_Neck2"
+      }
+    },
+    {
+      "canonical_link_id": "neck_to_head",
+      "region_id": "head_neck",
+      "anatomical_description": "Neck to head (terminal)",
+      "comparability": "topology_variant",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Neck_to_Head",
+        "252": "Neck2_to_Head",
+        "651": "Neck_to_Head",
+        "790": "Neck2_to_Head"
+      }
+    },
+    {
+      "canonical_link_id": "Chest_to_LShoulder",
+      "region_id": "left_arm",
+      "anatomical_description": "Chest to left shoulder",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Chest_to_LShoulder",
+        "252": "Chest_to_LShoulder",
+        "651": "Chest_to_LShoulder",
+        "790": "Chest_to_LShoulder"
+      }
+    },
+    {
+      "canonical_link_id": "LShoulder_to_LUArm",
+      "region_id": "left_arm",
+      "anatomical_description": "Left shoulder to upper arm",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LShoulder_to_LUArm",
+        "252": "LShoulder_to_LUArm",
+        "651": "LShoulder_to_LUArm",
+        "790": "LShoulder_to_LUArm"
+      }
+    },
+    {
+      "canonical_link_id": "LUArm_to_LFArm",
+      "region_id": "left_arm",
+      "anatomical_description": "Left elbow",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LUArm_to_LFArm",
+        "252": "LUArm_to_LFArm",
+        "651": "LUArm_to_LFArm",
+        "790": "LUArm_to_LFArm"
+      }
+    },
+    {
+      "canonical_link_id": "LFArm_to_LHand",
+      "region_id": "left_arm",
+      "anatomical_description": "Left wrist / hand",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LFArm_to_LHand",
+        "252": "LFArm_to_LHand",
+        "651": "LFArm_to_LHand",
+        "790": "LFArm_to_LHand"
+      }
+    },
+    {
+      "canonical_link_id": "Chest_to_RShoulder",
+      "region_id": "right_arm",
+      "anatomical_description": "Chest to right shoulder",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Chest_to_RShoulder",
+        "252": "Chest_to_RShoulder",
+        "651": "Chest_to_RShoulder",
+        "790": "Chest_to_RShoulder"
+      }
+    },
+    {
+      "canonical_link_id": "RShoulder_to_RUArm",
+      "region_id": "right_arm",
+      "anatomical_description": "Right shoulder to upper arm",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RShoulder_to_RUArm",
+        "252": "RShoulder_to_RUArm",
+        "651": "RShoulder_to_RUArm",
+        "790": "RShoulder_to_RUArm"
+      }
+    },
+    {
+      "canonical_link_id": "RUArm_to_RFArm",
+      "region_id": "right_arm",
+      "anatomical_description": "Right elbow",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RUArm_to_RFArm",
+        "252": "RUArm_to_RFArm",
+        "651": "RUArm_to_RFArm",
+        "790": "RUArm_to_RFArm"
+      }
+    },
+    {
+      "canonical_link_id": "RFArm_to_RHand",
+      "region_id": "right_arm",
+      "anatomical_description": "Right wrist / hand",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RFArm_to_RHand",
+        "252": "RFArm_to_RHand",
+        "651": "RFArm_to_RHand",
+        "790": "RFArm_to_RHand"
+      }
+    },
+    {
+      "canonical_link_id": "LThigh_to_LShin",
+      "region_id": "left_leg",
+      "anatomical_description": "Left knee",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LThigh_to_LShin",
+        "252": "LThigh_to_LShin",
+        "651": "LThigh_to_LShin",
+        "790": "LThigh_to_LShin"
+      }
+    },
+    {
+      "canonical_link_id": "LShin_to_LFoot",
+      "region_id": "left_leg",
+      "anatomical_description": "Left ankle / foot",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LShin_to_LFoot",
+        "252": "LShin_to_LFoot",
+        "651": "LShin_to_LFoot",
+        "790": "LShin_to_LFoot"
+      }
+    },
+    {
+      "canonical_link_id": "RThigh_to_RShin",
+      "region_id": "right_leg",
+      "anatomical_description": "Right knee",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RThigh_to_RShin",
+        "252": "RThigh_to_RShin",
+        "651": "RThigh_to_RShin",
+        "790": "RThigh_to_RShin"
+      }
+    },
+    {
+      "canonical_link_id": "RShin_to_RFoot",
+      "region_id": "right_leg",
+      "anatomical_description": "Right ankle / foot",
+      "comparability": "cohort",
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RShin_to_RFoot",
+        "252": "RShin_to_RFoot",
+        "651": "RShin_to_RFoot",
+        "790": "RShin_to_RFoot"
+      }
+    }
+  ],
+  "anatomical_regions": {
+    "head_neck": "Head / Neck",
+    "trunk_spine": "Trunk / Spine",
+    "left_arm": "Left arm",
+    "right_arm": "Right arm",
+    "left_leg": "Left leg",
+    "right_leg": "Right leg"
+  },
+  "visual_segment_vocabulary": [
+    "head",
+    "neck",
+    "upper_trunk_chest",
+    "lower_trunk_abdomen",
+    "pelvis",
+    "left_shoulder",
+    "left_upper_arm",
+    "left_forearm",
+    "left_hand",
+    "right_shoulder",
+    "right_upper_arm",
+    "right_forearm",
+    "right_hand",
+    "left_thigh",
+    "left_shin",
+    "left_foot",
+    "right_thigh",
+    "right_shin",
+    "right_foot"
+  ],
+  "visual_segment_mapping_note": "visual_segment_* fields in file 04 are presentation-only deterministic mappings from body-link anatomy. They are NOT new biological variables and do NOT invent continuous surface measurements.",
+  "embedded_reference_geometry": {
+    "252": {
+      "participant_id": "252",
+      "reference_timepoint": "T1",
+      "reference_repetition": "R1",
+      "session_id": "252_T1_P1_R1",
+      "length_units": "Millimeters",
+      "up_axis": "Y",
+      "coordinate_system_note": "Cartesian joint coordinates; up_axis=Y; units=Millimeters",
+      "hierarchy": {
+        "252": "252",
+        "Ab": "252",
+        "Spine2": "Ab",
+        "Spine3": "Spine2",
+        "Spine4": "Spine3",
+        "Chest": "Spine4",
+        "Neck": "Chest",
+        "Neck2": "Neck",
+        "Head": "Neck2",
+        "LShoulder": "Chest",
+        "LUArm": "LShoulder",
+        "LFArm": "LUArm",
+        "LHand": "LFArm",
+        "RShoulder": "Chest",
+        "RUArm": "RShoulder",
+        "RFArm": "RUArm",
+        "RHand": "RFArm",
+        "LThigh": "252",
+        "LShin": "LThigh",
+        "LFoot": "LShin",
+        "RThigh": "252",
+        "RShin": "RThigh",
+        "RFoot": "RShin"
+      },
+      "joints": [
+        {
+          "joint_id": "252",
+          "x": 21.29051180924242,
+          "y": 900.8530509925757,
+          "z": 30.64900940287879
+        },
+        {
+          "joint_id": "Ab",
+          "x": 21.874165178181816,
+          "y": 940.9579221333335,
+          "z": 29.185217637121216
+        },
+        {
+          "joint_id": "Spine2",
+          "x": 25.275590918030304,
+          "y": 1007.6788849765152,
+          "z": 41.309977256969695
+        },
+        {
+          "joint_id": "Spine3",
+          "x": 28.885307200909086,
+          "y": 1071.5307052027274,
+          "z": 56.55352021984849
+        },
+        {
+          "joint_id": "Spine4",
+          "x": 30.802446616666664,
+          "y": 1140.6314702907575,
+          "z": 63.50737785727272
+        },
+        {
+          "joint_id": "Chest",
+          "x": 32.74355575787879,
+          "y": 1292.0088165130303,
+          "z": 70.49926889212121
+        },
+        {
+          "joint_id": "Neck",
+          "x": 35.4860055359091,
+          "y": 1384.8040274725759,
+          "z": 83.90163284606061
+        },
+        {
+          "joint_id": "Neck2",
+          "x": 36.84473405681818,
+          "y": 1438.790248749697,
+          "z": 97.49577934333333
+        },
+        {
+          "joint_id": "Head",
+          "x": 36.28208065181818,
+          "y": 1494.1546648813637,
+          "z": 107.25346644530302
+        },
+        {
+          "joint_id": "LShoulder",
+          "x": 69.57473010030303,
+          "y": 1354.991601647727,
+          "z": 46.91767507121212
+        },
+        {
+          "joint_id": "LUArm",
+          "x": 155.91914377727272,
+          "y": 1356.1323973736362,
+          "z": 25.353063809393944
+        },
+        {
+          "joint_id": "LFArm",
+          "x": 279.13126741651513,
+          "y": 1194.897958904697,
+          "z": 113.68192516651516
+        },
+        {
+          "joint_id": "LHand",
+          "x": 258.4512656287879,
+          "y": 1174.0492160059093,
+          "z": 198.2103996448485
+        },
+        {
+          "joint_id": "RShoulder",
+          "x": -10.628676216212122,
+          "y": 1355.3339057842425,
+          "z": 62.85743688348485
+        },
+        {
+          "joint_id": "RUArm",
+          "x": -99.41789548969697,
+          "y": 1365.4175584434847,
+          "z": 72.04341413848485
+        },
+        {
+          "joint_id": "RFArm",
+          "x": -227.1522081689394,
+          "y": 1282.767088575606,
+          "z": 218.8605326789394
+        },
+        {
+          "joint_id": "RHand",
+          "x": -193.3856773566667,
+          "y": 1303.077071317424,
+          "z": 307.618477575303
+        },
+        {
+          "joint_id": "LThigh",
+          "x": 97.92943924409091,
+          "y": 898.4193603774243,
+          "z": 10.51291212030303
+        },
+        {
+          "joint_id": "LShin",
+          "x": 147.7926210240909,
+          "y": 468.28071458075755,
+          "z": 51.18949795696971
+        },
+        {
+          "joint_id": "LFoot",
+          "x": 166.02762052787878,
+          "y": 112.05830048393938,
+          "z": -18.249882419848486
+        },
+        {
+          "joint_id": "RThigh",
+          "x": -57.71318875136364,
+          "y": 902.7084665196969,
+          "z": 36.44061593166666
+        },
+        {
+          "joint_id": "RShin",
+          "x": -77.57329178893939,
+          "y": 480.6693680171212,
+          "z": 73.46749813909092
+        },
+        {
+          "joint_id": "RFoot",
+          "x": -112.87704997439394,
+          "y": 122.86948097484847,
+          "z": 3.641260894090912
+        }
+      ],
+      "source_path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/252_reference_pose.json",
+      "source_sha256": "b41eb09ebb284098896dd9bef03908550f0a38cbc48b9f6165e491b04b727334",
+      "usage": "rendering_layout_only",
+      "do_not_use_for_a2_denominators": true,
+      "not_continuous_body_surface_mesh": true
+    },
+    "651": {
+      "participant_id": "651",
+      "reference_timepoint": "T1",
+      "reference_repetition": "R1",
+      "session_id": "651_T1_P1_R1",
+      "length_units": "Millimeters",
+      "up_axis": "Y",
+      "coordinate_system_note": "Cartesian joint coordinates; up_axis=Y; units=Millimeters",
+      "hierarchy": {
+        "651": "651",
+        "Ab": "651",
+        "Chest": "Ab",
+        "Neck": "Chest",
+        "Head": "Neck",
+        "LShoulder": "Chest",
+        "LUArm": "LShoulder",
+        "LFArm": "LUArm",
+        "LHand": "LFArm",
+        "RShoulder": "Chest",
+        "RUArm": "RShoulder",
+        "RFArm": "RUArm",
+        "RHand": "RFArm",
+        "LThigh": "651",
+        "LShin": "LThigh",
+        "LFoot": "LShin",
+        "RThigh": "651",
+        "RShin": "RThigh",
+        "RFoot": "RShin"
+      },
+      "joints": [
+        {
+          "joint_id": "651",
+          "x": 111.1932479890432,
+          "y": 906.982828944753,
+          "z": -77.29514409783951
+        },
+        {
+          "joint_id": "Ab",
+          "x": 110.02042725787037,
+          "y": 989.2061087867284,
+          "z": -82.89945220540125
+        },
+        {
+          "joint_id": "Chest",
+          "x": 105.58468520586418,
+          "y": 1231.5333582564815,
+          "z": -92.82161873070989
+        },
+        {
+          "joint_id": "Neck",
+          "x": 97.31599947777778,
+          "y": 1479.530864932099,
+          "z": -96.92437677731483
+        },
+        {
+          "joint_id": "Head",
+          "x": 93.12677427623457,
+          "y": 1610.4889776368827,
+          "z": -52.91045026990741
+        },
+        {
+          "joint_id": "LShoulder",
+          "x": 135.46468220324076,
+          "y": 1434.8872643904324,
+          "z": -101.60704350123456
+        },
+        {
+          "joint_id": "LUArm",
+          "x": 210.38622083333334,
+          "y": 1447.1716066044753,
+          "z": -100.8444884978395
+        },
+        {
+          "joint_id": "LFArm",
+          "x": 383.501448825,
+          "y": 1438.2199619021605,
+          "z": 79.80434563256173
+        },
+        {
+          "joint_id": "LHand",
+          "x": 305.4656357728395,
+          "y": 1486.8119767515432,
+          "z": 244.71162953765432
+        },
+        {
+          "joint_id": "RShoulder",
+          "x": 61.97574632530864,
+          "y": 1433.0066701993826,
+          "z": -100.17245166373458
+        },
+        {
+          "joint_id": "RUArm",
+          "x": -14.800223659104939,
+          "y": 1438.5030350683642,
+          "z": -98.91102690478394
+        },
+        {
+          "joint_id": "RFArm",
+          "x": -232.17915719830245,
+          "y": 1419.8238874441358,
+          "z": 46.055938911419766
+        },
+        {
+          "joint_id": "RHand",
+          "x": -200.24592034104938,
+          "y": 1453.5973672427467,
+          "z": 217.6631625692901
+        },
+        {
+          "joint_id": "LThigh",
+          "x": 205.83594383549382,
+          "y": 908.3310880958333,
+          "z": -79.47846563410494
+        },
+        {
+          "joint_id": "LShin",
+          "x": 228.4199609919753,
+          "y": 421.0946386837963,
+          "z": -76.15157164567901
+        },
+        {
+          "joint_id": "LFoot",
+          "x": 238.529789771142,
+          "y": 104.48054449984566,
+          "z": -138.14626143919753
+        },
+        {
+          "joint_id": "RThigh",
+          "x": 16.550552207098768,
+          "y": 905.6345702342593,
+          "z": -75.11182235
+        },
+        {
+          "joint_id": "RShin",
+          "x": -25.29056201203704,
+          "y": 426.02217774228393,
+          "z": -78.77685101959877
+        },
+        {
+          "joint_id": "RFoot",
+          "x": -43.244480621141975,
+          "y": 108.8932538029321,
+          "z": -133.3796370271605
+        }
+      ],
+      "source_path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/651_reference_pose.json",
+      "source_sha256": "ce1e09d2ab5f6d46ea8ae2899094765becc284b30e4acdf9f7f8b3328b1b34cc",
+      "usage": "rendering_layout_only",
+      "do_not_use_for_a2_denominators": true,
+      "not_continuous_body_surface_mesh": true
+    },
+    "671": {
+      "participant_id": "671",
+      "reference_timepoint": "T1",
+      "reference_repetition": "R1",
+      "session_id": "671_T1_P1_R1",
+      "length_units": "Millimeters",
+      "up_axis": "Y",
+      "coordinate_system_note": "Cartesian joint coordinates; up_axis=Y; units=Millimeters",
+      "hierarchy": {
+        "671": "671",
+        "Ab": "671",
+        "Chest": "Ab",
+        "Neck": "Chest",
+        "Head": "Neck",
+        "LShoulder": "Chest",
+        "LUArm": "LShoulder",
+        "LFArm": "LUArm",
+        "LHand": "LFArm",
+        "RShoulder": "Chest",
+        "RUArm": "RShoulder",
+        "RFArm": "RUArm",
+        "RHand": "RFArm",
+        "LThigh": "671",
+        "LShin": "LThigh",
+        "LFoot": "LShin",
+        "RThigh": "671",
+        "RShin": "RThigh",
+        "RFoot": "RShin"
+      },
+      "joints": [
+        {
+          "joint_id": "671",
+          "x": 46.91717204434524,
+          "y": 924.3089806958333,
+          "z": 89.51285324494047
+        },
+        {
+          "joint_id": "Ab",
+          "x": 45.68164301324404,
+          "y": 1005.1759168808035,
+          "z": 93.09081863497023
+        },
+        {
+          "joint_id": "Chest",
+          "x": 41.50956257544643,
+          "y": 1229.5205187933036,
+          "z": 113.11645425654764
+        },
+        {
+          "joint_id": "Neck",
+          "x": 35.31815813735119,
+          "y": 1454.7034526305058,
+          "z": 142.93455319910714
+        },
+        {
+          "joint_id": "Head",
+          "x": 42.274926540773805,
+          "y": 1582.1900699413693,
+          "z": 180.1164197169643
+        },
+        {
+          "joint_id": "LShoulder",
+          "x": 72.4153649422619,
+          "y": 1412.8250185831846,
+          "z": 137.5941978513393
+        },
+        {
+          "joint_id": "LUArm",
+          "x": 168.65357899300594,
+          "y": 1430.2346381016368,
+          "z": 140.64310291830358
+        },
+        {
+          "joint_id": "LFArm",
+          "x": 315.3231216153274,
+          "y": 1299.8647055904764,
+          "z": 247.97330896235118
+        },
+        {
+          "joint_id": "LHand",
+          "x": 241.9485457686012,
+          "y": 1286.8988344363095,
+          "z": 353.5549694491071
+        },
+        {
+          "joint_id": "RShoulder",
+          "x": 0.5883662044642841,
+          "y": 1410.4363518129467,
+          "z": 136.73506447455358
+        },
+        {
+          "joint_id": "RUArm",
+          "x": -96.31922244360119,
+          "y": 1422.3121828535716,
+          "z": 136.23500279404763
+        },
+        {
+          "joint_id": "RFArm",
+          "x": -235.61678923898808,
+          "y": 1283.482804409375,
+          "z": 262.83341853303574
+        },
+        {
+          "joint_id": "RHand",
+          "x": -149.64223382127977,
+          "y": 1259.411467177232,
+          "z": 358.66834708333334
+        },
+        {
+          "joint_id": "LThigh",
+          "x": 141.2007700188988,
+          "y": 925.8518609916666,
+          "z": 93.033520121875
+        },
+        {
+          "joint_id": "LShin",
+          "x": 196.19275219925592,
+          "y": 425.8593372351191,
+          "z": 88.43829816502976
+        },
+        {
+          "joint_id": "LFoot",
+          "x": 229.85914894315474,
+          "y": 111.95762287886905,
+          "z": 53.48407140267857
+        },
+        {
+          "joint_id": "RThigh",
+          "x": -47.36642585520834,
+          "y": 922.7661000211309,
+          "z": 85.99218607961309
+        },
+        {
+          "joint_id": "RShin",
+          "x": -80.49995035907739,
+          "y": 424.6806394389881,
+          "z": 152.7734724278274
+        },
+        {
+          "joint_id": "RFoot",
+          "x": -95.83132739419642,
+          "y": 122.61990676026787,
+          "z": 64.50328815580357
+        }
+      ],
+      "source_path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/671_reference_pose.json",
+      "source_sha256": "51111f0c7daa2e1563689970dfe54ded216fccb216ecfd8e12db359c7f69d6f2",
+      "usage": "rendering_layout_only",
+      "do_not_use_for_a2_denominators": true,
+      "not_continuous_body_surface_mesh": true
+    },
+    "790": {
+      "participant_id": "790",
+      "reference_timepoint": "T1",
+      "reference_repetition": "R1",
+      "session_id": "790_T1_P1_R1",
+      "length_units": "Millimeters",
+      "up_axis": "Y",
+      "coordinate_system_note": "Cartesian joint coordinates; up_axis=Y; units=Millimeters",
+      "hierarchy": {
+        "790": "790",
+        "Ab": "790",
+        "Spine2": "Ab",
+        "Spine3": "Spine2",
+        "Spine4": "Spine3",
+        "Chest": "Spine4",
+        "Neck": "Chest",
+        "Neck2": "Neck",
+        "Head": "Neck2",
+        "LShoulder": "Chest",
+        "LUArm": "LShoulder",
+        "LFArm": "LUArm",
+        "LHand": "LFArm",
+        "RShoulder": "Chest",
+        "RUArm": "RShoulder",
+        "RFArm": "RUArm",
+        "RHand": "RFArm",
+        "LThigh": "790",
+        "LShin": "LThigh",
+        "LFoot": "LShin",
+        "RThigh": "790",
+        "RShin": "RThigh",
+        "RFoot": "RShin"
+      },
+      "joints": [
+        {
+          "joint_id": "790",
+          "x": -0.11849388675595324,
+          "y": 836.0832260622025,
+          "z": 165.65284947261904
+        },
+        {
+          "joint_id": "Ab",
+          "x": -1.4658673721726194,
+          "y": 872.3532805011904,
+          "z": 164.52023305758928
+        },
+        {
+          "joint_id": "Spine2",
+          "x": -3.971817329166667,
+          "y": 941.0653632309524,
+          "z": 174.15840893601188
+        },
+        {
+          "joint_id": "Spine3",
+          "x": -6.9270511245535715,
+          "y": 1011.2012934715773,
+          "z": 184.8862142922619
+        },
+        {
+          "joint_id": "Spine4",
+          "x": -10.987717727232143,
+          "y": 1092.5525909305059,
+          "z": 185.4722001642857
+        },
+        {
+          "joint_id": "Chest",
+          "x": -21.578160533035714,
+          "y": 1282.6832596705356,
+          "z": 173.55622076666666
+        },
+        {
+          "joint_id": "Neck",
+          "x": -29.262343910714286,
+          "y": 1403.6331944559524,
+          "z": 170.32217259479165
+        },
+        {
+          "joint_id": "Neck2",
+          "x": -29.193701207738094,
+          "y": 1458.6571647888393,
+          "z": 175.90591775535717
+        },
+        {
+          "joint_id": "Head",
+          "x": -25.60216871547619,
+          "y": 1525.3209395349702,
+          "z": 181.19994942991073
+        },
+        {
+          "joint_id": "LShoulder",
+          "x": 16.48079232142857,
+          "y": 1392.2204241440477,
+          "z": 160.69082954747026
+        },
+        {
+          "joint_id": "LUArm",
+          "x": 105.30071693630951,
+          "y": 1396.248403284375,
+          "z": 160.07740126562499
+        },
+        {
+          "joint_id": "LFArm",
+          "x": 179.31156452351192,
+          "y": 1305.3099237910715,
+          "z": 255.19843031488094
+        },
+        {
+          "joint_id": "LHand",
+          "x": 140.56052708467263,
+          "y": 1303.1559126130953,
+          "z": 299.91883737098215
+        },
+        {
+          "joint_id": "RShoulder",
+          "x": -72.68903653333332,
+          "y": 1387.660694030506,
+          "z": 161.29039891517857
+        },
+        {
+          "joint_id": "RUArm",
+          "x": -161.47606312991073,
+          "y": 1384.961300601637,
+          "z": 163.88795737470238
+        },
+        {
+          "joint_id": "RFArm",
+          "x": -179.30064076517854,
+          "y": 1248.3264717386905,
+          "z": 257.06850197410716
+        },
+        {
+          "joint_id": "RHand",
+          "x": -128.6046036153274,
+          "y": 1237.8147030486607,
+          "z": 302.33744565833337
+        },
+        {
+          "joint_id": "LThigh",
+          "x": 92.14856266502974,
+          "y": 839.599890355506,
+          "z": 164.4299732264881
+        },
+        {
+          "joint_id": "LShin",
+          "x": 112.52855439985117,
+          "y": 475.8427975778274,
+          "z": 186.63113188511903
+        },
+        {
+          "joint_id": "LFoot",
+          "x": 140.54824538422616,
+          "y": 100.43752736800595,
+          "z": 134.57890489940476
+        },
+        {
+          "joint_id": "RThigh",
+          "x": -92.33190095863094,
+          "y": 832.6971951681547,
+          "z": 168.9533566154762
+        },
+        {
+          "joint_id": "RShin",
+          "x": -98.6480441247024,
+          "y": 464.91840378675596,
+          "z": 177.10403543869046
+        },
+        {
+          "joint_id": "RFoot",
+          "x": -99.20376366250001,
+          "y": 98.7279652404762,
+          "z": 73.35607067767857
+        }
+      ],
+      "source_path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/790_reference_pose.json",
+      "source_sha256": "c3576bb6cb71b47c5e394b44da31ab7c7f0d54e43271edc3348bf4843aeb1d3c",
+      "usage": "rendering_layout_only",
+      "do_not_use_for_a2_denominators": true,
+      "not_continuous_body_surface_mesh": true
+    }
+  },
+  "geometry_assets": {
+    "embedded_in_this_file": true,
+    "surface_polygons": {
+      "available": false,
+      "requires_visual_mapping": true
+    },
+    "stale_packs_not_authoritative_for_numbers": [
+      "gaga_jcvpca/avater_671_252/",
+      "gaga_jcvpca/docs/slide45_figures/avatar_pooled/",
+      "avatar_verified/provenance_manifest.json denominators"
+    ]
+  },
+  "internal_to_presentation_terminology": {
+    "T1": "Baseline",
+    "T2": "\u22484 classes",
+    "T3": "\u224810 classes",
+    "D12": "Baseline \u2192 \u22484 classes",
+    "D13": "Baseline \u2192 \u224810 classes",
+    "NV": "Natural within-session repetition variability",
+    "A2": "Change exceeds own repetition variability and is directionally stable",
+    "S3": "Stricter interpretive-candidate stack (not the only meaningful links)",
+    "pooled ex09\u2013ex13": "One pooled progressive movement sequence"
+  }
+}

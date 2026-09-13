@@ -1,0 +1,330 @@
+{
+  "file_id": "05_FIGURE_REVIEW_AND_VISUAL_SPEC",
+  "extraction_date_utc": "2026-08-08T17:02:40Z",
+  "audience": "PhD admission committee",
+  "overall_recommendation": {
+    "keep_four_graphs": true,
+    "why_four_not_three": "G1 and G2 establish the measurement object and why an individual repetition reference is needed; G3 shows validation logic; G4 shows unique anatomical interpretability. Merging any two overloads a slide or loses a distinct idea.",
+    "strongest_graph": "G4 anatomical contribution map",
+    "weakest_original_concept": "G3 single-participant 671 funnel and/or locked 68\u219236\u219222\u21924 funnel implying only final-4 links matter",
+    "t3_represented_adequately": "Partially: full T1\u2192T3 data exported; main G4 uses D12 maps + D13 badges because coverage is limited for 252/651/671.",
+    "pooled_unmistakable_if_G1_executed": true,
+    "g3_defensible_without_cherry_picking": "Yes if validation-layers with per-participant counts; no if 671-only funnel.",
+    "anatomical_map_honest": "Yes at body-link/region resolution with verified poses; no continuous surface mesh available; requires_visual_mapping=true.",
+    "remaining_blockers": [
+      "Confirm \u22484 / \u224810 class presentation wording against study protocol",
+      "Visualization agent must map links/regions onto avatar without inventing continuous surface precision",
+      "Do not use avatar_verified provenance_manifest denominators"
+    ]
+  },
+  "candidate_aggregate_statistics_D12": {
+    "status": "verified_candidate_statistics_not_locked_visual",
+    "measured_links_sum": 68,
+    "beyond_repetition_variability_sum": 36,
+    "directionally_stable_A2_sum": 22,
+    "interpretive_candidate_S3_sum": 4,
+    "per_participant": {
+      "252": {
+        "measured": 20,
+        "beyond_repetition_variability": 12,
+        "directionally_stable_A2": 3,
+        "interpretive_candidate_S3": 0,
+        "coverage_band": "adequate"
+      },
+      "651": {
+        "measured": 10,
+        "beyond_repetition_variability": 6,
+        "directionally_stable_A2": 4,
+        "interpretive_candidate_S3": 0,
+        "coverage_band": "adequate"
+      },
+      "671": {
+        "measured": 18,
+        "beyond_repetition_variability": 11,
+        "directionally_stable_A2": 8,
+        "interpretive_candidate_S3": 4,
+        "coverage_band": "adequate"
+      },
+      "790": {
+        "measured": 20,
+        "beyond_repetition_variability": 7,
+        "directionally_stable_A2": 7,
+        "interpretive_candidate_S3": 0,
+        "coverage_band": "adequate"
+      }
+    },
+    "funnel_misinterpretation_risks": [
+      "Implies only final 4 links are meaningful (false: A2=22 is primary beyond-NV validated set)",
+      "Looks like a group-level filter (false: within-person analyses)",
+      "Collapses distinct statistical footings into one significance funnel"
+    ]
+  },
+  "candidate_aggregate_statistics_D13": {
+    "status": "exported_for_completeness",
+    "per_participant": {
+      "252": {
+        "measured": 20,
+        "beyond_repetition_variability": 18,
+        "directionally_stable_A2": 12,
+        "interpretive_candidate_S3": 0,
+        "coverage_band": "limited"
+      },
+      "651": {
+        "measured": 10,
+        "beyond_repetition_variability": 4,
+        "directionally_stable_A2": 2,
+        "interpretive_candidate_S3": 0,
+        "coverage_band": "limited"
+      },
+      "671": {
+        "measured": 17,
+        "beyond_repetition_variability": 12,
+        "directionally_stable_A2": 9,
+        "interpretive_candidate_S3": 0,
+        "coverage_band": "limited"
+      },
+      "790": {
+        "measured": 18,
+        "beyond_repetition_variability": 3,
+        "directionally_stable_A2": 3,
+        "interpretive_candidate_S3": 0,
+        "coverage_band": "adequate"
+      }
+    },
+    "sum_convenience_only": {
+      "measured": 65,
+      "beyond_repetition_variability": 37,
+      "directionally_stable_A2": 26,
+      "interpretive_candidate_S3": 0,
+      "warning": "Sum across participants is a packaging convenience only; not a group-level result."
+    },
+    "coverage_note": "D13 coverage limited for 252/651/671; adequate only for 790; S3=0 at T3"
+  },
+  "g2_progression_checks": {
+    "n_sessions": 12,
+    "n_sessions_positive_fitted_slope": 12,
+    "n_sessions_positive_endpoint_ex13_minus_ex09": 12,
+    "do_not_conflate_in_annotation": true,
+    "recommended_annotation_policy": "Prefer one primary annotation (usually endpoint Whole body vs Hands) and optionally a secondary note for fitted slope if both are 12/12; never treat them as interchangeable without stating both.",
+    "normalization_definition": "median_abs_nv(stage) / mean_over_five_stages(median_abs_nv) within participant\u00d7timepoint"
+  },
+  "graphs": [
+    {
+      "graph_id": "G1",
+      "working_title": "From progressive movement exploration to interpretable whole-body coordination",
+      "scientific_question": "What are we actually measuring?",
+      "one_sentence_message": "A cumulative progressive movement sequence is analyzed as one pooled whole-body block and converted into anatomically interpretable body-link contributions across Baseline, \u22484-class, and \u224810-class assessments within a broader blinded PhD design.",
+      "why_it_belongs": "Committee needs the paradigm and pooled definition before any result.",
+      "why_it_might_not_belong": "Could become a method poster if overloaded with preprocessing.",
+      "data_source": "01_PARADIGM_AND_METHOD.json",
+      "data_completeness": "Complete for schematic; class counts flagged for protocol confirmation",
+      "major_limitation": "Schematic, not empirical result",
+      "risk_of_misinterpretation": "Mistaking five stages for five independent analyses; mistaking study-context intervention mark for a treatment-effect claim",
+      "recommended_visualization": "Left: cumulative body avatars Hands\u2192Whole body. Center: bracket into ONE POOLED PROGRESSIVE MOVEMENT SEQUENCE. Right: JcvPCA concept to body-link contribution overlay. Secondary bottom: study-context timeline including blinded psilocybin/active-placebo intervention relative to Gaga classes and assessments.",
+      "alternative_visualization": "Compact vertical flow if horizontal space limited",
+      "exact_axis_labels": "N/A schematic",
+      "exact_display_labels": [
+        "Hands",
+        "+ Elbows",
+        "+ Shoulders",
+        "+ Head",
+        "Whole body",
+        "One pooled progressive movement sequence",
+        "Baseline",
+        "\u22484 classes",
+        "\u224810 classes",
+        "Blinded intervention"
+      ],
+      "color_semantics": {
+        "neutral_gray": "reference anatomy",
+        "accent": "currently recruited body regions",
+        "secondary_timeline": "low-contrast study context"
+      },
+      "missing_data_encoding": "N/A",
+      "annotations": [
+        "Each stage retains previous body involvement",
+        "Current movement analysis remains blinded"
+      ],
+      "legend_text": "Minimal; avoid A2/S3/NV labels",
+      "caption_draft": "The progressive guided sequence is analyzed as one pooled movement block. Body-link contributions are compared longitudinally at Baseline, after \u22484 Gaga classes, and after \u224810 Gaga classes within a broader blinded interventional design.",
+      "slide_role": "Slide 1 left",
+      "priority": 1,
+      "decision": "KEEP_WITH_REVISION"
+    },
+    {
+      "graph_id": "G2",
+      "working_title": "Natural repetition variability across progressive body involvement",
+      "scientific_question": "Does the measurement respond sensibly to the movement paradigm?",
+      "one_sentence_message": "Within-session repetition variability increases across the progressive sequence when expressed relative to each session average.",
+      "why_it_belongs": "Motivates individual repetition-based reference without claiming treatment effects.",
+      "why_it_might_not_belong": "Layer-2 descriptive only; order/fatigue confound; not the A2 gate.",
+      "data_source": "02_REPETITION_VARIABILITY.csv",
+      "data_completeness": "12 sessions \u00d7 5 stages complete",
+      "major_limitation": "Sequence order fixed; cannot separate progressive body involvement from order/fatigue",
+      "risk_of_misinterpretation": "Causal openness claim; conflating fitted slope with endpoint change; treating as A2 evidence",
+      "recommended_visualization": "Single plot; thin low-opacity trajectories per session; median + IQR; x=Hands\u2192Whole body; y=Within-session repetition variability (relative to session average)",
+      "alternative_visualization": "Small multiples by timepoint if session clutter is high",
+      "exact_axis_labels": {
+        "x": "Progressive sequence stage (Hands \u2192 + Elbows \u2192 + Shoulders \u2192 + Head \u2192 Whole body)",
+        "y": "Within-session repetition variability (relative to session average)"
+      },
+      "exact_display_labels": [
+        "Increasing body involvement \u2192"
+      ],
+      "color_semantics": {
+        "light_gray": "individual sessions",
+        "strong_accent": "median",
+        "soft_band": "IQR"
+      },
+      "missing_data_encoding": "N/A for main 12 sessions",
+      "annotations": [
+        "Endpoint check: 12/12 sessions Whole body > Hands (normalized)",
+        "Slope check: 12/12 sessions positive fitted progression slope",
+        "Do not conflate endpoint and slope in one phrase unless both are stated"
+      ],
+      "legend_text": "Individual sessions; Median; IQR",
+      "caption_draft": "Repetition-to-repetition variability changes systematically across the progressive sequence, motivating an individual repetition-based reference for longitudinal change. Descriptive protocol context only; order/fatigue cannot be separated from progressive body involvement.",
+      "slide_role": "Slide 1 right",
+      "priority": 2,
+      "decision": "KEEP_WITH_REVISION"
+    },
+    {
+      "graph_id": "G3",
+      "working_title": "Separating longitudinal change from natural repetition variability",
+      "scientific_question": "How do we distinguish a potentially meaningful longitudinal change from ordinary improvisational variability or an unstable analytical result?",
+      "one_sentence_message": "Validation layers show that many measured links remain within own repetition variability, while a participant-specific subset exceeds that variability and remains directionally stable; a still smaller subset meets a stricter interpretive-candidate stack.",
+      "why_it_belongs": "Communicates methodological maturity without implying clinical significance testing.",
+      "why_it_might_not_belong": "Can look like a group funnel or imply only S3 links matter if encoded poorly.",
+      "data_source": "03_LONGITUDINAL_LINK_EVIDENCE.csv",
+      "data_completeness": "Full D12 and D13 evaluated links + exclusion rows",
+      "major_limitation": "NV based on only two repetitions; S3 available only for 671 at D12",
+      "risk_of_misinterpretation": "Funnel 68\u219236\u219222\u21924 implies only 4 meaningful links or a cohort result",
+      "recommended_visualization": "VALIDATION LAYERS: four horizontal layers with per-participant counts \u2014 Measured links; Beyond repetition variability; Directionally stable (primary A2 layer); Interpretive candidate (optional S3). Explicit caption that A2 is the main validated beyond-NV layer and S3 is not the sole meaningful set. Optional four thin participant streams beneath.",
+      "alternative_visualization": "BACKUP narrowing funnel using the same candidate counts, only if layers are visually unclear; must include anti-misread annotations.",
+      "exact_axis_labels": "Layer labels (no continuous axis)",
+      "exact_display_labels": [
+        "Measured links",
+        "Beyond repetition variability",
+        "Directionally stable",
+        "Interpretive candidate"
+      ],
+      "color_semantics": {
+        "neutral_gray": "measured/reference",
+        "accent": "passes stated layer",
+        "muted": "does not pass layer"
+      },
+      "missing_data_encoding": "Show D13 as secondary/limited-coverage stream or badges; do not force symmetry",
+      "annotations": [
+        "Within-person validation, not a group filter",
+        "A2 directionally stable exceeds are the primary beyond-NV claim",
+        "S3 interpretive candidates are stricter and currently limited"
+      ],
+      "legend_text": "Per-participant counts at each layer",
+      "caption_draft": "Longitudinal link differences are interpreted relative to each participant\u2019s own within-session repetition variability and retained only when directionally stable under reference-orientation swap. Stricter interpretive-candidate criteria are shown separately and do not redefine the primary beyond-variability set.",
+      "slide_role": "Slide 2 left",
+      "priority": 2,
+      "decision": "KEEP_WITH_REVISION",
+      "illustrative_participant_671": {
+        "use_as_sole_hero": false,
+        "why_strong_method_example": "Best coverage + only S3 stack at D12 + rep_pass=True",
+        "why_not_sole_hero": "Largest/richest effect would look cherry-picked; prefer all-participant layers"
+      }
+    },
+    {
+      "graph_id": "G4",
+      "working_title": "Preliminary anatomical patterns of movement reorganization",
+      "scientific_question": "What can this framework reveal that a single movement score cannot?",
+      "one_sentence_message": "It can localize preliminary longitudinal changes to specific body-link contributions within whole-body movement organization, with participant-specific patterns.",
+      "why_it_belongs": "Unique interpretability advantage of JcvPCA; strongest admissions hero.",
+      "why_it_might_not_belong": "Risk of looking like physiology/activation if encoded as continuous heatmap",
+      "data_source": "04_ANATOMICAL_CONTRIBUTION_MAP_DATA.csv",
+      "data_completeness": "D12+D13 rows exported; main visual recommended as D12 maps + D13 badges",
+      "major_limitation": "Unequal denominators (651=10); limited D13 coverage; no verified continuous surface polygons",
+      "risk_of_misinterpretation": "Continuous body-surface precision; warm=better; excluded=no effect; shared trajectory",
+      "recommended_visualization": "Anatomical contribution map: four identical-pose scientific human avatars; neutral body; translucent link/region overlays only for validated A2 changes; hatch/outline for unavailable/excluded; D13 A2 k/n + coverage badges under each body. Not a continuous surface heatmap.",
+      "alternative_visualization": "Link glyphs connected on simplified body if avatar overlay too ambiguous",
+      "exact_axis_labels": "N/A spatial anatomy",
+      "exact_display_labels": [
+        "A2 = k/n",
+        "Unavailable",
+        "No clear validated change",
+        "Increased contribution",
+        "Decreased contribution",
+        "\u224810-class status"
+      ],
+      "color_semantics": {
+        "neutral_gray": "reference anatomy / no clear validated change",
+        "diverging_accent": "signed contribution change only for validated A2 links; colorblind-safe; no better/worse implication",
+        "excluded": "hatch or broken boundary, distinct from no-change"
+      },
+      "missing_data_encoding": "Excluded/unavailable distinct from measured-but-no-clear-change",
+      "annotations": [
+        "Change in body-link contribution to movement organization",
+        "Denominators honest (651 = 4/10)",
+        "S3 marks only if used, and only on 671 D12"
+      ],
+      "legend_text": "Validated change in contribution; Unavailable; No clear validated change",
+      "caption_draft": "Preliminary anatomical contribution maps for Baseline \u2192 \u22484 classes. Highlighted regions are body links whose contribution change exceeds each participant\u2019s own repetition variability and remains directionally stable. Patterns differ across participants; unavailable anatomy is not shown as no effect.",
+      "slide_role": "Slide 2 right (hero)",
+      "priority": 1,
+      "decision": "KEEP",
+      "g4_timepoint_decision": "Option C mixed-availability: main panels Baseline\u21924 classes for all four; 10-class badges for honest T3 status; full T3 data retained in export",
+      "signed_direction_decision": "Use muted colorblind-safe diverging accents for A2-validated links only; intensity within participant; never rank participants by color intensity; caption forbids better/worse reading"
+    }
+  ],
+  "two_slide_storyboard_primary": {
+    "slide_1": {
+      "title": "Measuring individual change in a progressive whole-body movement sequence",
+      "left": "G1 paradigm + secondary blinded study-context timeline",
+      "right": "G2 progressive repetition variability",
+      "one_line": "A cumulative pooled movement sequence is measured with an individual repetition reference because natural repetition variability itself changes across the sequence."
+    },
+    "slide_2": {
+      "title": "From observed difference to interpretable anatomical reorganization",
+      "left": "G3 validation layers",
+      "right": "G4 anatomical contribution maps",
+      "one_line": "Longitudinal differences are validated against each person\u2019s own repetition variability and localize to participant-specific body-link contribution patterns."
+    }
+  },
+  "alternative_package_ALT_anatomy_first": {
+    "description": "Genuine alternative visual strategy, not a reshuffle of prompt G1\u2013G4",
+    "slide_1_left": "Large 2\u00d72 anatomical contribution maps (hero)",
+    "slide_1_right": "Compact progressive-sequence + pooled-block schematic",
+    "slide_2_left": "All-participant NV vs |\u0394| evidence scatter with A2 encoding (from 03)",
+    "slide_2_right": "Dual-timepoint coverage honesty strip D12 vs D13 A2 k/n + coverage bands",
+    "why_better_for_some_committees": "Anatomy first is memorable; scatter is quantitative floor proof; T3 underrepresentation fixed by explicit coverage strip",
+    "requires_new_scientific_computation": false,
+    "audience_gets_in_3_to_5_seconds": "Changes localize on the body and are judged against own variability",
+    "misinterpretation_risk": "Committee may skip paradigm pooled definition if schematic is too small",
+    "placement": "BACKUP / ALT if primary package feels too schematic"
+  },
+  "backup_package_1_from_final_figure_strategy_review": {
+    "status": "documented_backup_not_primary_export",
+    "graphs": [
+      "R1/R2 evidence scatter",
+      "anatomical maps",
+      "pooled coupling fingerprint",
+      "multimethod role strip"
+    ],
+    "source_paths_if_needed_later": [
+      "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/results_committee_case/marker_gap_policy_ex09_13/tables_to_show/05_nv_profile_signed_tiers.csv",
+      "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_shared6d_poc/pooled_ex09_13/outputs/coupling/pooled_coupling_longitudinal.csv",
+      "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_shared6d_poc/pooled_ex09_13/outputs/POOLED_CROSS_METHOD_MATRIX.csv"
+    ],
+    "why_not_primary_for_admissions": "Coupling + multimethod strip denser and more thesis-results oriented; higher risk of scoreboard aesthetics"
+  },
+  "visual_language_shared": {
+    "light_neutral_gray": "background / reference / natural variability / non-highlighted anatomy",
+    "strong_accent": "evidence that passes the intended validation layer",
+    "diverging_accents": "only for signed A2 contribution direction when clearly captioned",
+    "limited_unavailable_excluded": "hatch / transparency / broken boundary",
+    "avoid": [
+      "dashboard aesthetics",
+      "UMAP",
+      "rainbow heatmaps",
+      "A2/S3/D12 labels in audience-facing text",
+      "stick figures",
+      "continuous-surface false precision"
+    ]
+  }
+}

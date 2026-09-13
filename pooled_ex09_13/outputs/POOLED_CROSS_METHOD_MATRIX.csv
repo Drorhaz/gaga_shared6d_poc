@@ -1,0 +1,57 @@
+participant,comparison_alias,scope,method,evidence_role,category,detail
+252,D12,PRIMARY,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,PRESENT,A2=3/20; S3=0; cov=adequate; rep_pass=False
+252,D12,PRIMARY,Coupling,INTERPRETATION,PRESENT,pooled regional+trunk_arm; glyph=↓
+252,D12,PRIMARY,ExplicitFeatures,INTERPRETATION,LIMITED,entropy/dim/symmetry/active_region pooled
+252,D12,PRIMARY,Conv,DETECTION;EXERCISE_LOCALIZATION,ABSENT,median_ratio=0.7777017341950059; interpretable=6/6
+252,D12,PRIMARY,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+252,D12,PRIMARY,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache
+252,D12,PRIMARY,PCA,REFERENCE,NOT_APPLICABLE,identity reference only
+252,D13,SUPPLEMENTAL,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,PRESENT,A2=12/20; S3=0; cov=limited; rep_pass=False
+252,D13,SUPPLEMENTAL,Coupling,INTERPRETATION,LIMITED,pooled regional+trunk_arm; glyph=
+252,D13,SUPPLEMENTAL,ExplicitFeatures,INTERPRETATION,LIMITED,entropy/dim/symmetry/active_region pooled
+252,D13,SUPPLEMENTAL,Conv,DETECTION;EXERCISE_LOCALIZATION,STRONG,median_ratio=2.6549924506412412; interpretable=6/6
+252,D13,SUPPLEMENTAL,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+252,D13,SUPPLEMENTAL,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache
+252,D13,SUPPLEMENTAL,PCA,REFERENCE,NOT_APPLICABLE,identity reference only
+651,D12,PRIMARY,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,PRESENT,A2=4/10; S3=0; cov=adequate; rep_pass=False
+651,D12,PRIMARY,Coupling,INTERPRETATION,PRESENT,pooled regional+trunk_arm; glyph=↑
+651,D12,PRIMARY,ExplicitFeatures,INTERPRETATION,PRESENT,entropy/dim/symmetry/active_region pooled
+651,D12,PRIMARY,Conv,DETECTION;EXERCISE_LOCALIZATION,STRONG,median_ratio=7.572446640861111; interpretable=5/6
+651,D12,PRIMARY,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+651,D12,PRIMARY,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache
+651,D12,PRIMARY,PCA,REFERENCE,NOT_APPLICABLE,identity reference only
+651,D13,SUPPLEMENTAL,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,PRESENT,A2=2/10; S3=0; cov=limited; rep_pass=False
+651,D13,SUPPLEMENTAL,Coupling,INTERPRETATION,PRESENT,pooled regional+trunk_arm; glyph=↑
+651,D13,SUPPLEMENTAL,ExplicitFeatures,INTERPRETATION,PRESENT,entropy/dim/symmetry/active_region pooled
+651,D13,SUPPLEMENTAL,Conv,DETECTION;EXERCISE_LOCALIZATION,PRESENT,median_ratio=1.7685139300104398; interpretable=5/6
+651,D13,SUPPLEMENTAL,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+651,D13,SUPPLEMENTAL,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,DET pooled block-B; complete=False
+651,D13,SUPPLEMENTAL,PCA,REFERENCE,NOT_APPLICABLE,identity reference only
+671,D12,PRIMARY,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,STRONG,A2=8/18; S3=4; cov=adequate; rep_pass=True
+671,D12,PRIMARY,Coupling,INTERPRETATION,PRESENT,pooled regional+trunk_arm; glyph=mixed
+671,D12,PRIMARY,ExplicitFeatures,INTERPRETATION,LIMITED,entropy/dim/symmetry/active_region pooled
+671,D12,PRIMARY,Conv,DETECTION;EXERCISE_LOCALIZATION,LIMITED,median_ratio=1.7766645114561666; interpretable=3/6
+671,D12,PRIMARY,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+671,D12,PRIMARY,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache
+671,D12,PRIMARY,PCA,REFERENCE,NOT_APPLICABLE,identity reference only
+671,D13,SUPPLEMENTAL,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,PRESENT,A2=9/17; S3=0; cov=limited; rep_pass=False
+671,D13,SUPPLEMENTAL,Coupling,INTERPRETATION,PRESENT,pooled regional+trunk_arm; glyph=mixed
+671,D13,SUPPLEMENTAL,ExplicitFeatures,INTERPRETATION,PRESENT,entropy/dim/symmetry/active_region pooled
+671,D13,SUPPLEMENTAL,Conv,DETECTION;EXERCISE_LOCALIZATION,LIMITED,median_ratio=2.3691565854206402; interpretable=1/6
+671,D13,SUPPLEMENTAL,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+671,D13,SUPPLEMENTAL,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache
+671,D13,SUPPLEMENTAL,PCA,REFERENCE,NOT_APPLICABLE,identity reference only
+790,D12,PRIMARY,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,STRONG,A2=7/20; S3=0; cov=adequate; rep_pass=False
+790,D12,PRIMARY,Coupling,INTERPRETATION,PRESENT,pooled regional+trunk_arm; glyph=↑
+790,D12,PRIMARY,ExplicitFeatures,INTERPRETATION,PRESENT,entropy/dim/symmetry/active_region pooled
+790,D12,PRIMARY,Conv,DETECTION;EXERCISE_LOCALIZATION,PRESENT,median_ratio=1.6126909326936065; interpretable=4/6
+790,D12,PRIMARY,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+790,D12,PRIMARY,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,Incomplete exercise grid for boundary-block pooled RQA from Stage1 cache
+790,D12,PRIMARY,PCA,REFERENCE,NOT_APPLICABLE,identity reference only
+790,D13,SUPPLEMENTAL,JcvPCA,DETECTION;ANATOMICAL_LOCALIZATION;INTERPRETATION,PRESENT,A2=3/18; S3=0; cov=adequate; rep_pass=False
+790,D13,SUPPLEMENTAL,Coupling,INTERPRETATION,LIMITED,pooled regional+trunk_arm; glyph=
+790,D13,SUPPLEMENTAL,ExplicitFeatures,INTERPRETATION,PRESENT,entropy/dim/symmetry/active_region pooled
+790,D13,SUPPLEMENTAL,Conv,DETECTION;EXERCISE_LOCALIZATION,STRONG,median_ratio=5.517796617088948; interpretable=4/6
+790,D13,SUPPLEMENTAL,Transformer,SENSITIVITY,NOT_APPLICABLE,No separate longitudinal change table; Conv preferred; pooled window logic identical
+790,D13,SUPPLEMENTAL,RQA,TEMPORAL_CHARACTERIZATION,NOT_APPLICABLE,DET pooled block-B; complete=False
+790,D13,SUPPLEMENTAL,PCA,REFERENCE,NOT_APPLICABLE,identity reference only

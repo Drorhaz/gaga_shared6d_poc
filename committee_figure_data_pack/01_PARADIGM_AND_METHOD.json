@@ -1,0 +1,666 @@
+{
+  "file_id": "01_PARADIGM_AND_METHOD",
+  "purpose": "Support G1 paradigm + method schematic for PhD admissions committee",
+  "progressive_movement_sequence": {
+    "definition": "ex09\u2013ex13 form ONE progressive guided movement sequence (Group4 curvilinear exploration), not five independent exercises.",
+    "pooled_definition": "The main JcvPCA longitudinal analysis treats ex09\u2013ex13 as ONE POOLED progressive movement block (contiguous concatenation in frame order). It is NOT a sixth exercise, NOT an average of five independent task results, and NOT the mean of five exercise-level effects.",
+    "stages": [
+      {
+        "stage_order": 1,
+        "exercise_id": "ex09",
+        "stage_display": "Hands",
+        "body_involvement_description": "Hands",
+        "cumulative_regions_highlighted": [
+          "hands"
+        ],
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 2,
+        "exercise_id": "ex10",
+        "stage_display": "+ Elbows",
+        "body_involvement_description": "Hands + elbows",
+        "cumulative_regions_highlighted": [
+          "hands",
+          "elbows"
+        ],
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 3,
+        "exercise_id": "ex11",
+        "stage_display": "+ Shoulders",
+        "body_involvement_description": "Hands + elbows + shoulders",
+        "cumulative_regions_highlighted": [
+          "hands",
+          "elbows",
+          "shoulders"
+        ],
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 4,
+        "exercise_id": "ex12",
+        "stage_display": "+ Head",
+        "body_involvement_description": "Hands + elbows + shoulders + head/nose",
+        "cumulative_regions_highlighted": [
+          "hands",
+          "elbows",
+          "shoulders",
+          "head"
+        ],
+        "retains_previous_stages": true
+      },
+      {
+        "stage_order": 5,
+        "exercise_id": "ex13",
+        "stage_display": "Whole body",
+        "body_involvement_description": "Whole body",
+        "cumulative_regions_highlighted": [
+          "hands",
+          "elbows",
+          "shoulders",
+          "head",
+          "whole_body"
+        ],
+        "retains_previous_stages": true
+      }
+    ],
+    "display_arrow": "Hands \u2192 + Elbows \u2192 + Shoulders \u2192 + Head \u2192 Whole body",
+    "exercise_boundary_handling": "Contiguous ex09\u2013ex13 window per session; exercises concatenated in protocol order for pooled analysis."
+  },
+  "recording_structure": {
+    "participants": [
+      "252",
+      "651",
+      "671",
+      "790"
+    ],
+    "timepoints_internal": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "timepoints_display": {
+      "T1": "Baseline",
+      "T2": "After approximately 4 Gaga classes",
+      "T3": "After approximately 10 Gaga classes"
+    },
+    "class_count_labels_require_protocol_confirmation": true,
+    "repetitions": {
+      "R1": "First within-session repetition of the movement sequence",
+      "R2": "Second within-session repetition of the movement sequence"
+    },
+    "natural_repetition_variability": {
+      "plain_language": "Difference between repetition 1 and repetition 2 within the same session/timepoint provides an internal estimate of natural within-session repetition variability for that participant.",
+      "internal_labels": [
+        "NV",
+        "T1_R1 vs T1_R2"
+      ],
+      "a2_floor_definition": "Primary longitudinal exceedance uses matched single-rep footing: (T1_R1 vs T{k}_R1) compared with (T1_R1 vs T1_R2).",
+      "not_a_universal_noise_floor": true,
+      "limitations": "Only two repetitions; not a complete measurement-noise model."
+    },
+    "approximate_class_counts": {
+      "T2": 4,
+      "T3": 10,
+      "note": "Approximate class exposure for presentation; confirm against study protocol before freezing captions."
+    }
+  },
+  "study_context_timeline": {
+    "role_in_G1": "Visually secondary strip under the progressive-sequence / pooled / JcvPCA narrative. Communicates broader PhD design without implying current treatment-effect claims.",
+    "current_analysis_status": "Blinded; do not attribute participant-level movement results to psilocybin or active placebo.",
+    "events": [
+      {
+        "order": 1,
+        "label": "Baseline assessment",
+        "internal_timepoint": "T1",
+        "display": "Baseline"
+      },
+      {
+        "order": 2,
+        "label": "Blinded psilocybin / active-placebo intervention",
+        "internal_timepoint": null,
+        "display": "Blinded intervention",
+        "note": "Shown for PhD-design context only; no treatment effect claimed in current figures."
+      },
+      {
+        "order": 3,
+        "label": "Gaga movement practice continues",
+        "internal_timepoint": null,
+        "display": "Gaga classes"
+      },
+      {
+        "order": 4,
+        "label": "Early practice assessment",
+        "internal_timepoint": "T2",
+        "display": "\u22484 classes"
+      },
+      {
+        "order": 5,
+        "label": "Post-training assessment",
+        "internal_timepoint": "T3",
+        "display": "\u224810 classes"
+      }
+    ],
+    "core_comparisons_for_figures": [
+      "Baseline \u2192 4 classes (T1\u2192T2 / D12) \u2014 primary matched-coverage comparison",
+      "Baseline \u2192 10 classes (T1\u2192T3 / D13) \u2014 retained in data; coverage limited for several participants"
+    ],
+    "forbidden_implication": "Do not imply proven psilocybin effect, proven Gaga treatment effect, or one common trajectory."
+  },
+  "motion_capture": {
+    "relevant_for_schematic": true,
+    "sample_rate_hz": 120,
+    "length_units": "Millimeters",
+    "representation_for_analysis": "Relative rotations / angular features of body links (not raw marker XYZ as the JcvPCA object).",
+    "skeleton_setups": {
+      "Setup_A": {
+        "participants": [
+          "671",
+          "651"
+        ],
+        "nominal_links": 18,
+        "note": "Direct Ab\u2192Chest topology"
+      },
+      "Setup_B": {
+        "participants": [
+          "252",
+          "790"
+        ],
+        "nominal_links": 22,
+        "note": "Spine chain topology; evaluated link counts after marker-gap policy may be lower"
+      }
+    }
+  },
+  "analysis_pipeline_presentation_level": [
+    "Motion capture of progressive movement sequence",
+    "QC and marker-gap policy (exclude unsupported links)",
+    "Body-link relative rotation representation",
+    "JcvPCA: project matched recordings into a shared movement structure and compare body-link contributions",
+    "Compare longitudinal change with within-session repetition variability"
+  ],
+  "jcvpca_plain_language": {
+    "working_explanation": "JcvPCA compares how different body links contribute to the shared structure of whole-body movement across matched recordings.",
+    "steps": [
+      "One matched recording defines a PCA movement space",
+      "Another recording is projected into the same space",
+      "The analysis compares how body links contribute to the shared movement-variance structure",
+      "The output remains anatomically interpretable at the body-link level"
+    ],
+    "not_a_single_movement_score": true,
+    "strength": "Preserves the pattern across body links rather than collapsing to one global scalar.",
+    "primary_estimand_for_A2": "Matched single-rep signed link contribution change vs own T1 repetition variability, with direction stability under reference-orientation swap."
+  },
+  "body_links": [
+    {
+      "canonical_link_id": "pelvis_to_Ab",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Pelvis root to abdomen",
+      "comparability": "participant_only",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "671_to_Ab",
+        "252": "252_to_Ab",
+        "651": "651_to_Ab",
+        "790": "790_to_Ab"
+      }
+    },
+    {
+      "canonical_link_id": "pelvis_to_LThigh",
+      "region_id": "left_leg",
+      "anatomical_description": "Pelvis root to left thigh",
+      "comparability": "participant_only",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "671_to_LThigh",
+        "252": "252_to_LThigh",
+        "651": "651_to_LThigh",
+        "790": "790_to_LThigh"
+      }
+    },
+    {
+      "canonical_link_id": "pelvis_to_RThigh",
+      "region_id": "right_leg",
+      "anatomical_description": "Pelvis root to right thigh",
+      "comparability": "participant_only",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "671_to_RThigh",
+        "252": "252_to_RThigh",
+        "651": "651_to_RThigh",
+        "790": "790_to_RThigh"
+      }
+    },
+    {
+      "canonical_link_id": "Ab_to_Chest",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Abdomen to chest (direct)",
+      "comparability": "topology_variant",
+      "n_participants_present": 2,
+      "present_in": [
+        "671",
+        "651"
+      ],
+      "per_participant_stems": {
+        "671": "Ab_to_Chest",
+        "651": "Ab_to_Chest"
+      }
+    },
+    {
+      "canonical_link_id": "Ab_to_Spine2",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Abdomen to upper lumbar (Spine2)",
+      "comparability": "setup_specific",
+      "n_participants_present": 2,
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Ab_to_Spine2",
+        "790": "Ab_to_Spine2"
+      }
+    },
+    {
+      "canonical_link_id": "Spine2_to_Spine3",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Lumbar spine segment",
+      "comparability": "setup_specific",
+      "n_participants_present": 2,
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Spine2_to_Spine3",
+        "790": "Spine2_to_Spine3"
+      }
+    },
+    {
+      "canonical_link_id": "Spine3_to_Spine4",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Thoracic spine segment",
+      "comparability": "setup_specific",
+      "n_participants_present": 2,
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Spine3_to_Spine4",
+        "790": "Spine3_to_Spine4"
+      }
+    },
+    {
+      "canonical_link_id": "Spine4_to_Chest",
+      "region_id": "trunk_spine",
+      "anatomical_description": "Upper trunk to chest",
+      "comparability": "setup_specific",
+      "n_participants_present": 2,
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Spine4_to_Chest",
+        "790": "Spine4_to_Chest"
+      }
+    },
+    {
+      "canonical_link_id": "Chest_to_Neck",
+      "region_id": "head_neck",
+      "anatomical_description": "Chest to neck base",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Chest_to_Neck",
+        "252": "Chest_to_Neck",
+        "651": "Chest_to_Neck",
+        "790": "Chest_to_Neck"
+      }
+    },
+    {
+      "canonical_link_id": "Neck_to_Neck2",
+      "region_id": "head_neck",
+      "anatomical_description": "Neck to upper neck (Neck2)",
+      "comparability": "setup_specific",
+      "n_participants_present": 2,
+      "present_in": [
+        "252",
+        "790"
+      ],
+      "per_participant_stems": {
+        "252": "Neck_to_Neck2",
+        "790": "Neck_to_Neck2"
+      }
+    },
+    {
+      "canonical_link_id": "neck_to_head",
+      "region_id": "head_neck",
+      "anatomical_description": "Neck to head (terminal)",
+      "comparability": "topology_variant",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Neck_to_Head",
+        "252": "Neck2_to_Head",
+        "651": "Neck_to_Head",
+        "790": "Neck2_to_Head"
+      }
+    },
+    {
+      "canonical_link_id": "Chest_to_LShoulder",
+      "region_id": "left_arm",
+      "anatomical_description": "Chest to left shoulder",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Chest_to_LShoulder",
+        "252": "Chest_to_LShoulder",
+        "651": "Chest_to_LShoulder",
+        "790": "Chest_to_LShoulder"
+      }
+    },
+    {
+      "canonical_link_id": "LShoulder_to_LUArm",
+      "region_id": "left_arm",
+      "anatomical_description": "Left shoulder to upper arm",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LShoulder_to_LUArm",
+        "252": "LShoulder_to_LUArm",
+        "651": "LShoulder_to_LUArm",
+        "790": "LShoulder_to_LUArm"
+      }
+    },
+    {
+      "canonical_link_id": "LUArm_to_LFArm",
+      "region_id": "left_arm",
+      "anatomical_description": "Left elbow",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LUArm_to_LFArm",
+        "252": "LUArm_to_LFArm",
+        "651": "LUArm_to_LFArm",
+        "790": "LUArm_to_LFArm"
+      }
+    },
+    {
+      "canonical_link_id": "LFArm_to_LHand",
+      "region_id": "left_arm",
+      "anatomical_description": "Left wrist / hand",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LFArm_to_LHand",
+        "252": "LFArm_to_LHand",
+        "651": "LFArm_to_LHand",
+        "790": "LFArm_to_LHand"
+      }
+    },
+    {
+      "canonical_link_id": "Chest_to_RShoulder",
+      "region_id": "right_arm",
+      "anatomical_description": "Chest to right shoulder",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "Chest_to_RShoulder",
+        "252": "Chest_to_RShoulder",
+        "651": "Chest_to_RShoulder",
+        "790": "Chest_to_RShoulder"
+      }
+    },
+    {
+      "canonical_link_id": "RShoulder_to_RUArm",
+      "region_id": "right_arm",
+      "anatomical_description": "Right shoulder to upper arm",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RShoulder_to_RUArm",
+        "252": "RShoulder_to_RUArm",
+        "651": "RShoulder_to_RUArm",
+        "790": "RShoulder_to_RUArm"
+      }
+    },
+    {
+      "canonical_link_id": "RUArm_to_RFArm",
+      "region_id": "right_arm",
+      "anatomical_description": "Right elbow",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RUArm_to_RFArm",
+        "252": "RUArm_to_RFArm",
+        "651": "RUArm_to_RFArm",
+        "790": "RUArm_to_RFArm"
+      }
+    },
+    {
+      "canonical_link_id": "RFArm_to_RHand",
+      "region_id": "right_arm",
+      "anatomical_description": "Right wrist / hand",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RFArm_to_RHand",
+        "252": "RFArm_to_RHand",
+        "651": "RFArm_to_RHand",
+        "790": "RFArm_to_RHand"
+      }
+    },
+    {
+      "canonical_link_id": "LThigh_to_LShin",
+      "region_id": "left_leg",
+      "anatomical_description": "Left knee",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LThigh_to_LShin",
+        "252": "LThigh_to_LShin",
+        "651": "LThigh_to_LShin",
+        "790": "LThigh_to_LShin"
+      }
+    },
+    {
+      "canonical_link_id": "LShin_to_LFoot",
+      "region_id": "left_leg",
+      "anatomical_description": "Left ankle / foot",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "LShin_to_LFoot",
+        "252": "LShin_to_LFoot",
+        "651": "LShin_to_LFoot",
+        "790": "LShin_to_LFoot"
+      }
+    },
+    {
+      "canonical_link_id": "RThigh_to_RShin",
+      "region_id": "right_leg",
+      "anatomical_description": "Right knee",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RThigh_to_RShin",
+        "252": "RThigh_to_RShin",
+        "651": "RThigh_to_RShin",
+        "790": "RThigh_to_RShin"
+      }
+    },
+    {
+      "canonical_link_id": "RShin_to_RFoot",
+      "region_id": "right_leg",
+      "anatomical_description": "Right ankle / foot",
+      "comparability": "cohort",
+      "n_participants_present": 4,
+      "present_in": [
+        "671",
+        "252",
+        "651",
+        "790"
+      ],
+      "per_participant_stems": {
+        "671": "RShin_to_RFoot",
+        "252": "RShin_to_RFoot",
+        "651": "RShin_to_RFoot",
+        "790": "RShin_to_RFoot"
+      }
+    }
+  ],
+  "anatomical_regions": {
+    "head_neck": "Head / Neck",
+    "trunk_spine": "Trunk / Spine",
+    "left_arm": "Left arm",
+    "right_arm": "Right arm",
+    "left_leg": "Left leg",
+    "right_leg": "Right leg"
+  },
+  "geometry_assets": {
+    "verified_reference_poses": {
+      "252": {
+        "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/252_reference_pose.json",
+        "status": "verified_pose_geometry_for_rendering",
+        "note": "Use for joint/bone layout only. Do NOT trust avatar_verified provenance_manifest.json denominators for A2 counts."
+      },
+      "651": {
+        "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/651_reference_pose.json",
+        "status": "verified_pose_geometry_for_rendering",
+        "note": "Use for joint/bone layout only. Do NOT trust avatar_verified provenance_manifest.json denominators for A2 counts."
+      },
+      "671": {
+        "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/671_reference_pose.json",
+        "status": "verified_pose_geometry_for_rendering",
+        "note": "Use for joint/bone layout only. Do NOT trust avatar_verified provenance_manifest.json denominators for A2 counts."
+      },
+      "790": {
+        "path": "/Users/drorhazan/Desktop/gaga_psilo/projects/gaga_jcvpca/docs/slide45_figures/avatar_verified/geometry/790_reference_pose.json",
+        "status": "verified_pose_geometry_for_rendering",
+        "note": "Use for joint/bone layout only. Do NOT trust avatar_verified provenance_manifest.json denominators for A2 counts."
+      }
+    },
+    "surface_polygons": {
+      "available": false,
+      "requires_visual_mapping": true,
+      "warning": "Do not invent continuous body-surface measurement; overlays must remain link/region resolution."
+    },
+    "stale_geometry_packs_not_authoritative_for_numbers": [
+      "gaga_jcvpca/avater_671_252/",
+      "gaga_jcvpca/docs/slide45_figures/avatar_pooled/ (different estimand for A2)"
+    ]
+  },
+  "internal_to_presentation_terminology": {
+    "T1": "Baseline",
+    "T2": "4 classes",
+    "T3": "10 classes",
+    "D12": "Baseline \u2192 4 classes",
+    "D13": "Baseline \u2192 10 classes",
+    "NV": "Natural within-session repetition variability",
+    "A2": "Change exceeds own repetition variability and is directionally stable",
+    "S0": "Within repetition variability",
+    "S1": "Exceeds variability but direction unstable",
+    "S2": "Exceeds variability and directionally stable (A2 minimum)",
+    "S3": "Interpretive candidate (stricter stack; not the only meaningful links)",
+    "rep_pass": "Robustness pass across repetition-design checks",
+    "pooled ex09\u2013ex13": "One pooled progressive movement sequence"
+  }
+}
